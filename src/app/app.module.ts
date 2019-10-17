@@ -10,6 +10,7 @@ import { AddCardComponent } from './pages/add-card/add-card.component';
 import { DetailsComponent } from './pages/details/details.component';
 import { WeatherService } from './services/weather/weather.service';
 import { UiService } from './services/ui/ui.service';
+import { TwitterService } from './services/twitter/twitter.service';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { UiService } from './services/ui/ui.service';
   providers: [
     WeatherService,
     UiService,
+    TwitterService
   ],
   bootstrap: [AppComponent]
 })

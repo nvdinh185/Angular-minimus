@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -14,9 +14,10 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.cities = [
       { name: 'tokyo' },
-      { name: 'hanoi' },
-      { name: 'saigon' },
-      { name: 'london' }
+      { name: 'paris' },
+      { name: 'doha' },
+      { name: 'rabat' },
+      { name: 'tunis' }
     ];
   }
 }
