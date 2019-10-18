@@ -1,14 +1,11 @@
 <div class="root__container">
   <header [ngClass]="{'main__header-dark': darkModeActive}" class="main__header">
 
-    <div class="left__section">
-      <svg (click)="toggleMenu()" class="hamburger__icon" id="Menu_Burger_Icon">
-      </svg>
-    </div>
+    <div></div>
 
     <h3 class="date__text">Today</h3>
 
-    <div class="mode-toggle__container">
+    <div>
       <span class="mode-toggle__text">Light</span>
       <label class="toggle-button__container">
         <input (click)="modeToggleSwitch()" type="checkbox" class="mode-toggle__input" />
@@ -19,7 +16,7 @@
     </div>
   </header>
 
-  <main class="main__container">
+  <main>
     <div class="main-container__bg" [ngClass]="{'main-container__bg-dark': darkModeActive}"></div>
     <router-outlet></router-outlet>
   </main>

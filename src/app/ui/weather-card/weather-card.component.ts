@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { WeatherService } from '../../services/weather/weather.service';
 import { UiService } from '../../services/ui/ui.service';
@@ -10,7 +10,7 @@ import { first } from 'rxjs/operators';
   templateUrl: './weather-card.component.html',
   styleUrls: ['./weather-card.component.css']
 })
-export class WeatherCardComponent implements OnInit, OnDestroy {
+export class WeatherCardComponent {
 
   @Input() set city(city: string) {
     this.cityName = city;
@@ -47,7 +47,6 @@ export class WeatherCardComponent implements OnInit, OnDestroy {
 
   @Input() addMode;
   @Output() cityStored = new EventEmitter();
-  citesWeather: Object;
   darkMode: boolean;
   sub1: Subscription;
   state: string;
@@ -56,7 +55,6 @@ export class WeatherCardComponent implements OnInit, OnDestroy {
   minTemp: number;
   errorMessage: string;
   cityName;
-  cityAdded = false;
 
   constructor(public weather: WeatherService,
     public router: Router,
@@ -91,6 +89,4 @@ export class WeatherCardComponent implements OnInit, OnDestroy {
     //   setTimeout(() => this.cityAdded = false, 2000);
     // });
   }
-
-
 }
