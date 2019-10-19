@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { WeatherService } from '../../services/weather/weather.service';
 import { UiService } from '../../services/ui/ui.service';
 import { Subscription } from 'rxjs';
-import { first } from 'rxjs/operators';
 
 @Component({
   selector: 'app-weather-card',
@@ -14,8 +13,8 @@ export class WeatherCardComponent {
 
   @Input() set city(city: string) {
     this.cityName = city;
+    //Lấy trạng thái thời tiết và nhiệt độ hiện tại
     this.weather.getWeather(city)
-      .pipe(first())
       .subscribe((payload) => {
         this.state = payload.weather[0].main;
         this.temp = Math.ceil(payload.main.temp);
@@ -25,15 +24,15 @@ export class WeatherCardComponent {
           this.errorMessage = '';
         }, 3000);
       });
+    //Lấy nhiệt độ cao nhất và thấp nhất theo dự báo
     this.weather.getForecast(city)
-      .pipe(first())
       .subscribe((payload) => {
-        this.maxTemp = Math.round(payload[0].main.temp);
-        this.minTemp = Math.round(payload[0].main.temp);
+        this.maxTemp = Math.round(payload[0].main.temp_max);
+        this.minTemp = Math.round(payload[0].main.temp_min);
         for (const res of payload) {
           if (new Date().toLocaleDateString('en-GB') === new Date(res.dt_txt).toLocaleDateString('en-GB')) {
-            this.maxTemp = res.main.temp > this.maxTemp ? Math.round(res.main.temp) : this.maxTemp;
-            this.minTemp = res.main.temp < this.minTemp ? Math.round(res.main.temp) : this.minTemp;
+            this.maxTemp = res.main.temp_max > this.maxTemp ? Math.round(res.main.temp_max) : this.maxTemp;
+            this.minTemp = res.main.temp_min < this.minTemp ? Math.round(res.main.temp_min) : this.minTemp;
           }
         }
       }, (err) => {
@@ -42,7 +41,6 @@ export class WeatherCardComponent {
           this.errorMessage = '';
         }, 3000);
       });
-
   }
 
   @Input() addMode;

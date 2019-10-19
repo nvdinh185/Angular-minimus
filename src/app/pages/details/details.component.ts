@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { WeatherService } from '../../services/weather/weather.service';
 import { Subscription } from 'rxjs';
@@ -10,7 +10,7 @@ import { TwitterService } from '../../services/twitter/twitter.service';
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css']
 })
-export class DetailsComponent implements OnInit, OnDestroy {
+export class DetailsComponent {
 
   darkMode: boolean;
   city: string;

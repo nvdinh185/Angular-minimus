@@ -8,21 +8,24 @@ import { first } from 'rxjs/operators';
 @Injectable()
 export class WeatherService {
 
-  private readonly baseURL = 'https://api.openweathermap.org/data/2.5/weather?appid=1f481fd4fafd2cf9425a51599c8abd7a&units=metric&q=';
+  //đường dẫn để lấy thông tin thời tiết
+  private readonly baseURL = 'https://api.openweathermap.org/data/2.5/weather?&units=metric&q=';
   private readonly appID = environment.appID;
 
   constructor(public http: HttpClient) {
   }
 
+  //Lấy thông tin thời tiết hiện tại
   getWeather(city: string): Observable<any> {
     return this.http.get(
-      `${this.baseURL}${city}&units=metric&APPID=${this.appID}`).pipe((first()));
+      `${this.baseURL}${city}&appid=${this.appID}`)
   }
-  
+
+  //Lấy thông tin thời tiết dự báo
   getForecast(city: string): Subject<Array<any>> {
     const dataSubject = new Subject<Array<any>>();
     this.http.get(
-      `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=1f481fd4fafd2cf9425a51599c8abd7a`)
+      `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${this.appID}`)
       .subscribe((weather: any) => {
         dataSubject.next(weather.list);
       });
@@ -32,8 +35,9 @@ export class WeatherService {
   getWeatherState(city: string): Subject<string> {
     const dataSubject = new Subject<string>();
     this.http.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1f481fd4fafd2cf9425a51599c8abd7a`)
+      `${this.baseURL}${city}&appid=${this.appID}`)
       .subscribe((data) => {
+        console.log(data)
         dataSubject.next(data['weather'][0].main);
       });
     return dataSubject;
@@ -44,6 +48,7 @@ export class WeatherService {
     this.http.get(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=1f481fd4fafd2cf9425a51599c8abd7a`)
       .subscribe((weather: any) => {
+        console.log(weather)
         dataSubject.next(Math.round(Number(weather.main.temp)));
       });
     return dataSubject;
