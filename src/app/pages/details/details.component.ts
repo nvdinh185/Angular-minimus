@@ -28,7 +28,7 @@ export class DetailsComponent {
   sub5: Subscription;
   sub6: Subscription;
 
-  constructor(public twitter: TwitterService, public activeRouter: ActivatedRoute, public weather: WeatherService, public ui: UiService) { }
+  constructor(public activeRouter: ActivatedRoute, public weather: WeatherService, public ui: UiService) { }
 
   ngOnInit() {
     this.sub1 = this.ui.darkModeState.subscribe((isDark) => {
@@ -50,7 +50,7 @@ export class DetailsComponent {
         case 'tunis':
           this.cityIllustrationPath = '../../../assets/cities/tunis.svg';
           break;
-        case 'tokyo':
+        case 'danang':
           this.cityIllustrationPath = '../../../assets/cities/japan.svg';
           break;
         default:
