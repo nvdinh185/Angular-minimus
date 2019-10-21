@@ -32,6 +32,8 @@ export class WeatherService {
     this.http.get(`${this.baseURL}forecast?&units=metric&q=${city}&appid=${this.appID}`)
       .subscribe((weather: any) => {
         dataSubject.next(weather.list);
+      }, (err) => {
+        dataSubject.next(err.error);
       });
     return dataSubject;
   }

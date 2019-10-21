@@ -29,21 +29,23 @@ export class WeatherCardComponent {
     //Lấy nhiệt độ cao nhất và thấp nhất cho ngày hiện tại
     //từ thông tin thời tiết dự báo
     this.weather.getForecast(city)
-      .subscribe((payload) => {
-        this.maxTemp = Math.round(payload[0].main.temp_max);
-        this.minTemp = Math.round(payload[0].main.temp_min);
-        for (const res of payload) {
-          //Lấy nhiệt độ cao nhất và thấp nhất theo dự báo cho ngày hiện tại
-          if (new Date().toLocaleDateString('en-GB') === new Date(res.dt_txt).toLocaleDateString('en-GB')) {
-            this.maxTemp = res.main.temp_max > this.maxTemp ? Math.round(res.main.temp_max) : this.maxTemp;
-            this.minTemp = res.main.temp_min < this.minTemp ? Math.round(res.main.temp_min) : this.minTemp;
+      .subscribe((payload: any) => {
+        if (payload.cod === '404') {
+          this.errorMessage = payload.message;
+          setTimeout(() => {
+            this.errorMessage = '';
+          }, 3000);
+        } else {
+          this.maxTemp = Math.round(payload[0].main.temp_max);
+          this.minTemp = Math.round(payload[0].main.temp_min);
+          for (const res of payload) {
+            //Lấy nhiệt độ cao nhất và thấp nhất theo dự báo cho ngày hiện tại
+            if (new Date().toLocaleDateString('en-GB') === new Date(res.dt_txt).toLocaleDateString('en-GB')) {
+              this.maxTemp = res.main.temp_max > this.maxTemp ? Math.round(res.main.temp_max) : this.maxTemp;
+              this.minTemp = res.main.temp_min < this.minTemp ? Math.round(res.main.temp_min) : this.minTemp;
+            }
           }
         }
-      }, (err) => {
-        this.errorMessage = err.error.message;
-        setTimeout(() => {
-          this.errorMessage = '';
-        }, 3000);
       });
   }
 
@@ -77,18 +79,5 @@ export class WeatherCardComponent {
     if (!this.addMode) {
       this.router.navigateByUrl('/details/' + this.cityName);
     }
-  }
-
-  addCity() {
-    // this.fb.addCity(this.cityName).subscribe(() => {
-    //   this.cityName = null;
-    //   this.maxTemp = null;
-    //   this.minTemp = null;
-    //   this.state = null;
-    //   this.temp = null;
-    //   this.cityAdded = true;
-    //   this.cityStored.emit();
-    //   setTimeout(() => this.cityAdded = false, 2000);
-    // });
   }
 }

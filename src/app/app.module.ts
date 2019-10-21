@@ -11,6 +11,7 @@ import { DetailsComponent } from './pages/details/details.component';
 import { WeatherService } from './services/weather/weather.service';
 import { UiService } from './services/ui/ui.service';
 import { TwitterService } from './services/twitter/twitter.service';
+import { ErrorComponent } from './ui/error/error.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TwitterService } from './services/twitter/twitter.service';
     HomeComponent,
     WeatherCardComponent,
     AddCardComponent,
-    DetailsComponent
+    DetailsComponent,
+    ErrorComponent
   ],
   imports: [
     HttpClientModule,
