@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { WeatherService } from '../../services/weather/weather.service';
 import { UiService } from '../../services/ui/ui.service';
@@ -16,8 +16,8 @@ export class WeatherCardComponent {
 
     //Lấy trạng thái thời tiết và nhiệt độ hiện tại
     //từ thông tin thời tiết hiện tại
-    this.weather.getWeather(city)
-      .subscribe((payload) => {
+    this.sub = this.weather.getWeather(city)
+      .subscribe(payload => {
         this.state = payload.weather[0].main;
         this.temp = Math.ceil(payload.main.temp);
       }, (err) => {
@@ -26,9 +26,10 @@ export class WeatherCardComponent {
           this.errorMessage = '';
         }, 3000);
       });
+
     //Lấy nhiệt độ cao nhất và thấp nhất cho ngày hiện tại
     //từ thông tin thời tiết dự báo
-    this.weather.getForecast(city)
+    this.sub = this.weather.getForecast(city)
       .subscribe((payload: any) => {
         if (payload.cod === '404') {
           this.errorMessage = payload.message;
@@ -49,10 +50,8 @@ export class WeatherCardComponent {
       });
   }
 
-  @Input() addMode;
-  @Output() cityStored = new EventEmitter();
   darkMode: boolean;
-  sub1: Subscription;
+  sub: Subscription;
   state: string;
   temp: number;
   maxTemp: number;
@@ -66,18 +65,16 @@ export class WeatherCardComponent {
   }
 
   ngOnInit() {
-    this.sub1 = this.ui.darkModeState.subscribe((isDark) => {
+    this.sub = this.ui.darkModeState.subscribe((isDark) => {
       this.darkMode = isDark;
     });
   }
 
   ngOnDestroy() {
-    this.sub1.unsubscribe();
+    this.sub.unsubscribe();
   }
 
   openDetails() {
-    if (!this.addMode) {
-      this.router.navigateByUrl('/details/' + this.cityName);
-    }
+    this.router.navigateByUrl('/details/' + this.cityName);
   }
 }

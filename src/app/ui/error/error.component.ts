@@ -9,7 +9,7 @@ export class ErrorComponent {
 
   @Input() message: string;
   @Input() action = 'GOT IT';
-
+  
   constructor() {
   }
 

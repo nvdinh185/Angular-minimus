@@ -30,7 +30,7 @@ import { ErrorComponent } from './ui/error/error.component';
   providers: [
     WeatherService,
     UiService,
-    TwitterService
+    //TwitterService
   ],
   bootstrap: [AppComponent]
 })

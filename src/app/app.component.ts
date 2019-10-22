@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { UiService } from './services/ui/ui.service';
-import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -10,18 +10,30 @@ import { Router } from '@angular/router';
 export class AppComponent {
 
   darkModeActive: boolean;
+  sub: Subscription;
 
-  constructor(public ui: UiService, public router: Router) {
+  constructor(public ui: UiService) {
   }
 
   ngOnInit() {
-    this.ui.darkModeState.subscribe((value) => {
+    //Nhận lại đối tượng darkModeState phát ra
+    //gán cho biến darkModeActive
+    this.sub = this.ui.darkModeState.subscribe((value) => {
       this.darkModeActive = value;
     })
   };
 
   modeToggleSwitch() {
+    //Tiếp tục phát ra đối tượng darkModeState
+    //ở đâu có thuộc tính subscribe sẽ nhận lại được
     this.ui.darkModeState.next(!this.darkModeActive);
+  }
+
+  /**
+   * Khi thoát khỏi trang này thì không cho phép phát ra nữa
+   */
+  ngOnDestroy() {
+    this.sub.unsubscribe();
   }
 
 }

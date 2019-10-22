@@ -1,8 +1,8 @@
-<section class="weather__card" (click)="openDetails()" [ngClass]="{'weather__card-dark': darkMode}">
+<section class="weather_card" (click)="openDetails()" [ngClass]="{'weather_card-dark': darkMode}">
     <!-- Tên thành phố -->
-    <span class="city-name__text">{{cityName}}</span>
+    <span class="city-name_text">{{cityName}}</span>
     <!-- Hình ảnh mô tả cho các trạng thái thời tiết -->
-    <div class="weather-icon__container" [ngSwitch]="true">
+    <div class="weather-icon_container" [ngSwitch]="true">
         <svg *ngSwitchCase="state === 'Sunny' || state === 'Clear'" viewBox="2050 -845 262 262">
             <circle cx="131" cy="131" r="131" fill="#ffde17" data-name="Sun Icon" transform="translate(2050 -845)" />
         </svg>
@@ -55,25 +55,25 @@
     </div>
     <!-- Hiển thị nhiệt độ và trạng thái thời tiết hiện tại -->
     <div>
-        <span class="temperature-metric__text">{{ temp }}°</span>
-        <span class="weather-condition__text">{{ state }}</span>
+        <span class="temperature-metric_text">{{ temp }}°</span>
+        <span class="weather-condition_text">{{ state }}</span>
     </div>
     <!-- Nhiệt độ thấp nhất và cao nhất theo dự báo -->
-    <section class="min-max__container">
-        <div class="min__container">
-            <svg class="min-arrow__icon" viewBox="188.5 807 21 21">
+    <section class="min-max_container">
+        <div class="min_container">
+            <svg class="min-arrow_icon" viewBox="188.5 807 21 21">
                 <path fill="#00ff9b" d="M209.5 817.5h-21L199 828z" data-name="Min Arrow" />
             </svg>
 
-            <span class="min-temperature__text">{{ minTemp }}</span>
-            <span class="min__text">Min</span>
+            <span class="min-temperature_text">{{ minTemp }}</span>
+            <span class="min_text">Min</span>
         </div>
-        <div class="max__container">
-            <svg class="max-arrow__icon" viewBox="449.5 820 21 21">
+        <div class="max_container">
+            <svg class="max-arrow_icon" viewBox="449.5 820 21 21">
                 <path fill="red" d="M449.5 830.5h21L460 820z" data-name="Max Arrow" />
             </svg>
-            <span class="max-temperature__text">{{ maxTemp }}</span>
-            <span class="max__text">Max</span>
+            <span class="max-temperature_text">{{ maxTemp }}</span>
+            <span class="max_text">Max</span>
         </div>
     </section>
 </section>

@@ -1,4 +1,4 @@
-.root__container {
+.root_container {
 	width: 100vw;
 	height: 100vh;
 	display: grid;
@@ -7,7 +7,7 @@
 	position: relative;
 }
 
-.main__header {
+.main_header {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 0.25fr;
@@ -20,23 +20,23 @@
 	animation: 1s ease-in-out 0ms 1 fadein;
 }
 
-.main__header-dark {
+.main_header-dark {
 	background-color: #2B244D;
 	color: white;
 }
 
-.toggle-button__container {
+.toggle-button_container {
 	cursor: pointer;
 	position: relative;
 	margin: 0 0.5rem;
 }
 
-.mode-toggle__input {
+.mode-toggle_input {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
 
-.mode-toggle__bg {
+.mode-toggle_bg {
 	height: 1rem;
 	width: 2rem;
 	border-radius: 0.5rem;
@@ -45,7 +45,7 @@
 	transition: background-color 300ms linear;
 }
 
-.mode-toggle__circle {
+.mode-toggle_circle {
 	height: 1.30rem;
 	width: 1.30rem;
 	background-color: #2B244D;
@@ -57,29 +57,31 @@
 	left: 0.1rem;
 }
 
-.mode-toggle__circle-checked {
+.mode-toggle_circle-checked {
 	background-color: white;
 	left: 1.75rem;
 }
 
-.mode-toggle__bg-checked {
+.mode-toggle_bg-checked {
 	background-color: #FF0070;
 }
 
-.mode-toggle__text {
+.mode-toggle_text {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 }
 
-.date__text {
+.date_text {
+	/* in đậm chữ */
 	text-transform: uppercase;
+	/* Khoảng cách chữ */
 	letter-spacing: 0.1rem;
-	display: inline;
+	/* Khoảng cách với lề */
 	margin: 0.5rem 0;
 }
 
-.main-container__bg {
+.main-container_bg {
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -91,7 +93,7 @@
 	transition: opacity 300ms linear;
 }
 
-.main-container__bg-dark {
+.main-container_bg-dark {
 	opacity: 1;
 	background: linear-gradient(to bottom, #B290FF, #2E1D65);
 	transition: opacity 300ms linear;
