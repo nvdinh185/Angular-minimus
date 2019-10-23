@@ -43,7 +43,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// import {AddComponent} from './pages/add/add.component';
 var routes = [
     { path: '', component: _pages_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
     { path: 'details/:city', component: _pages_details_details_component__WEBPACK_IMPORTED_MODULE_4__["DetailsComponent"] },
@@ -71,7 +70,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".root__container {\r\n\twidth: 100vw;\r\n\theight: 100vh;\r\n\tdisplay: grid;\r\n\tgrid-template-columns: auto;\r\n\tgrid-template-rows: 0.5fr auto;\r\n\tposition: relative;\r\n}\r\n\r\n.main__header {\r\n\twidth: 100%;\r\n\tdisplay: grid;\r\n\tgrid-template-columns: 1fr 1fr 0.25fr;\r\n\tgrid-template-rows: 1fr;\r\n\tbox-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);\r\n\theight: 4rem;\r\n\tmargin: 0;\r\n\talign-items: center;\r\n\ttransition: background-color 500ms linear;\r\n\t-webkit-animation: 1s ease-in-out 0ms 1 fadein;\r\n\t        animation: 1s ease-in-out 0ms 1 fadein;\r\n}\r\n\r\n.main__header-dark {\r\n\tbackground-color: #2B244D;\r\n\tcolor: white;\r\n}\r\n\r\n.toggle-button__container {\r\n\tcursor: pointer;\r\n\tposition: relative;\r\n\tmargin: 0 0.5rem;\r\n}\r\n\r\n.mode-toggle__input {\r\n\t-webkit-appearance: none;\r\n\t-moz-appearance: none;\r\n}\r\n\r\n.mode-toggle__bg {\r\n\theight: 1rem;\r\n\twidth: 2rem;\r\n\tborder-radius: 0.5rem;\r\n\tbackground-color: rgba(0, 0, 0, 0.5);\r\n\tdisplay: inline-block;\r\n\ttransition: background-color 300ms linear;\r\n}\r\n\r\n.mode-toggle__circle {\r\n\theight: 1.30rem;\r\n\twidth: 1.30rem;\r\n\tbackground-color: #2B244D;\r\n\tposition: absolute;\r\n\ttop: -0.2rem;\r\n\tborder-radius: 50%;\r\n\tbox-shadow: 0 0 0 rgba(0, 0, 255, 0.5);\r\n\ttransition: left 300ms linear;\r\n\tleft: 0.1rem;\r\n}\r\n\r\n.mode-toggle__circle-checked {\r\n\tbackground-color: white;\r\n\tleft: 1.75rem;\r\n}\r\n\r\n.mode-toggle__bg-checked {\r\n\tbackground-color: #FF0070;\r\n}\r\n\r\n.mode-toggle__text {\r\n\tfont-size: 0.75rem;\r\n\ttext-transform: uppercase;\r\n\tletter-spacing: 0.1rem;\r\n}\r\n\r\n.date__text {\r\n\ttext-transform: uppercase;\r\n\tletter-spacing: 0.1rem;\r\n\tdisplay: inline;\r\n\tmargin: 0.5rem 0;\r\n}\r\n\r\n.main-container__bg {\r\n\theight: 100%;\r\n\twidth: 100%;\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\tz-index: -2;\r\n\topacity: 0;\r\n\tbackground: white;\r\n\ttransition: opacity 300ms linear;\r\n}\r\n\r\n.main-container__bg-dark {\r\n\topacity: 1;\r\n\tbackground: linear-gradient(to bottom, #B290FF, #2E1D65);\r\n\ttransition: opacity 300ms linear;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Q0FDQyxZQUFZO0NBQ1osYUFBYTtDQUNiLGFBQWE7Q0FDYiwyQkFBMkI7Q0FDM0IsOEJBQThCO0NBQzlCLGtCQUFrQjtBQUNuQjs7QUFFQTtDQUNDLFdBQVc7Q0FDWCxhQUFhO0NBQ2IscUNBQXFDO0NBQ3JDLHVCQUF1QjtDQUN2Qix5Q0FBeUM7Q0FDekMsWUFBWTtDQUNaLFNBQVM7Q0FDVCxtQkFBbUI7Q0FDbkIseUNBQXlDO0NBQ3pDLDhDQUFzQztTQUF0QyxzQ0FBc0M7QUFDdkM7O0FBRUE7Q0FDQyx5QkFBeUI7Q0FDekIsWUFBWTtBQUNiOztBQUVBO0NBQ0MsZUFBZTtDQUNmLGtCQUFrQjtDQUNsQixnQkFBZ0I7QUFDakI7O0FBRUE7Q0FDQyx3QkFBd0I7Q0FDeEIscUJBQXFCO0FBQ3RCOztBQUVBO0NBQ0MsWUFBWTtDQUNaLFdBQVc7Q0FDWCxxQkFBcUI7Q0FDckIsb0NBQW9DO0NBQ3BDLHFCQUFxQjtDQUNyQix5Q0FBeUM7QUFDMUM7O0FBRUE7Q0FDQyxlQUFlO0NBQ2YsY0FBYztDQUNkLHlCQUF5QjtDQUN6QixrQkFBa0I7Q0FDbEIsWUFBWTtDQUNaLGtCQUFrQjtDQUNsQixzQ0FBc0M7Q0FDdEMsNkJBQTZCO0NBQzdCLFlBQVk7QUFDYjs7QUFFQTtDQUNDLHVCQUF1QjtDQUN2QixhQUFhO0FBQ2Q7O0FBRUE7Q0FDQyx5QkFBeUI7QUFDMUI7O0FBRUE7Q0FDQyxrQkFBa0I7Q0FDbEIseUJBQXlCO0NBQ3pCLHNCQUFzQjtBQUN2Qjs7QUFFQTtDQUNDLHlCQUF5QjtDQUN6QixzQkFBc0I7Q0FDdEIsZUFBZTtDQUNmLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFlBQVk7Q0FDWixXQUFXO0NBQ1gsa0JBQWtCO0NBQ2xCLE1BQU07Q0FDTixPQUFPO0NBQ1AsV0FBVztDQUNYLFVBQVU7Q0FDVixpQkFBaUI7Q0FDakIsZ0NBQWdDO0FBQ2pDOztBQUVBO0NBQ0MsVUFBVTtDQUNWLHdEQUF3RDtDQUN4RCxnQ0FBZ0M7QUFDakMiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5yb290X19jb250YWluZXIge1xyXG5cdHdpZHRoOiAxMDB2dztcclxuXHRoZWlnaHQ6IDEwMHZoO1xyXG5cdGRpc3BsYXk6IGdyaWQ7XHJcblx0Z3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiBhdXRvO1xyXG5cdGdyaWQtdGVtcGxhdGUtcm93czogMC41ZnIgYXV0bztcclxuXHRwb3NpdGlvbjogcmVsYXRpdmU7XHJcbn1cclxuXHJcbi5tYWluX19oZWFkZXIge1xyXG5cdHdpZHRoOiAxMDAlO1xyXG5cdGRpc3BsYXk6IGdyaWQ7XHJcblx0Z3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyIDAuMjVmcjtcclxuXHRncmlkLXRlbXBsYXRlLXJvd3M6IDFmcjtcclxuXHRib3gtc2hhZG93OiAwIDAgMnJlbSByZ2JhKDAsIDAsIDI1NSwgMC4xKTtcclxuXHRoZWlnaHQ6IDRyZW07XHJcblx0bWFyZ2luOiAwO1xyXG5cdGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcblx0dHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciA1MDBtcyBsaW5lYXI7XHJcblx0YW5pbWF0aW9uOiAxcyBlYXNlLWluLW91dCAwbXMgMSBmYWRlaW47XHJcbn1cclxuXHJcbi5tYWluX19oZWFkZXItZGFyayB7XHJcblx0YmFja2dyb3VuZC1jb2xvcjogIzJCMjQ0RDtcclxuXHRjb2xvcjogd2hpdGU7XHJcbn1cclxuXHJcbi50b2dnbGUtYnV0dG9uX19jb250YWluZXIge1xyXG5cdGN1cnNvcjogcG9pbnRlcjtcclxuXHRwb3NpdGlvbjogcmVsYXRpdmU7XHJcblx0bWFyZ2luOiAwIDAuNXJlbTtcclxufVxyXG5cclxuLm1vZGUtdG9nZ2xlX19pbnB1dCB7XHJcblx0LXdlYmtpdC1hcHBlYXJhbmNlOiBub25lO1xyXG5cdC1tb3otYXBwZWFyYW5jZTogbm9uZTtcclxufVxyXG5cclxuLm1vZGUtdG9nZ2xlX19iZyB7XHJcblx0aGVpZ2h0OiAxcmVtO1xyXG5cdHdpZHRoOiAycmVtO1xyXG5cdGJvcmRlci1yYWRpdXM6IDAuNXJlbTtcclxuXHRiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcblx0ZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG5cdHRyYW5zaXRpb246IGJhY2tncm91bmQtY29sb3IgMzAwbXMgbGluZWFyO1xyXG59XHJcblxyXG4ubW9kZS10b2dnbGVfX2NpcmNsZSB7XHJcblx0aGVpZ2h0OiAxLjMwcmVtO1xyXG5cdHdpZHRoOiAxLjMwcmVtO1xyXG5cdGJhY2tncm91bmQtY29sb3I6ICMyQjI0NEQ7XHJcblx0cG9zaXRpb246IGFic29sdXRlO1xyXG5cdHRvcDogLTAuMnJlbTtcclxuXHRib3JkZXItcmFkaXVzOiA1MCU7XHJcblx0Ym94LXNoYWRvdzogMCAwIDAgcmdiYSgwLCAwLCAyNTUsIDAuNSk7XHJcblx0dHJhbnNpdGlvbjogbGVmdCAzMDBtcyBsaW5lYXI7XHJcblx0bGVmdDogMC4xcmVtO1xyXG59XHJcblxyXG4ubW9kZS10b2dnbGVfX2NpcmNsZS1jaGVja2VkIHtcclxuXHRiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuXHRsZWZ0OiAxLjc1cmVtO1xyXG59XHJcblxyXG4ubW9kZS10b2dnbGVfX2JnLWNoZWNrZWQge1xyXG5cdGJhY2tncm91bmQtY29sb3I6ICNGRjAwNzA7XHJcbn1cclxuXHJcbi5tb2RlLXRvZ2dsZV9fdGV4dCB7XHJcblx0Zm9udC1zaXplOiAwLjc1cmVtO1xyXG5cdHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcblx0bGV0dGVyLXNwYWNpbmc6IDAuMXJlbTtcclxufVxyXG5cclxuLmRhdGVfX3RleHQge1xyXG5cdHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcblx0bGV0dGVyLXNwYWNpbmc6IDAuMXJlbTtcclxuXHRkaXNwbGF5OiBpbmxpbmU7XHJcblx0bWFyZ2luOiAwLjVyZW0gMDtcclxufVxyXG5cclxuLm1haW4tY29udGFpbmVyX19iZyB7XHJcblx0aGVpZ2h0OiAxMDAlO1xyXG5cdHdpZHRoOiAxMDAlO1xyXG5cdHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuXHR0b3A6IDA7XHJcblx0bGVmdDogMDtcclxuXHR6LWluZGV4OiAtMjtcclxuXHRvcGFjaXR5OiAwO1xyXG5cdGJhY2tncm91bmQ6IHdoaXRlO1xyXG5cdHRyYW5zaXRpb246IG9wYWNpdHkgMzAwbXMgbGluZWFyO1xyXG59XHJcblxyXG4ubWFpbi1jb250YWluZXJfX2JnLWRhcmsge1xyXG5cdG9wYWNpdHk6IDE7XHJcblx0YmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KHRvIGJvdHRvbSwgI0IyOTBGRiwgIzJFMUQ2NSk7XHJcblx0dHJhbnNpdGlvbjogb3BhY2l0eSAzMDBtcyBsaW5lYXI7XHJcbn0iXX0= */"
+module.exports = ".root_container {\r\n\twidth: 100vw;\r\n\theight: 100vh;\r\n\tdisplay: grid;\r\n\tgrid-template-columns: auto;\r\n\tgrid-template-rows: 0.5fr auto;\r\n\tposition: relative;\r\n}\r\n\r\n.main_header {\r\n\twidth: 100%;\r\n\tdisplay: grid;\r\n\tgrid-template-columns: 1fr 1fr 0.25fr;\r\n\tgrid-template-rows: 1fr;\r\n\tbox-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);\r\n\theight: 4rem;\r\n\tmargin: 0;\r\n\talign-items: center;\r\n\ttransition: background-color 500ms linear;\r\n\t-webkit-animation: 1s ease-in-out 0ms 1 fadein;\r\n\t        animation: 1s ease-in-out 0ms 1 fadein;\r\n}\r\n\r\n.main_header-dark {\r\n\tbackground-color: #2B244D;\r\n\tcolor: white;\r\n}\r\n\r\n.toggle-button_container {\r\n\tcursor: pointer;\r\n\tposition: relative;\r\n\tmargin: 0 0.5rem;\r\n}\r\n\r\n.mode-toggle_input {\r\n\t-webkit-appearance: none;\r\n\t-moz-appearance: none;\r\n}\r\n\r\n.mode-toggle_bg {\r\n\theight: 1rem;\r\n\twidth: 2rem;\r\n\tborder-radius: 0.5rem;\r\n\tbackground-color: rgba(0, 0, 0, 0.5);\r\n\tdisplay: inline-block;\r\n\ttransition: background-color 300ms linear;\r\n}\r\n\r\n.mode-toggle_circle {\r\n\theight: 1.30rem;\r\n\twidth: 1.30rem;\r\n\tbackground-color: #2B244D;\r\n\tposition: absolute;\r\n\ttop: -0.2rem;\r\n\tborder-radius: 50%;\r\n\tbox-shadow: 0 0 0 rgba(0, 0, 255, 0.5);\r\n\ttransition: left 300ms linear;\r\n\tleft: 0.1rem;\r\n}\r\n\r\n.mode-toggle_circle-checked {\r\n\tbackground-color: white;\r\n\tleft: 1.75rem;\r\n}\r\n\r\n.mode-toggle_bg-checked {\r\n\tbackground-color: #FF0070;\r\n}\r\n\r\n.mode-toggle_text {\r\n\tfont-size: 0.75rem;\r\n\ttext-transform: uppercase;\r\n\tletter-spacing: 0.1rem;\r\n}\r\n\r\n.date_text {\r\n\t/* in đậm chữ */\r\n\ttext-transform: uppercase;\r\n\t/* Khoảng cách chữ */\r\n\tletter-spacing: 0.1rem;\r\n\t/* Khoảng cách với lề */\r\n\tmargin: 0.5rem 0;\r\n}\r\n\r\n.main-container_bg {\r\n\theight: 100%;\r\n\twidth: 100%;\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\tz-index: -2;\r\n\topacity: 0;\r\n\tbackground: white;\r\n\ttransition: opacity 300ms linear;\r\n}\r\n\r\n.main-container_bg-dark {\r\n\topacity: 1;\r\n\tbackground: linear-gradient(to bottom, #B290FF, #2E1D65);\r\n\ttransition: opacity 300ms linear;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Q0FDQyxZQUFZO0NBQ1osYUFBYTtDQUNiLGFBQWE7Q0FDYiwyQkFBMkI7Q0FDM0IsOEJBQThCO0NBQzlCLGtCQUFrQjtBQUNuQjs7QUFFQTtDQUNDLFdBQVc7Q0FDWCxhQUFhO0NBQ2IscUNBQXFDO0NBQ3JDLHVCQUF1QjtDQUN2Qix5Q0FBeUM7Q0FDekMsWUFBWTtDQUNaLFNBQVM7Q0FDVCxtQkFBbUI7Q0FDbkIseUNBQXlDO0NBQ3pDLDhDQUFzQztTQUF0QyxzQ0FBc0M7QUFDdkM7O0FBRUE7Q0FDQyx5QkFBeUI7Q0FDekIsWUFBWTtBQUNiOztBQUVBO0NBQ0MsZUFBZTtDQUNmLGtCQUFrQjtDQUNsQixnQkFBZ0I7QUFDakI7O0FBRUE7Q0FDQyx3QkFBd0I7Q0FDeEIscUJBQXFCO0FBQ3RCOztBQUVBO0NBQ0MsWUFBWTtDQUNaLFdBQVc7Q0FDWCxxQkFBcUI7Q0FDckIsb0NBQW9DO0NBQ3BDLHFCQUFxQjtDQUNyQix5Q0FBeUM7QUFDMUM7O0FBRUE7Q0FDQyxlQUFlO0NBQ2YsY0FBYztDQUNkLHlCQUF5QjtDQUN6QixrQkFBa0I7Q0FDbEIsWUFBWTtDQUNaLGtCQUFrQjtDQUNsQixzQ0FBc0M7Q0FDdEMsNkJBQTZCO0NBQzdCLFlBQVk7QUFDYjs7QUFFQTtDQUNDLHVCQUF1QjtDQUN2QixhQUFhO0FBQ2Q7O0FBRUE7Q0FDQyx5QkFBeUI7QUFDMUI7O0FBRUE7Q0FDQyxrQkFBa0I7Q0FDbEIseUJBQXlCO0NBQ3pCLHNCQUFzQjtBQUN2Qjs7QUFFQTtDQUNDLGVBQWU7Q0FDZix5QkFBeUI7Q0FDekIsb0JBQW9CO0NBQ3BCLHNCQUFzQjtDQUN0Qix1QkFBdUI7Q0FDdkIsZ0JBQWdCO0FBQ2pCOztBQUVBO0NBQ0MsWUFBWTtDQUNaLFdBQVc7Q0FDWCxrQkFBa0I7Q0FDbEIsTUFBTTtDQUNOLE9BQU87Q0FDUCxXQUFXO0NBQ1gsVUFBVTtDQUNWLGlCQUFpQjtDQUNqQixnQ0FBZ0M7QUFDakM7O0FBRUE7Q0FDQyxVQUFVO0NBQ1Ysd0RBQXdEO0NBQ3hELGdDQUFnQztBQUNqQyIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnJvb3RfY29udGFpbmVyIHtcclxuXHR3aWR0aDogMTAwdnc7XHJcblx0aGVpZ2h0OiAxMDB2aDtcclxuXHRkaXNwbGF5OiBncmlkO1xyXG5cdGdyaWQtdGVtcGxhdGUtY29sdW1uczogYXV0bztcclxuXHRncmlkLXRlbXBsYXRlLXJvd3M6IDAuNWZyIGF1dG87XHJcblx0cG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcblxyXG4ubWFpbl9oZWFkZXIge1xyXG5cdHdpZHRoOiAxMDAlO1xyXG5cdGRpc3BsYXk6IGdyaWQ7XHJcblx0Z3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyIDAuMjVmcjtcclxuXHRncmlkLXRlbXBsYXRlLXJvd3M6IDFmcjtcclxuXHRib3gtc2hhZG93OiAwIDAgMnJlbSByZ2JhKDAsIDAsIDI1NSwgMC4xKTtcclxuXHRoZWlnaHQ6IDRyZW07XHJcblx0bWFyZ2luOiAwO1xyXG5cdGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcblx0dHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciA1MDBtcyBsaW5lYXI7XHJcblx0YW5pbWF0aW9uOiAxcyBlYXNlLWluLW91dCAwbXMgMSBmYWRlaW47XHJcbn1cclxuXHJcbi5tYWluX2hlYWRlci1kYXJrIHtcclxuXHRiYWNrZ3JvdW5kLWNvbG9yOiAjMkIyNDREO1xyXG5cdGNvbG9yOiB3aGl0ZTtcclxufVxyXG5cclxuLnRvZ2dsZS1idXR0b25fY29udGFpbmVyIHtcclxuXHRjdXJzb3I6IHBvaW50ZXI7XHJcblx0cG9zaXRpb246IHJlbGF0aXZlO1xyXG5cdG1hcmdpbjogMCAwLjVyZW07XHJcbn1cclxuXHJcbi5tb2RlLXRvZ2dsZV9pbnB1dCB7XHJcblx0LXdlYmtpdC1hcHBlYXJhbmNlOiBub25lO1xyXG5cdC1tb3otYXBwZWFyYW5jZTogbm9uZTtcclxufVxyXG5cclxuLm1vZGUtdG9nZ2xlX2JnIHtcclxuXHRoZWlnaHQ6IDFyZW07XHJcblx0d2lkdGg6IDJyZW07XHJcblx0Ym9yZGVyLXJhZGl1czogMC41cmVtO1xyXG5cdGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcclxuXHRkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcblx0dHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAzMDBtcyBsaW5lYXI7XHJcbn1cclxuXHJcbi5tb2RlLXRvZ2dsZV9jaXJjbGUge1xyXG5cdGhlaWdodDogMS4zMHJlbTtcclxuXHR3aWR0aDogMS4zMHJlbTtcclxuXHRiYWNrZ3JvdW5kLWNvbG9yOiAjMkIyNDREO1xyXG5cdHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuXHR0b3A6IC0wLjJyZW07XHJcblx0Ym9yZGVyLXJhZGl1czogNTAlO1xyXG5cdGJveC1zaGFkb3c6IDAgMCAwIHJnYmEoMCwgMCwgMjU1LCAwLjUpO1xyXG5cdHRyYW5zaXRpb246IGxlZnQgMzAwbXMgbGluZWFyO1xyXG5cdGxlZnQ6IDAuMXJlbTtcclxufVxyXG5cclxuLm1vZGUtdG9nZ2xlX2NpcmNsZS1jaGVja2VkIHtcclxuXHRiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuXHRsZWZ0OiAxLjc1cmVtO1xyXG59XHJcblxyXG4ubW9kZS10b2dnbGVfYmctY2hlY2tlZCB7XHJcblx0YmFja2dyb3VuZC1jb2xvcjogI0ZGMDA3MDtcclxufVxyXG5cclxuLm1vZGUtdG9nZ2xlX3RleHQge1xyXG5cdGZvbnQtc2l6ZTogMC43NXJlbTtcclxuXHR0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG5cdGxldHRlci1zcGFjaW5nOiAwLjFyZW07XHJcbn1cclxuXHJcbi5kYXRlX3RleHQge1xyXG5cdC8qIGluIMSR4bqtbSBjaOG7ryAqL1xyXG5cdHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcblx0LyogS2hv4bqjbmcgY8OhY2ggY2jhu68gKi9cclxuXHRsZXR0ZXItc3BhY2luZzogMC4xcmVtO1xyXG5cdC8qIEtob+G6o25nIGPDoWNoIHbhu5tpIGzhu4EgKi9cclxuXHRtYXJnaW46IDAuNXJlbSAwO1xyXG59XHJcblxyXG4ubWFpbi1jb250YWluZXJfYmcge1xyXG5cdGhlaWdodDogMTAwJTtcclxuXHR3aWR0aDogMTAwJTtcclxuXHRwb3NpdGlvbjogYWJzb2x1dGU7XHJcblx0dG9wOiAwO1xyXG5cdGxlZnQ6IDA7XHJcblx0ei1pbmRleDogLTI7XHJcblx0b3BhY2l0eTogMDtcclxuXHRiYWNrZ3JvdW5kOiB3aGl0ZTtcclxuXHR0cmFuc2l0aW9uOiBvcGFjaXR5IDMwMG1zIGxpbmVhcjtcclxufVxyXG5cclxuLm1haW4tY29udGFpbmVyX2JnLWRhcmsge1xyXG5cdG9wYWNpdHk6IDE7XHJcblx0YmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KHRvIGJvdHRvbSwgI0IyOTBGRiwgIzJFMUQ2NSk7XHJcblx0dHJhbnNpdGlvbjogb3BhY2l0eSAzMDBtcyBsaW5lYXI7XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -82,7 +81,7 @@ module.exports = ".root__container {\r\n\twidth: 100vw;\r\n\theight: 100vh;\r\n\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"root__container\">\r\n  <header [ngClass]=\"{'main__header-dark': darkModeActive}\" class=\"main__header\">\r\n\r\n    <div></div>\r\n\r\n    <h3 class=\"date__text\">Today</h3>\r\n\r\n    <div>\r\n      <span class=\"mode-toggle__text\">Light</span>\r\n      <label class=\"toggle-button__container\">\r\n        <input (click)=\"modeToggleSwitch()\" type=\"checkbox\" class=\"mode-toggle__input\" />\r\n        <span [ngClass]=\"{'mode-toggle__bg-checked': darkModeActive}\" class=\"mode-toggle__bg\"></span>\r\n        <span [ngClass]=\"{'mode-toggle__circle-checked': darkModeActive}\" class=\"mode-toggle__circle\"></span>\r\n      </label>\r\n      <span class=\"mode-toggle__text\">Dark</span>\r\n    </div>\r\n  </header>\r\n\r\n  <main>\r\n    <div class=\"main-container__bg\" [ngClass]=\"{'main-container__bg-dark': darkModeActive}\"></div>\r\n    <router-outlet></router-outlet>\r\n  </main>\r\n</div>"
+module.exports = "<div class=\"root_container\">\r\n  <header [ngClass]=\"{'main_header-dark': darkModeActive}\" class=\"main_header\">\r\n\r\n    <div></div>\r\n\r\n    <h3 class=\"date_text\">Today</h3>\r\n\r\n    <div>\r\n      <span class=\"mode-toggle_text\">Light</span>\r\n      <label class=\"toggle-button_container\">\r\n        <input (click)=\"modeToggleSwitch()\" type=\"checkbox\" class=\"mode-toggle_input\" />\r\n        <span [ngClass]=\"{'mode-toggle_bg-checked': darkModeActive}\" class=\"mode-toggle_bg\"></span>\r\n        <span [ngClass]=\"{'mode-toggle_circle-checked': darkModeActive}\" class=\"mode-toggle_circle\"></span>\r\n      </label>\r\n      <span class=\"mode-toggle_text\">Dark</span>\r\n    </div>\r\n  </header>\r\n\r\n  <main>\r\n    <div class=\"main-container_bg\" [ngClass]=\"{'main-container_bg-dark': darkModeActive}\"></div>\r\n    <router-outlet></router-outlet>\r\n  </main>\r\n</div>"
 
 /***/ }),
 
@@ -99,25 +98,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_ui_ui_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./services/ui/ui.service */ "./src/app/services/ui/ui.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-
 
 
 
 var AppComponent = /** @class */ (function () {
-    function AppComponent(ui, router) {
+    function AppComponent(ui) {
         this.ui = ui;
-        this.router = router;
     }
     AppComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.ui.darkModeState.subscribe(function (value) {
+        //Nhận lại đối tượng darkModeState phát ra
+        //gán cho biến darkModeActive
+        this.sub = this.ui.darkModeState.subscribe(function (value) {
             _this.darkModeActive = value;
         });
     };
     ;
     AppComponent.prototype.modeToggleSwitch = function () {
+        //Tiếp tục phát ra đối tượng darkModeState
+        //ở đâu có thuộc tính subscribe sẽ nhận lại được
         this.ui.darkModeState.next(!this.darkModeActive);
+    };
+    /**
+     * Khi thoát khỏi trang này thì hủy đối tượng darkModeState
+     * để giải phóng bộ nhớ
+     */
+    AppComponent.prototype.ngOnDestroy = function () {
+        this.sub.unsubscribe();
     };
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -125,7 +132,7 @@ var AppComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_ui_ui_service__WEBPACK_IMPORTED_MODULE_2__["UiService"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_ui_ui_service__WEBPACK_IMPORTED_MODULE_2__["UiService"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -151,13 +158,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _pages_home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/home/home.component */ "./src/app/pages/home/home.component.ts");
-/* harmony import */ var _ui_weather_card_weather_card_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ui/weather-card/weather-card.component */ "./src/app/ui/weather-card/weather-card.component.ts");
-/* harmony import */ var _pages_add_card_add_card_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/add-card/add-card.component */ "./src/app/pages/add-card/add-card.component.ts");
-/* harmony import */ var _pages_details_details_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/details/details.component */ "./src/app/pages/details/details.component.ts");
-/* harmony import */ var _services_weather_weather_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./services/weather/weather.service */ "./src/app/services/weather/weather.service.ts");
-/* harmony import */ var _services_ui_ui_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./services/ui/ui.service */ "./src/app/services/ui/ui.service.ts");
-/* harmony import */ var _services_twitter_twitter_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./services/twitter/twitter.service */ "./src/app/services/twitter/twitter.service.ts");
-
+/* harmony import */ var _components_weather_card_weather_card_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/weather-card/weather-card.component */ "./src/app/components/weather-card/weather-card.component.ts");
+/* harmony import */ var _pages_details_details_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/details/details.component */ "./src/app/pages/details/details.component.ts");
+/* harmony import */ var _services_weather_weather_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./services/weather/weather.service */ "./src/app/services/weather/weather.service.ts");
+/* harmony import */ var _services_ui_ui_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./services/ui/ui.service */ "./src/app/services/ui/ui.service.ts");
+/* harmony import */ var _components_error_error_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/error/error.component */ "./src/app/components/error/error.component.ts");
 
 
 
@@ -178,9 +183,9 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
                 _pages_home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"],
-                _ui_weather_card_weather_card_component__WEBPACK_IMPORTED_MODULE_7__["WeatherCardComponent"],
-                _pages_add_card_add_card_component__WEBPACK_IMPORTED_MODULE_8__["AddCardComponent"],
-                _pages_details_details_component__WEBPACK_IMPORTED_MODULE_9__["DetailsComponent"]
+                _components_weather_card_weather_card_component__WEBPACK_IMPORTED_MODULE_7__["WeatherCardComponent"],
+                _pages_details_details_component__WEBPACK_IMPORTED_MODULE_8__["DetailsComponent"],
+                _components_error_error_component__WEBPACK_IMPORTED_MODULE_11__["ErrorComponent"]
             ],
             imports: [
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
@@ -188,9 +193,8 @@ var AppModule = /** @class */ (function () {
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
             ],
             providers: [
-                _services_weather_weather_service__WEBPACK_IMPORTED_MODULE_10__["WeatherService"],
-                _services_ui_ui_service__WEBPACK_IMPORTED_MODULE_11__["UiService"],
-                _services_twitter_twitter_service__WEBPACK_IMPORTED_MODULE_12__["TwitterService"]
+                _services_weather_weather_service__WEBPACK_IMPORTED_MODULE_9__["WeatherService"],
+                _services_ui_ui_service__WEBPACK_IMPORTED_MODULE_10__["UiService"],
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
@@ -202,56 +206,190 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/pages/add-card/add-card.component.css":
+/***/ "./src/app/components/error/error.component.css":
+/*!******************************************************!*\
+  !*** ./src/app/components/error/error.component.css ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".error-wrapper {\r\n  position: fixed;\r\n  left: 50%;\r\n  bottom: 0;\r\n  transform: translate(-50%, 5rem);\r\n  width: 70%;\r\n  background-color: crimson;\r\n  color: white;\r\n  height: 4rem;\r\n  border-radius: 0.25rem 0.25rem 0 0;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  padding: 0.5rem 3rem;\r\n  transition: transform 1s ease-in-out;\r\n  z-index: 9999999999;\r\n}\r\n\r\n.error-wrapper-active {\r\n  transform: translate(-50%, 0);\r\n}\r\n\r\n.error-message {\r\n  font-size: 1.25rem;\r\n  letter-spacing: 0.1rem;\r\n  text-transform: capitalize;\r\n  line-height: 1.25rem;\r\n  display: block;\r\n  text-overflow: ellipsis;\r\n  overflow: hidden;\r\n  white-space: nowrap;\r\n  width: 80%;\r\n}\r\n\r\n.error-btn {\r\n  outline: none;\r\n  border: none;\r\n  padding: 1rem 1.5rem;\r\n  background-color: rgba(255, 255, 255, 0.3);\r\n  font-size: 1rem;\r\n  font-weight: bold;\r\n  color: white;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9lcnJvci9lcnJvci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZUFBZTtFQUNmLFNBQVM7RUFDVCxTQUFTO0VBQ1QsZ0NBQWdDO0VBQ2hDLFVBQVU7RUFDVix5QkFBeUI7RUFDekIsWUFBWTtFQUNaLFlBQVk7RUFDWixrQ0FBa0M7RUFDbEMsYUFBYTtFQUNiLDhCQUE4QjtFQUM5QixtQkFBbUI7RUFDbkIsb0JBQW9CO0VBQ3BCLG9DQUFvQztFQUNwQyxtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSw2QkFBNkI7QUFDL0I7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsc0JBQXNCO0VBQ3RCLDBCQUEwQjtFQUMxQixvQkFBb0I7RUFDcEIsY0FBYztFQUNkLHVCQUF1QjtFQUN2QixnQkFBZ0I7RUFDaEIsbUJBQW1CO0VBQ25CLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGFBQWE7RUFDYixZQUFZO0VBQ1osb0JBQW9CO0VBQ3BCLDBDQUEwQztFQUMxQyxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLFlBQVk7QUFDZCIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZXJyb3IvZXJyb3IuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5lcnJvci13cmFwcGVyIHtcclxuICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgbGVmdDogNTAlO1xyXG4gIGJvdHRvbTogMDtcclxuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCA1cmVtKTtcclxuICB3aWR0aDogNzAlO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGNyaW1zb247XHJcbiAgY29sb3I6IHdoaXRlO1xyXG4gIGhlaWdodDogNHJlbTtcclxuICBib3JkZXItcmFkaXVzOiAwLjI1cmVtIDAuMjVyZW0gMCAwO1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgcGFkZGluZzogMC41cmVtIDNyZW07XHJcbiAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDFzIGVhc2UtaW4tb3V0O1xyXG4gIHotaW5kZXg6IDk5OTk5OTk5OTk7XHJcbn1cclxuXHJcbi5lcnJvci13cmFwcGVyLWFjdGl2ZSB7XHJcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgMCk7XHJcbn1cclxuXHJcbi5lcnJvci1tZXNzYWdlIHtcclxuICBmb250LXNpemU6IDEuMjVyZW07XHJcbiAgbGV0dGVyLXNwYWNpbmc6IDAuMXJlbTtcclxuICB0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZTtcclxuICBsaW5lLWhlaWdodDogMS4yNXJlbTtcclxuICBkaXNwbGF5OiBibG9jaztcclxuICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gIHdoaXRlLXNwYWNlOiBub3dyYXA7XHJcbiAgd2lkdGg6IDgwJTtcclxufVxyXG5cclxuLmVycm9yLWJ0biB7XHJcbiAgb3V0bGluZTogbm9uZTtcclxuICBib3JkZXI6IG5vbmU7XHJcbiAgcGFkZGluZzogMXJlbSAxLjVyZW07XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjMpO1xyXG4gIGZvbnQtc2l6ZTogMXJlbTtcclxuICBmb250LXdlaWdodDogYm9sZDtcclxuICBjb2xvcjogd2hpdGU7XHJcbn1cclxuIl19 */"
+
+/***/ }),
+
+/***/ "./src/app/components/error/error.component.html":
 /*!*******************************************************!*\
-  !*** ./src/app/pages/add-card/add-card.component.css ***!
+  !*** ./src/app/components/error/error.component.html ***!
   \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".add__card {\r\n    background-color: #ffffff;\r\n    box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);\r\n    display: grid;\r\n    grid-template-columns: 1fr;\r\n    grid-template-rows: 1fr 1fr;\r\n    padding: 2rem;\r\n    margin: 2rem;\r\n    width: 19rem;\r\n    height: 30rem;\r\n    justify-items: center;\r\n    cursor: pointer;\r\n    border-radius: 1.75rem;\r\n    -webkit-animation: 1.25s ease-in-out 0ms 1 fadein;\r\n            animation: 1.25s ease-in-out 0ms 1 fadein;\r\n    color: #443282;\r\n  }\r\n  \r\n  .add__card-dark {\r\n    background: linear-gradient(to bottom, #711B86, #00057A);\r\n    color: white;\r\n  }\r\n  \r\n  .card__title {\r\n    text-transform: uppercase;\r\n    letter-spacing: 0.1rem;\r\n  }\r\n  \r\n  .city__illustration {\r\n    width: 20rem;\r\n  }\r\n  \r\n  .body__container {\r\n    align-self: end;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    flex-flow: column;\r\n  }\r\n  \r\n  .add__icon {\r\n    width: 10rem;\r\n    margin-bottom: 1.15rem;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvYWRkLWNhcmQvYWRkLWNhcmQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHlCQUF5QjtJQUN6Qix5Q0FBeUM7SUFDekMsYUFBYTtJQUNiLDBCQUEwQjtJQUMxQiwyQkFBMkI7SUFDM0IsYUFBYTtJQUNiLFlBQVk7SUFDWixZQUFZO0lBQ1osYUFBYTtJQUNiLHFCQUFxQjtJQUNyQixlQUFlO0lBQ2Ysc0JBQXNCO0lBQ3RCLGlEQUF5QztZQUF6Qyx5Q0FBeUM7SUFDekMsY0FBYztFQUNoQjs7RUFFQTtJQUNFLHdEQUF3RDtJQUN4RCxZQUFZO0VBQ2Q7O0VBRUE7SUFDRSx5QkFBeUI7SUFDekIsc0JBQXNCO0VBQ3hCOztFQUVBO0lBQ0UsWUFBWTtFQUNkOztFQUVBO0lBQ0UsZUFBZTtJQUNmLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsbUJBQW1CO0lBQ25CLGlCQUFpQjtFQUNuQjs7RUFFQTtJQUNFLFlBQVk7SUFDWixzQkFBc0I7RUFDeEIiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9hZGQtY2FyZC9hZGQtY2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFkZF9fY2FyZCB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmO1xyXG4gICAgYm94LXNoYWRvdzogMCAwIDJyZW0gcmdiYSgwLCAwLCAyNTUsIDAuMSk7XHJcbiAgICBkaXNwbGF5OiBncmlkO1xyXG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnI7XHJcbiAgICBncmlkLXRlbXBsYXRlLXJvd3M6IDFmciAxZnI7XHJcbiAgICBwYWRkaW5nOiAycmVtO1xyXG4gICAgbWFyZ2luOiAycmVtO1xyXG4gICAgd2lkdGg6IDE5cmVtO1xyXG4gICAgaGVpZ2h0OiAzMHJlbTtcclxuICAgIGp1c3RpZnktaXRlbXM6IGNlbnRlcjtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIGJvcmRlci1yYWRpdXM6IDEuNzVyZW07XHJcbiAgICBhbmltYXRpb246IDEuMjVzIGVhc2UtaW4tb3V0IDBtcyAxIGZhZGVpbjtcclxuICAgIGNvbG9yOiAjNDQzMjgyO1xyXG4gIH1cclxuICBcclxuICAuYWRkX19jYXJkLWRhcmsge1xyXG4gICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KHRvIGJvdHRvbSwgIzcxMUI4NiwgIzAwMDU3QSk7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgfVxyXG4gIFxyXG4gIC5jYXJkX190aXRsZSB7XHJcbiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG4gICAgbGV0dGVyLXNwYWNpbmc6IDAuMXJlbTtcclxuICB9XHJcbiAgXHJcbiAgLmNpdHlfX2lsbHVzdHJhdGlvbiB7XHJcbiAgICB3aWR0aDogMjByZW07XHJcbiAgfVxyXG4gIFxyXG4gIC5ib2R5X19jb250YWluZXIge1xyXG4gICAgYWxpZ24tc2VsZjogZW5kO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBmbGV4LWZsb3c6IGNvbHVtbjtcclxuICB9XHJcbiAgXHJcbiAgLmFkZF9faWNvbiB7XHJcbiAgICB3aWR0aDogMTByZW07XHJcbiAgICBtYXJnaW4tYm90dG9tOiAxLjE1cmVtO1xyXG4gIH0iXX0= */"
+module.exports = "<div class=\"error-wrapper\" [ngClass]=\"{'error-wrapper-active': message}\">\r\n  <span class=\"error-message\">{{ message }}</span>\r\n  <button class=\"error-btn\">{{ action }}</button>\r\n</div>"
 
 /***/ }),
 
-/***/ "./src/app/pages/add-card/add-card.component.html":
-/*!********************************************************!*\
-  !*** ./src/app/pages/add-card/add-card.component.html ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"add__card\" routerLink=\"/add\" [ngClass]=\"{'add__card-dark': darkMode}\">\r\n  <div class=\"header__container\">\r\n    <span class=\"card__title\">Add city</span>\r\n  </div>\r\n  <div class=\"body__container\">\r\n    <svg class=\"add__icon\"></svg>\r\n    <svg class=\"city__illustration\"></svg>\r\n  </div>\r\n</div>"
-
-/***/ }),
-
-/***/ "./src/app/pages/add-card/add-card.component.ts":
-/*!******************************************************!*\
-  !*** ./src/app/pages/add-card/add-card.component.ts ***!
-  \******************************************************/
-/*! exports provided: AddCardComponent */
+/***/ "./src/app/components/error/error.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/components/error/error.component.ts ***!
+  \*****************************************************/
+/*! exports provided: ErrorComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddCardComponent", function() { return AddCardComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ErrorComponent", function() { return ErrorComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 
 
-var AddCardComponent = /** @class */ (function () {
-    function AddCardComponent() {
+var ErrorComponent = /** @class */ (function () {
+    function ErrorComponent() {
+        this.action = 'GOT IT';
     }
-    AddCardComponent.prototype.ngOnInit = function () {
+    ErrorComponent.prototype.ngOnInit = function () {
     };
-    AddCardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], ErrorComponent.prototype, "message", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], ErrorComponent.prototype, "action", void 0);
+    ErrorComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-add-card',
-            template: __webpack_require__(/*! ./add-card.component.html */ "./src/app/pages/add-card/add-card.component.html"),
-            styles: [__webpack_require__(/*! ./add-card.component.css */ "./src/app/pages/add-card/add-card.component.css")]
+            selector: 'app-error',
+            template: __webpack_require__(/*! ./error.component.html */ "./src/app/components/error/error.component.html"),
+            styles: [__webpack_require__(/*! ./error.component.css */ "./src/app/components/error/error.component.css")]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], AddCardComponent);
-    return AddCardComponent;
+    ], ErrorComponent);
+    return ErrorComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/weather-card/weather-card.component.css":
+/*!********************************************************************!*\
+  !*** ./src/app/components/weather-card/weather-card.component.css ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".weather_card {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: 1fr;\r\n\tgrid-template-rows: 1fr 1fr 1fr;\r\n\tbox-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);\r\n\tjustify-items: center;\r\n\tpadding: 2rem;\r\n\tmargin: 2rem;\r\n\twidth: 19rem;\r\n\theight: 30rem;\r\n\tcursor: pointer;\r\n\tbackground-color: white;\r\n\tborder-radius: 1.75rem;\r\n\t-webkit-animation: 1.25s ease-in-out 0ms 1 fadein;\r\n\t        animation: 1.25s ease-in-out 0ms 1 fadein;\r\n}\r\n\r\n.weather_card-dark {\r\n\tbackground: linear-gradient(to bottom, #711B86, #00057A);\r\n\tcolor: white;\r\n}\r\n\r\n.city-name_text {\r\n\ttext-transform: uppercase;\r\n\tfont-size: 1.4rem;\r\n\tletter-spacing: 0.1rem;\r\n\tmargin-bottom: 1rem;\r\n}\r\n\r\n.temperature-metric_text {\r\n\ttext-align: start;\r\n\tfont-size: 3rem;\r\n}\r\n\r\n.min-max_container {\r\n\tdisplay: grid;\r\n\tgrid-template-rows: 1fr;\r\n\tgrid-template-columns: 1fr 1fr;\r\n\talign-items: center;\r\n}\r\n\r\n.min_container,\r\n.max_container {\r\n\tmargin: 1rem 3rem;\r\n\tdisplay: grid;\r\n\tgrid-template-columns: 1fr;\r\n\tgrid-template-rows: 1fr 1fr;\r\n}\r\n\r\n.min-arrow_icon,\r\n.max-arrow_icon {\r\n\theight: 1.25rem;\r\n\tmargin: auto;\r\n}\r\n\r\n.max-arrow_icon {\r\n\tmargin-bottom: -0.05rem;\r\n}\r\n\r\n.weather-condition_text {\r\n\tdisplay: block;\r\n\tfont-size: 1rem;\r\n\ttext-transform: uppercase;\r\n\tletter-spacing: 0.1rem;\r\n\ttext-align: center;\r\n}\r\n\r\n.max_text {\r\n\tcolor: #FF0070;\r\n}\r\n\r\n.min_text {\r\n\tcolor: #00FF9B;\r\n}\r\n\r\n.max_text,\r\n.min_text {\r\n\tfont-size: 1rem;\r\n\ttext-align: center;\r\n}\r\n\r\n.max-temperature_text,\r\n.min-temperature_text {\r\n\ttext-align: center;\r\n\tfont-size: 2rem;\r\n}\r\n\r\n.weather-icon_container {\r\n\twidth: 10rem;\r\n\tmargin-bottom: 2rem;\r\n\tdisplay: flex;\r\n\tjustify-content: center;\r\n}\r\n\r\n.weather-icon_container>svg {\r\n\twidth: 10rem;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy93ZWF0aGVyLWNhcmQvd2VhdGhlci1jYXJkLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Q0FDQyxhQUFhO0NBQ2IsMEJBQTBCO0NBQzFCLCtCQUErQjtDQUMvQix5Q0FBeUM7Q0FDekMscUJBQXFCO0NBQ3JCLGFBQWE7Q0FDYixZQUFZO0NBQ1osWUFBWTtDQUNaLGFBQWE7Q0FDYixlQUFlO0NBQ2YsdUJBQXVCO0NBQ3ZCLHNCQUFzQjtDQUN0QixpREFBeUM7U0FBekMseUNBQXlDO0FBQzFDOztBQUVBO0NBQ0Msd0RBQXdEO0NBQ3hELFlBQVk7QUFDYjs7QUFFQTtDQUNDLHlCQUF5QjtDQUN6QixpQkFBaUI7Q0FDakIsc0JBQXNCO0NBQ3RCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDLGlCQUFpQjtDQUNqQixlQUFlO0FBQ2hCOztBQUVBO0NBQ0MsYUFBYTtDQUNiLHVCQUF1QjtDQUN2Qiw4QkFBOEI7Q0FDOUIsbUJBQW1CO0FBQ3BCOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixhQUFhO0NBQ2IsMEJBQTBCO0NBQzFCLDJCQUEyQjtBQUM1Qjs7QUFFQTs7Q0FFQyxlQUFlO0NBQ2YsWUFBWTtBQUNiOztBQUVBO0NBQ0MsdUJBQXVCO0FBQ3hCOztBQUVBO0NBQ0MsY0FBYztDQUNkLGVBQWU7Q0FDZix5QkFBeUI7Q0FDekIsc0JBQXNCO0NBQ3RCLGtCQUFrQjtBQUNuQjs7QUFFQTtDQUNDLGNBQWM7QUFDZjs7QUFFQTtDQUNDLGNBQWM7QUFDZjs7QUFFQTs7Q0FFQyxlQUFlO0NBQ2Ysa0JBQWtCO0FBQ25COztBQUVBOztDQUVDLGtCQUFrQjtDQUNsQixlQUFlO0FBQ2hCOztBQUVBO0NBQ0MsWUFBWTtDQUNaLG1CQUFtQjtDQUNuQixhQUFhO0NBQ2IsdUJBQXVCO0FBQ3hCOztBQUVBO0NBQ0MsWUFBWTtBQUNiIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy93ZWF0aGVyLWNhcmQvd2VhdGhlci1jYXJkLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIud2VhdGhlcl9jYXJkIHtcclxuXHRkaXNwbGF5OiBncmlkO1xyXG5cdGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyO1xyXG5cdGdyaWQtdGVtcGxhdGUtcm93czogMWZyIDFmciAxZnI7XHJcblx0Ym94LXNoYWRvdzogMCAwIDJyZW0gcmdiYSgwLCAwLCAyNTUsIDAuMSk7XHJcblx0anVzdGlmeS1pdGVtczogY2VudGVyO1xyXG5cdHBhZGRpbmc6IDJyZW07XHJcblx0bWFyZ2luOiAycmVtO1xyXG5cdHdpZHRoOiAxOXJlbTtcclxuXHRoZWlnaHQ6IDMwcmVtO1xyXG5cdGN1cnNvcjogcG9pbnRlcjtcclxuXHRiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuXHRib3JkZXItcmFkaXVzOiAxLjc1cmVtO1xyXG5cdGFuaW1hdGlvbjogMS4yNXMgZWFzZS1pbi1vdXQgMG1zIDEgZmFkZWluO1xyXG59XHJcblxyXG4ud2VhdGhlcl9jYXJkLWRhcmsge1xyXG5cdGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCh0byBib3R0b20sICM3MTFCODYsICMwMDA1N0EpO1xyXG5cdGNvbG9yOiB3aGl0ZTtcclxufVxyXG5cclxuLmNpdHktbmFtZV90ZXh0IHtcclxuXHR0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG5cdGZvbnQtc2l6ZTogMS40cmVtO1xyXG5cdGxldHRlci1zcGFjaW5nOiAwLjFyZW07XHJcblx0bWFyZ2luLWJvdHRvbTogMXJlbTtcclxufVxyXG5cclxuLnRlbXBlcmF0dXJlLW1ldHJpY190ZXh0IHtcclxuXHR0ZXh0LWFsaWduOiBzdGFydDtcclxuXHRmb250LXNpemU6IDNyZW07XHJcbn1cclxuXHJcbi5taW4tbWF4X2NvbnRhaW5lciB7XHJcblx0ZGlzcGxheTogZ3JpZDtcclxuXHRncmlkLXRlbXBsYXRlLXJvd3M6IDFmcjtcclxuXHRncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XHJcblx0YWxpZ24taXRlbXM6IGNlbnRlcjtcclxufVxyXG5cclxuLm1pbl9jb250YWluZXIsXHJcbi5tYXhfY29udGFpbmVyIHtcclxuXHRtYXJnaW46IDFyZW0gM3JlbTtcclxuXHRkaXNwbGF5OiBncmlkO1xyXG5cdGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyO1xyXG5cdGdyaWQtdGVtcGxhdGUtcm93czogMWZyIDFmcjtcclxufVxyXG5cclxuLm1pbi1hcnJvd19pY29uLFxyXG4ubWF4LWFycm93X2ljb24ge1xyXG5cdGhlaWdodDogMS4yNXJlbTtcclxuXHRtYXJnaW46IGF1dG87XHJcbn1cclxuXHJcbi5tYXgtYXJyb3dfaWNvbiB7XHJcblx0bWFyZ2luLWJvdHRvbTogLTAuMDVyZW07XHJcbn1cclxuXHJcbi53ZWF0aGVyLWNvbmRpdGlvbl90ZXh0IHtcclxuXHRkaXNwbGF5OiBibG9jaztcclxuXHRmb250LXNpemU6IDFyZW07XHJcblx0dGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcclxuXHRsZXR0ZXItc3BhY2luZzogMC4xcmVtO1xyXG5cdHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLm1heF90ZXh0IHtcclxuXHRjb2xvcjogI0ZGMDA3MDtcclxufVxyXG5cclxuLm1pbl90ZXh0IHtcclxuXHRjb2xvcjogIzAwRkY5QjtcclxufVxyXG5cclxuLm1heF90ZXh0LFxyXG4ubWluX3RleHQge1xyXG5cdGZvbnQtc2l6ZTogMXJlbTtcclxuXHR0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5tYXgtdGVtcGVyYXR1cmVfdGV4dCxcclxuLm1pbi10ZW1wZXJhdHVyZV90ZXh0IHtcclxuXHR0ZXh0LWFsaWduOiBjZW50ZXI7XHJcblx0Zm9udC1zaXplOiAycmVtO1xyXG59XHJcblxyXG4ud2VhdGhlci1pY29uX2NvbnRhaW5lciB7XHJcblx0d2lkdGg6IDEwcmVtO1xyXG5cdG1hcmdpbi1ib3R0b206IDJyZW07XHJcblx0ZGlzcGxheTogZmxleDtcclxuXHRqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxuLndlYXRoZXItaWNvbl9jb250YWluZXI+c3ZnIHtcclxuXHR3aWR0aDogMTByZW07XHJcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/weather-card/weather-card.component.html":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/weather-card/weather-card.component.html ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<section class=\"weather_card\" (click)=\"openDetails()\" [ngClass]=\"{'weather_card-dark': darkMode}\">\r\n    <!-- Tên thành phố -->\r\n    <span class=\"city-name_text\">{{cityName}}</span>\r\n    <!-- Hình ảnh mô tả cho các trạng thái thời tiết -->\r\n    <div class=\"weather-icon_container\" [ngSwitch]=\"true\">\r\n        <svg *ngSwitchCase=\"state === 'Sunny' || state === 'Clear'\" viewBox=\"2050 -845 262 262\">\r\n            <circle cx=\"131\" cy=\"131\" r=\"131\" fill=\"#ffde17\" data-name=\"Sun Icon\" transform=\"translate(2050 -845)\" />\r\n        </svg>\r\n        <svg *ngSwitchCase=\"state === 'Clouds'\" viewBox=\"2436.9 -843.1 275.5 274.1\">\r\n            <g data-name=\"cloudy icon\" transform=\"translate(84 790)\">\r\n                <circle cx=\"137\" cy=\"137\" r=\"137\" fill=\"#fff\" data-name=\"Ellipse 23\"\r\n                    transform=\"translate(2354 -1633)\" />\r\n                <path fill=\"#ffde17\"\r\n                    d=\"M2523.4-1361.5a37.2 37.2 0 0 0 8.4-23.4c0-22-19.8-40-44.1-40l-3.4.1h-.5a39.8 39.8 0 0 0-39.4-33.7 40.1 40.1 0 0 0-10 1.2 40 40 0 0 0-35.2-21.2 40.1 40.1 0 0 0-38.5 29 137.4 137.4 0 0 1-7.8-45.8 138.8 138.8 0 0 1 2.8-27.8 137 137 0 0 1 8-25.8 137.8 137.8 0 0 1 12.7-23.4 138.8 138.8 0 0 1 16.8-20.4 138.8 138.8 0 0 1 20.4-16.9 137.8 137.8 0 0 1 23.4-12.7 137 137 0 0 1 25.9-8 138.8 138.8 0 0 1 27.7-2.8 138.8 138.8 0 0 1 27.8 2.8 137 137 0 0 1 25.9 8 137.8 137.8 0 0 1 23.4 12.7 138.8 138.8 0 0 1 20.4 16.9 138.7 138.7 0 0 1 16.8 20.4 137.8 137.8 0 0 1 12.7 23.4 137 137 0 0 1 8 25.8 138.8 138.8 0 0 1 2.8 27.8 137.4 137.4 0 0 1-8 46.1 137.2 137.2 0 0 1-21.9 39.6 138.2 138.2 0 0 1-33.2 30.1 136.8 136.8 0 0 1-41.9 18z\"\r\n                    data-name=\"Subtraction 1\" />\r\n            </g>\r\n        </svg>\r\n        <svg *ngSwitchCase=\"state === 'Rain' || state === 'Drizzle' || state === 'Mist'\"\r\n            viewBox=\"3170 -843.1 163.5 242.7\">\r\n            <g data-name=\"Rain Icon\">\r\n                <g data-name=\"Water Drops\">\r\n                    <path fill=\"#0032cc\" d=\"M3295.4-824.5s85.8 133.5 0 133.5 0-133.5 0-133.5z\" data-name=\"Path 7\" />\r\n                    <path fill=\"#003eff\" d=\"M3239.4-843s-156.1 242.6 0 242.6 0-242.7 0-242.7z\" data-name=\"Path 3\" />\r\n                </g>\r\n            </g>\r\n        </svg>\r\n        <svg *ngSwitchCase=\"state === 'Haze' || state === 'Fog'\" viewBox=\"0 0 454 366\">\r\n            <path fill=\"#12bcff\"\r\n                d=\"M340 110c-40 0-75-14-110-26-30-11-61-21-92-27-35-6-65 6-89 34a28 28 0 0 1-40 3C-3 83-3 66 8 54 53 1 110-9 174 7c36 9 71 25 106 36 19 5 39 10 58 11 27 2 48-13 65-33 12-13 29-15 41-5s13 28 1 41c-28 33-63 53-105 53zM120 312c-27-1-51 11-70 34-11 13-29 15-41 4-12-10-12-28-1-40 45-53 103-63 167-47 37 10 72 25 108 36 18 6 37 10 55 11 27 2 47-12 64-32 8-9 17-15 30-12 21 4 29 28 16 45-37 45-85 65-143 51-34-8-66-21-99-32-27-9-53-18-86-18zM123 128c42 1 81 15 120 29 26 9 52 18 79 24 28 6 53-3 74-24l11-11c11-11 27-11 39-1 10 10 11 26 1 38-35 43-81 64-137 52-34-7-67-20-100-32-29-10-59-20-91-19-28 1-51 13-69 34-12 13-29 15-41 4s-12-28 0-41c30-35 68-52 114-53z\" />\r\n        </svg>\r\n        <svg *ngSwitchCase=\"state === 'Storm' || state === 'Thunderstorm'\" viewBox=\"3487.9 -810.7 291.2 200.3\">\r\n            <g data-name=\"Strom icon\" transform=\"translate(1959 -1260.7)\">\r\n                <ellipse cx=\"55.3\" cy=\"51.7\" class=\"cls-99\" data-name=\"Ellipse 14\" rx=\"55.3\" ry=\"51.7\"\r\n                    transform=\"translate(1529 490.4)\" />\r\n                <ellipse cx=\"55.3\" cy=\"51.7\" class=\"cls-99\" data-name=\"Ellipse 15\" rx=\"55.3\" ry=\"51.7\"\r\n                    transform=\"translate(1569.6 467.8)\" />\r\n                <circle cx=\"55.3\" cy=\"55.3\" r=\"55.3\" class=\"cls-99\" data-name=\"Ellipse 16\"\r\n                    transform=\"translate(1618.9 476.8)\" />\r\n                <ellipse cx=\"55.3\" cy=\"51.7\" class=\"cls-99\" data-name=\"Ellipse 17\" rx=\"55.3\" ry=\"51.7\"\r\n                    transform=\"translate(1631.8 450)\" />\r\n                <ellipse cx=\"55.3\" cy=\"51.7\" class=\"cls-99\" data-name=\"Ellipse 18\" rx=\"55.3\" ry=\"51.7\"\r\n                    transform=\"translate(1687.1 477.5)\" />\r\n                <ellipse cx=\"55.3\" cy=\"51.7\" class=\"cls-99\" data-name=\"Ellipse 19\" rx=\"55.3\" ry=\"51.7\"\r\n                    transform=\"translate(1709.6 507.3)\" />\r\n                <circle cx=\"55.3\" cy=\"55.3\" r=\"55.3\" class=\"cls-99\" data-name=\"Ellipse 20\"\r\n                    transform=\"translate(1639.6 500.1)\" />\r\n                <ellipse cx=\"55.3\" cy=\"51.7\" class=\"cls-99\" data-name=\"Ellipse 21\" rx=\"55.3\" ry=\"51.7\"\r\n                    transform=\"translate(1569.6 507.3)\" />\r\n                <path fill=\"none\" stroke=\"#fd0\" stroke-width=\"18\"\r\n                    d=\"M1732.5 644l-61.4-61.4 22.5-10.3 26.8 5.1 9.5-22.4-38-37.2\" data-name=\"Path 59\" />\r\n                <path fill=\"none\" stroke=\"#fd0\" stroke-width=\"15\" d=\"M1597.2 539.5l31.2 25.9-24.8 22.2 17.3 36.2\"\r\n                    data-name=\"Path 60\" />\r\n            </g>\r\n        </svg>\r\n    </div>\r\n    <!-- Hiển thị nhiệt độ và trạng thái thời tiết hiện tại -->\r\n    <div>\r\n        <span class=\"temperature-metric_text\">{{ temp }}°</span>\r\n        <span class=\"weather-condition_text\">{{ state }}</span>\r\n    </div>\r\n    <!-- Nhiệt độ thấp nhất và cao nhất theo dự báo -->\r\n    <section class=\"min-max_container\">\r\n        <div class=\"min_container\">\r\n            <svg class=\"min-arrow_icon\" viewBox=\"188.5 807 21 21\">\r\n                <path fill=\"#00ff9b\" d=\"M209.5 817.5h-21L199 828z\" data-name=\"Min Arrow\" />\r\n            </svg>\r\n\r\n            <span class=\"min-temperature_text\">{{ minTemp }}</span>\r\n            <span class=\"min_text\">Min</span>\r\n        </div>\r\n        <div class=\"max_container\">\r\n            <svg class=\"max-arrow_icon\" viewBox=\"449.5 820 21 21\">\r\n                <path fill=\"red\" d=\"M449.5 830.5h21L460 820z\" data-name=\"Max Arrow\" />\r\n            </svg>\r\n            <span class=\"max-temperature_text\">{{ maxTemp }}</span>\r\n            <span class=\"max_text\">Max</span>\r\n        </div>\r\n    </section>\r\n</section>\r\n\r\n<app-error [message]=\"errorMessage\"></app-error>"
+
+/***/ }),
+
+/***/ "./src/app/components/weather-card/weather-card.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/weather-card/weather-card.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: WeatherCardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WeatherCardComponent", function() { return WeatherCardComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_weather_weather_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/weather/weather.service */ "./src/app/services/weather/weather.service.ts");
+/* harmony import */ var _services_ui_ui_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/ui/ui.service */ "./src/app/services/ui/ui.service.ts");
+
+
+
+
+
+var WeatherCardComponent = /** @class */ (function () {
+    function WeatherCardComponent(weather, router, ui) {
+        this.weather = weather;
+        this.router = router;
+        this.ui = ui;
+    }
+    Object.defineProperty(WeatherCardComponent.prototype, "city", {
+        set: function (city) {
+            var _this = this;
+            this.cityName = city;
+            //Lấy trạng thái thời tiết và nhiệt độ hiện tại
+            //từ thông tin thời tiết hiện tại
+            this.sub = this.weather.getWeather(city)
+                .subscribe(function (payload) {
+                _this.state = payload.weather[0].main;
+                _this.temp = Math.ceil(payload.main.temp);
+            }, function (err) {
+                _this.errorMessage = err.error.message;
+                setTimeout(function () {
+                    _this.errorMessage = '';
+                }, 3000);
+            });
+            //Lấy nhiệt độ cao nhất và thấp nhất cho ngày hiện tại
+            //từ thông tin thời tiết dự báo
+            this.sub = this.weather.getForecast(city)
+                .subscribe(function (payload) {
+                if (payload.cod === '404') {
+                    _this.errorMessage = payload.message;
+                    setTimeout(function () {
+                        _this.errorMessage = '';
+                    }, 3000);
+                }
+                else {
+                    _this.maxTemp = Math.round(payload[0].main.temp_max);
+                    _this.minTemp = Math.round(payload[0].main.temp_min);
+                    for (var _i = 0, payload_1 = payload; _i < payload_1.length; _i++) {
+                        var res = payload_1[_i];
+                        //Lấy nhiệt độ cao nhất và thấp nhất theo dự báo cho ngày hiện tại
+                        if (new Date().toLocaleDateString('en-GB') === new Date(res.dt_txt).toLocaleDateString('en-GB')) {
+                            _this.maxTemp = res.main.temp_max > _this.maxTemp ? Math.round(res.main.temp_max) : _this.maxTemp;
+                            _this.minTemp = res.main.temp_min < _this.minTemp ? Math.round(res.main.temp_min) : _this.minTemp;
+                        }
+                    }
+                }
+            });
+        },
+        enumerable: true,
+        configurable: true
+    });
+    WeatherCardComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.sub = this.ui.darkModeState.subscribe(function (isDark) {
+            _this.darkMode = isDark;
+        });
+    };
+    WeatherCardComponent.prototype.ngOnDestroy = function () {
+        this.sub.unsubscribe();
+    };
+    WeatherCardComponent.prototype.openDetails = function () {
+        this.router.navigateByUrl('/details/' + this.cityName);
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [String])
+    ], WeatherCardComponent.prototype, "city", null);
+    WeatherCardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-weather-card',
+            template: __webpack_require__(/*! ./weather-card.component.html */ "./src/app/components/weather-card/weather-card.component.html"),
+            styles: [__webpack_require__(/*! ./weather-card.component.css */ "./src/app/components/weather-card/weather-card.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_weather_weather_service__WEBPACK_IMPORTED_MODULE_3__["WeatherService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            _services_ui_ui_service__WEBPACK_IMPORTED_MODULE_4__["UiService"]])
+    ], WeatherCardComponent);
+    return WeatherCardComponent;
 }());
 
 
@@ -276,7 +414,7 @@ module.exports = ".details-page__wrapper-dark {\r\n    background: linear-gradie
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"details-page__wrapper\" [ngClass]=\"{'details-page__wrapper-dark': darkMode}\">\r\n  <div class=\"background-gradient__circle\" [ngClass]=\"{'background-gradient__circle-dark': darkMode}\"></div>\r\n  <svg class=\"back__button\" routerLink=\"\" viewBox=\"4085 152 98.5 126\" tabindex=\"0\">\r\n    <defs>\r\n      <style>\r\n        .a {\r\n          fill: #2b244d;\r\n        }\r\n\r\n        .b {\r\n          fill: rgba(0, 0, 0, 0);\r\n        }\r\n\r\n        .b,\r\n        .c {\r\n          stroke: #fff;\r\n          stroke-width: 2px;\r\n        }\r\n\r\n        .c {\r\n          fill: none;\r\n        }\r\n\r\n        .d {\r\n          fill: #fff;\r\n          font-size: 15px;\r\n          font-family: SegoeUI, Segoe UI, sans-serif;\r\n          letter-spacing: 0.4em;\r\n        }\r\n      </style>\r\n    </defs>\r\n    <g transform=\"translate(3980)\">\r\n      <circle class=\"a\" cx=\"39\" cy=\"39\" r=\"39\" transform=\"translate(105 152)\"></circle>\r\n      <line class=\"b\" transform=\"translate(123.5 190.5)\" x1=\"80\"></line>\r\n      <line class=\"b\" transform=\"translate(123.5 164.5)\" x2=\"26\" y1=\"26\"></line>\r\n      <line class=\"c\" transform=\"translate(123.5 190.5)\" x1=\"26\" y1=\"27\"></line>\r\n      <text class=\"d\" transform=\"translate(117 274)\">\r\n        <tspan x=\"0\" y=\"0\">BACK</tspan>\r\n      </text>\r\n    </g>\r\n  </svg>\r\n  <section class=\"main-weather__card\">\r\n    <section class=\"card-header__container-dark\" [ngSwitch]=\"true\">\r\n      <img class=\"city__illustration\" [src]=\"cityIllustrationPath\" />\r\n      <div class=\"header-content__wrapper\">\r\n        <div class=\"today-weather__container\">\r\n          <div class=\"temp-state__container\">\r\n            <span class=\"temperature__text\">{{temp}}°</span>\r\n            <span class=\"weather-state__text\">{{state}}</span>\r\n          </div>\r\n          <div class=\"hum-wind__container\">\r\n            <div class=\"hum__container\">\r\n              <span class=\"hum__text\">humidity</span>\r\n              <span class=\"hum-value__text\">{{hum}} %</span>\r\n            </div>\r\n            <div class=\"hum-wind__separator\">&nbsp;</div>\r\n            <div class=\"wind__container\">\r\n              <span class=\"wind__text\">wind</span>\r\n              <span class=\"wind-value__text\">{{wind}} K/M</span>\r\n            </div>\r\n            <div class=\"hum-wind__separator\">&nbsp;</div>\r\n            <div class=\"wind__container\">\r\n              <span class=\"wind__text\">Min</span>\r\n              <span class=\"wind-value__text\">{{minTemp}}°</span>\r\n            </div>\r\n            <div class=\"hum-wind__separator\">&nbsp;</div>\r\n            <div class=\"wind__container\">\r\n              <span class=\"wind__text\">Max</span>\r\n              <span class=\"wind-value__text\">{{maxTemp}}°</span>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"city-name__container\">\r\n          <div class=\"city-name__underline\">\r\n            <span class=\"city-name__text\">{{city}}</span>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  </section>\r\n</div>\r\n\r\n\r\n<!-- <app-error [message]=\"errorMessage\"></app-error> -->"
+module.exports = "<div class=\"details-page__wrapper\" [ngClass]=\"{'details-page__wrapper-dark': darkMode}\">\r\n  <div class=\"background-gradient__circle\" [ngClass]=\"{'background-gradient__circle-dark': darkMode}\"></div>\r\n  <svg class=\"back__button\" routerLink=\"\" viewBox=\"4085 152 98.5 126\" tabindex=\"0\">\r\n    <defs>\r\n      <style>\r\n        .a {\r\n          fill: #2b244d;\r\n        }\r\n\r\n        .b {\r\n          fill: rgba(0, 0, 0, 0);\r\n        }\r\n\r\n        .b,\r\n        .c {\r\n          stroke: #fff;\r\n          stroke-width: 2px;\r\n        }\r\n\r\n        .c {\r\n          fill: none;\r\n        }\r\n\r\n        .d {\r\n          fill: #fff;\r\n          font-size: 15px;\r\n          font-family: SegoeUI, Segoe UI, sans-serif;\r\n          letter-spacing: 0.4em;\r\n        }\r\n      </style>\r\n    </defs>\r\n    <g transform=\"translate(3980)\">\r\n      <circle class=\"a\" cx=\"39\" cy=\"39\" r=\"39\" transform=\"translate(105 152)\"></circle>\r\n      <line class=\"b\" transform=\"translate(123.5 190.5)\" x1=\"80\"></line>\r\n      <line class=\"b\" transform=\"translate(123.5 164.5)\" x2=\"26\" y1=\"26\"></line>\r\n      <line class=\"c\" transform=\"translate(123.5 190.5)\" x1=\"26\" y1=\"27\"></line>\r\n      <text class=\"d\" transform=\"translate(117 274)\">\r\n        <tspan x=\"0\" y=\"0\">BACK</tspan>\r\n      </text>\r\n    </g>\r\n  </svg>\r\n  <section class=\"main-weather__card\">\r\n    <section class=\"card-header__container-dark\" [ngSwitch]=\"true\">\r\n      <img class=\"city__illustration\" [src]=\"cityIllustrationPath\" />\r\n      <div class=\"header-content__wrapper\">\r\n        <div class=\"today-weather__container\">\r\n          <div class=\"temp-state__container\">\r\n            <span class=\"temperature__text\">{{temp}}°</span>\r\n            <span class=\"weather-state__text\">{{state}}</span>\r\n          </div>\r\n          <div class=\"hum-wind__container\">\r\n            <div class=\"hum__container\">\r\n              <span class=\"hum__text\">humidity</span>\r\n              <span class=\"hum-value__text\">{{hum}} %</span>\r\n            </div>\r\n            <div class=\"hum-wind__separator\">&nbsp;</div>\r\n            <div class=\"wind__container\">\r\n              <span class=\"wind__text\">wind</span>\r\n              <span class=\"wind-value__text\">{{wind}} K/M</span>\r\n            </div>\r\n            <div class=\"hum-wind__separator\">&nbsp;</div>\r\n            <div class=\"wind__container\">\r\n              <span class=\"wind__text\">Min</span>\r\n              <span class=\"wind-value__text\">{{minTemp}}°</span>\r\n            </div>\r\n            <div class=\"hum-wind__separator\">&nbsp;</div>\r\n            <div class=\"wind__container\">\r\n              <span class=\"wind__text\">Max</span>\r\n              <span class=\"wind-value__text\">{{maxTemp}}°</span>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"city-name__container\">\r\n          <div class=\"city-name__underline\">\r\n            <span class=\"city-name__text\">{{city}}</span>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n  </section>\r\n</div>\r\n\r\n<app-error [message]=\"errorMessage\"></app-error>"
 
 /***/ }),
 
@@ -295,16 +433,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _services_weather_weather_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/weather/weather.service */ "./src/app/services/weather/weather.service.ts");
 /* harmony import */ var _services_ui_ui_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/ui/ui.service */ "./src/app/services/ui/ui.service.ts");
-/* harmony import */ var _services_twitter_twitter_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/twitter/twitter.service */ "./src/app/services/twitter/twitter.service.ts");
-
 
 
 
 
 
 var DetailsComponent = /** @class */ (function () {
-    function DetailsComponent(twitter, activeRouter, weather, ui) {
-        this.twitter = twitter;
+    function DetailsComponent(activeRouter, weather, ui) {
         this.activeRouter = activeRouter;
         this.weather = weather;
         this.ui = ui;
@@ -329,13 +464,29 @@ var DetailsComponent = /** @class */ (function () {
                 case 'tunis':
                     _this.cityIllustrationPath = '../../../assets/cities/tunis.svg';
                     break;
-                case 'tokyo':
+                case 'danang':
                     _this.cityIllustrationPath = '../../../assets/cities/japan.svg';
                     break;
                 default:
                     _this.cityIllustrationPath = '../../../assets/cities/default.svg';
             }
-            _this.sub1 = _this.weather.getWeatherState(_this.city).subscribe(function (state) { return _this.state = state; });
+            _this.sub1 = _this.weather.getWeatherState(_this.city)
+                .subscribe(function (state) {
+                if (state.cod === '404') {
+                    _this.errorMessage = state.message;
+                    setTimeout(function () {
+                        _this.errorMessage = '';
+                    }, 3000);
+                }
+                else {
+                    _this.state = state;
+                }
+            }, function (err) {
+                _this.errorMessage = err.error.message;
+                setTimeout(function () {
+                    _this.errorMessage = '';
+                }, 3000);
+            });
             _this.sub2 = _this.weather.getCurrentTemp(_this.city).subscribe(function (temperature) { return _this.temp = temperature; });
             _this.sub3 = _this.weather.getCurrentHum(_this.city).subscribe(function (humidity) { return _this.hum = humidity; });
             _this.sub4 = _this.weather.getCurrentWind(_this.city).subscribe(function (windspeed) { return _this.wind = windspeed; });
@@ -357,7 +508,9 @@ var DetailsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./details.component.html */ "./src/app/pages/details/details.component.html"),
             styles: [__webpack_require__(/*! ./details.component.css */ "./src/app/pages/details/details.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_twitter_twitter_service__WEBPACK_IMPORTED_MODULE_5__["TwitterService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _services_weather_weather_service__WEBPACK_IMPORTED_MODULE_3__["WeatherService"], _services_ui_ui_service__WEBPACK_IMPORTED_MODULE_4__["UiService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
+            _services_weather_weather_service__WEBPACK_IMPORTED_MODULE_3__["WeatherService"],
+            _services_ui_ui_service__WEBPACK_IMPORTED_MODULE_4__["UiService"]])
     ], DetailsComponent);
     return DetailsComponent;
 }());
@@ -384,7 +537,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n  <app-weather-card *ngFor=\"let city of cities\" [city]=\"city?.name\"></app-weather-card>\r\n  <!-- <app-add-card></app-add-card> -->\r\n</div>"
+module.exports = "<div>\r\n  <app-weather-card *ngFor=\"let city of cities\" [city]=\"city?.name\"></app-weather-card>\r\n</div>"
 
 /***/ }),
 
@@ -407,7 +560,7 @@ var HomeComponent = /** @class */ (function () {
     }
     HomeComponent.prototype.ngOnInit = function () {
         this.cities = [
-            { name: 'tokyo' },
+            { name: 'danang' },
             { name: 'paris' },
             { name: 'doha' },
             { name: 'rabat' },
@@ -423,54 +576,6 @@ var HomeComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], HomeComponent);
     return HomeComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/services/twitter/twitter.service.ts":
-/*!*****************************************************!*\
-  !*** ./src/app/services/twitter/twitter.service.ts ***!
-  \*****************************************************/
-/*! exports provided: TwitterService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TwitterService", function() { return TwitterService; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-
-
-
-
-var TwitterService = /** @class */ (function () {
-    function TwitterService(http) {
-        this.http = http;
-    }
-    TwitterService.prototype.fetchTweets = function (city) {
-        return this.http.post('https://us-central1-minimus-weather.cloudfunctions.net/tweets', {
-            data: { q: city + " Weather" }
-        }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["first"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (res) { return res && res.result ? res.result.statuses : []; }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["filter"])(function (tweets) { return tweets.map(function (tweet) { return tweet.text && tweet.text.match(/weather/g); }); }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (tweets) { return tweets.map(function (tweet) { return ({
-            text: tweet.text,
-            date: tweet.created_at,
-            user: {
-                name: tweet.user.name,
-                photo: tweet.user.profile_image_url_https,
-                handle: tweet.user.screen_name
-            }
-        }); }); }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (tweets) { return tweets.slice(0, 4); }));
-    };
-    TwitterService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
-    ], TwitterService);
-    return TwitterService;
 }());
 
 
@@ -495,6 +600,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var UiService = /** @class */ (function () {
     function UiService() {
+        //Phát ra thuộc tính darkModeState có giá trị là true
         this.darkModeState = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](true);
     }
     UiService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -523,8 +629,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../environments/environment */ "./src/environments/environment.ts");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-
 
 
 
@@ -533,56 +637,91 @@ __webpack_require__.r(__webpack_exports__);
 var WeatherService = /** @class */ (function () {
     function WeatherService(http) {
         this.http = http;
-        this.baseURL = 'https://api.openweathermap.org/data/2.5/weather?appid=1f481fd4fafd2cf9425a51599c8abd7a&units=metric&q=';
+        //đường dẫn để lấy thông tin thời tiết
+        this.baseURL = 'https://api.openweathermap.org/data/2.5/';
         this.appID = _environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].appID;
     }
+    /**
+     * Lấy thông tin thời tiết hiện tại
+     * @param city
+     */
     WeatherService.prototype.getWeather = function (city) {
-        return this.http.get("" + this.baseURL + city + "&units=metric&APPID=" + this.appID).pipe((Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["first"])()));
+        return this.http.get(this.baseURL + "weather?&units=metric&q=" + city + "&appid=" + this.appID);
     };
+    /**
+     * Lấy thông tin thời tiết dự báo
+     * trong hôm nay và 4 ngày sắp tới
+     * @param city
+     */
     WeatherService.prototype.getForecast = function (city) {
         var dataSubject = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
-        this.http.get("https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=metric&appid=1f481fd4fafd2cf9425a51599c8abd7a")
+        this.http.get(this.baseURL + "forecast?&units=metric&q=" + city + "&appid=" + this.appID)
             .subscribe(function (weather) {
             dataSubject.next(weather.list);
+        }, function (err) {
+            dataSubject.next(err.error);
         });
         return dataSubject;
     };
+    /**
+     * Lấy trạng thái thời tiết hiện tại
+     * @param city
+     */
     WeatherService.prototype.getWeatherState = function (city) {
         var dataSubject = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
-        this.http.get("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=1f481fd4fafd2cf9425a51599c8abd7a")
+        this.http.get(this.baseURL + "weather?&units=metric&q=" + city + "&appid=" + this.appID)
             .subscribe(function (data) {
             dataSubject.next(data['weather'][0].main);
+        }, function (err) {
+            dataSubject.next(err.error);
         });
         return dataSubject;
     };
+    /**
+     * Lấy nhiệt độ hiện tại
+     * @param city
+     */
     WeatherService.prototype.getCurrentTemp = function (city) {
         var dataSubject = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
-        this.http.get("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=1f481fd4fafd2cf9425a51599c8abd7a")
+        this.http.get(this.baseURL + "weather?&units=metric&q=" + city + "&appid=" + this.appID)
             .subscribe(function (weather) {
-            dataSubject.next(Math.round(Number(weather.main.temp)));
+            dataSubject.next(Math.ceil(Number(weather.main.temp)));
         });
         return dataSubject;
     };
+    /**
+     * Lấy độ ẩm hiện tại
+     * @param city
+     */
     WeatherService.prototype.getCurrentHum = function (city) {
         var dataSubject = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
-        this.http.get("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=1f481fd4fafd2cf9425a51599c8abd7a")
+        this.http.get(this.baseURL + "weather?&units=metric&q=" + city + "&appid=" + this.appID)
             .subscribe(function (weather) {
             dataSubject.next(weather.main.humidity);
         });
         return dataSubject;
     };
+    /**
+     * Lấy tốc độ gió hiện tại
+     * @param city
+     */
     WeatherService.prototype.getCurrentWind = function (city) {
         var dataSubject = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
-        this.http.get("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=1f481fd4fafd2cf9425a51599c8abd7a")
+        this.http.get(this.baseURL + "weather?&units=metric&q=" + city + "&appid=" + this.appID)
             .subscribe(function (weather) {
             dataSubject.next(Math.round(Math.round(weather.wind.speed)));
         });
         return dataSubject;
     };
+    /**
+     * Trả về giá trị cao nhất của nhiệt độ
+     * theo dự báo lấy trong hôm nay và 4 ngày sắp tới
+     * @param city
+     */
     WeatherService.prototype.getMaxTemp = function (city) {
         var dataSubject = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         var max;
-        this.http.get("https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=metric&appid=1f481fd4fafd2cf9425a51599c8abd7a")
+        this.http.get(this.baseURL + "forecast?&units=metric&q=" + city + "&appid=" + this.appID)
             .subscribe(function (weather) {
             max = weather.list[0].main.temp;
             weather.list.forEach(function (value) {
@@ -594,10 +733,15 @@ var WeatherService = /** @class */ (function () {
         });
         return dataSubject;
     };
+    /**
+     * Trả về giá trị thấp nhất của nhiệt độ
+     * theo dự báo lấy trong hôm nay và 4 ngày sắp tới
+     * @param city
+     */
     WeatherService.prototype.getMinTemp = function (city) {
         var dataSubject = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         var min;
-        this.http.get("https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=metric&appid=1f481fd4fafd2cf9425a51599c8abd7a")
+        this.http.get(this.baseURL + "forecast?&units=metric&q=" + city + "&appid=" + this.appID)
             .subscribe(function (weather) {
             min = weather.list[0].main.temp;
             weather.list.forEach(function (value) {
@@ -620,150 +764,6 @@ var WeatherService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/ui/weather-card/weather-card.component.css":
-/*!************************************************************!*\
-  !*** ./src/app/ui/weather-card/weather-card.component.css ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".weather__card {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: 1fr;\r\n\tgrid-template-rows: 1fr 1fr 1fr;\r\n\tbox-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);\r\n\tjustify-items: center;\r\n\tpadding: 2rem;\r\n\tmargin: 2rem;\r\n\twidth: 19rem;\r\n\theight: 30rem;\r\n\tcursor: pointer;\r\n\tbackground-color: white;\r\n\tborder-radius: 1.75rem;\r\n\t-webkit-animation: 1.25s ease-in-out 0ms 1 fadein;\r\n\t        animation: 1.25s ease-in-out 0ms 1 fadein;\r\n}\r\n\r\n.weather__card-dark {\r\n\tbackground: linear-gradient(to bottom, #711B86, #00057A);\r\n\tcolor: white;\r\n}\r\n\r\n.city-name__text {\r\n\ttext-transform: uppercase;\r\n\tfont-size: 1.4rem;\r\n\tletter-spacing: 0.1rem;\r\n\tmargin-bottom: 1rem;\r\n}\r\n\r\n.temperature-metric__text {\r\n\ttext-align: start;\r\n\tfont-size: 3rem;\r\n}\r\n\r\n.min-max__container {\r\n\tdisplay: grid;\r\n\tgrid-template-rows: 1fr;\r\n\tgrid-template-columns: 1fr 1fr;\r\n\talign-items: center;\r\n}\r\n\r\n.min__container,\r\n.max__container {\r\n\tmargin: 1rem 3rem;\r\n\tdisplay: grid;\r\n\tgrid-template-columns: 1fr;\r\n\tgrid-template-rows: 1fr 1fr;\r\n}\r\n\r\n.min-arrow__icon,\r\n.max-arrow__icon {\r\n\theight: 1.25rem;\r\n\tmargin: auto;\r\n}\r\n\r\n.max-arrow__icon {\r\n\tmargin-bottom: -0.05rem;\r\n}\r\n\r\n.weather-condition__text {\r\n\tdisplay: block;\r\n\tfont-size: 1rem;\r\n\ttext-transform: uppercase;\r\n\tletter-spacing: 0.1rem;\r\n\ttext-align: center;\r\n}\r\n\r\n.max__text {\r\n\tcolor: #FF0070;\r\n}\r\n\r\n.min__text {\r\n\tcolor: #00FF9B;\r\n}\r\n\r\n.max__text,\r\n.min__text {\r\n\tfont-size: 1rem;\r\n\ttext-align: center;\r\n}\r\n\r\n.max-temperature__text,\r\n.min-temperature__text {\r\n\ttext-align: center;\r\n\tfont-size: 2rem;\r\n}\r\n\r\n.weather-icon__container {\r\n\twidth: 10rem;\r\n\tmargin-bottom: 2rem;\r\n\tdisplay: flex;\r\n\tjustify-content: center;\r\n}\r\n\r\n.weather-icon__container>svg {\r\n\twidth: 10rem;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdWkvd2VhdGhlci1jYXJkL3dlYXRoZXItY2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0NBQ0MsYUFBYTtDQUNiLDBCQUEwQjtDQUMxQiwrQkFBK0I7Q0FDL0IseUNBQXlDO0NBQ3pDLHFCQUFxQjtDQUNyQixhQUFhO0NBQ2IsWUFBWTtDQUNaLFlBQVk7Q0FDWixhQUFhO0NBQ2IsZUFBZTtDQUNmLHVCQUF1QjtDQUN2QixzQkFBc0I7Q0FDdEIsaURBQXlDO1NBQXpDLHlDQUF5QztBQUMxQzs7QUFFQTtDQUNDLHdEQUF3RDtDQUN4RCxZQUFZO0FBQ2I7O0FBRUE7Q0FDQyx5QkFBeUI7Q0FDekIsaUJBQWlCO0NBQ2pCLHNCQUFzQjtDQUN0QixtQkFBbUI7QUFDcEI7O0FBRUE7Q0FDQyxpQkFBaUI7Q0FDakIsZUFBZTtBQUNoQjs7QUFFQTtDQUNDLGFBQWE7Q0FDYix1QkFBdUI7Q0FDdkIsOEJBQThCO0NBQzlCLG1CQUFtQjtBQUNwQjs7QUFFQTs7Q0FFQyxpQkFBaUI7Q0FDakIsYUFBYTtDQUNiLDBCQUEwQjtDQUMxQiwyQkFBMkI7QUFDNUI7O0FBRUE7O0NBRUMsZUFBZTtDQUNmLFlBQVk7QUFDYjs7QUFFQTtDQUNDLHVCQUF1QjtBQUN4Qjs7QUFFQTtDQUNDLGNBQWM7Q0FDZCxlQUFlO0NBQ2YseUJBQXlCO0NBQ3pCLHNCQUFzQjtDQUN0QixrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxjQUFjO0FBQ2Y7O0FBRUE7Q0FDQyxjQUFjO0FBQ2Y7O0FBRUE7O0NBRUMsZUFBZTtDQUNmLGtCQUFrQjtBQUNuQjs7QUFFQTs7Q0FFQyxrQkFBa0I7Q0FDbEIsZUFBZTtBQUNoQjs7QUFFQTtDQUNDLFlBQVk7Q0FDWixtQkFBbUI7Q0FDbkIsYUFBYTtDQUNiLHVCQUF1QjtBQUN4Qjs7QUFFQTtDQUNDLFlBQVk7QUFDYiIsImZpbGUiOiJzcmMvYXBwL3VpL3dlYXRoZXItY2FyZC93ZWF0aGVyLWNhcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi53ZWF0aGVyX19jYXJkIHtcclxuXHRkaXNwbGF5OiBncmlkO1xyXG5cdGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyO1xyXG5cdGdyaWQtdGVtcGxhdGUtcm93czogMWZyIDFmciAxZnI7XHJcblx0Ym94LXNoYWRvdzogMCAwIDJyZW0gcmdiYSgwLCAwLCAyNTUsIDAuMSk7XHJcblx0anVzdGlmeS1pdGVtczogY2VudGVyO1xyXG5cdHBhZGRpbmc6IDJyZW07XHJcblx0bWFyZ2luOiAycmVtO1xyXG5cdHdpZHRoOiAxOXJlbTtcclxuXHRoZWlnaHQ6IDMwcmVtO1xyXG5cdGN1cnNvcjogcG9pbnRlcjtcclxuXHRiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuXHRib3JkZXItcmFkaXVzOiAxLjc1cmVtO1xyXG5cdGFuaW1hdGlvbjogMS4yNXMgZWFzZS1pbi1vdXQgMG1zIDEgZmFkZWluO1xyXG59XHJcblxyXG4ud2VhdGhlcl9fY2FyZC1kYXJrIHtcclxuXHRiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQodG8gYm90dG9tLCAjNzExQjg2LCAjMDAwNTdBKTtcclxuXHRjb2xvcjogd2hpdGU7XHJcbn1cclxuXHJcbi5jaXR5LW5hbWVfX3RleHQge1xyXG5cdHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcblx0Zm9udC1zaXplOiAxLjRyZW07XHJcblx0bGV0dGVyLXNwYWNpbmc6IDAuMXJlbTtcclxuXHRtYXJnaW4tYm90dG9tOiAxcmVtO1xyXG59XHJcblxyXG4udGVtcGVyYXR1cmUtbWV0cmljX190ZXh0IHtcclxuXHR0ZXh0LWFsaWduOiBzdGFydDtcclxuXHRmb250LXNpemU6IDNyZW07XHJcbn1cclxuXHJcbi5taW4tbWF4X19jb250YWluZXIge1xyXG5cdGRpc3BsYXk6IGdyaWQ7XHJcblx0Z3JpZC10ZW1wbGF0ZS1yb3dzOiAxZnI7XHJcblx0Z3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyO1xyXG5cdGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5taW5fX2NvbnRhaW5lcixcclxuLm1heF9fY29udGFpbmVyIHtcclxuXHRtYXJnaW46IDFyZW0gM3JlbTtcclxuXHRkaXNwbGF5OiBncmlkO1xyXG5cdGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyO1xyXG5cdGdyaWQtdGVtcGxhdGUtcm93czogMWZyIDFmcjtcclxufVxyXG5cclxuLm1pbi1hcnJvd19faWNvbixcclxuLm1heC1hcnJvd19faWNvbiB7XHJcblx0aGVpZ2h0OiAxLjI1cmVtO1xyXG5cdG1hcmdpbjogYXV0bztcclxufVxyXG5cclxuLm1heC1hcnJvd19faWNvbiB7XHJcblx0bWFyZ2luLWJvdHRvbTogLTAuMDVyZW07XHJcbn1cclxuXHJcbi53ZWF0aGVyLWNvbmRpdGlvbl9fdGV4dCB7XHJcblx0ZGlzcGxheTogYmxvY2s7XHJcblx0Zm9udC1zaXplOiAxcmVtO1xyXG5cdHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcblx0bGV0dGVyLXNwYWNpbmc6IDAuMXJlbTtcclxuXHR0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5tYXhfX3RleHQge1xyXG5cdGNvbG9yOiAjRkYwMDcwO1xyXG59XHJcblxyXG4ubWluX190ZXh0IHtcclxuXHRjb2xvcjogIzAwRkY5QjtcclxufVxyXG5cclxuLm1heF9fdGV4dCxcclxuLm1pbl9fdGV4dCB7XHJcblx0Zm9udC1zaXplOiAxcmVtO1xyXG5cdHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLm1heC10ZW1wZXJhdHVyZV9fdGV4dCxcclxuLm1pbi10ZW1wZXJhdHVyZV9fdGV4dCB7XHJcblx0dGV4dC1hbGlnbjogY2VudGVyO1xyXG5cdGZvbnQtc2l6ZTogMnJlbTtcclxufVxyXG5cclxuLndlYXRoZXItaWNvbl9fY29udGFpbmVyIHtcclxuXHR3aWR0aDogMTByZW07XHJcblx0bWFyZ2luLWJvdHRvbTogMnJlbTtcclxuXHRkaXNwbGF5OiBmbGV4O1xyXG5cdGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG4ud2VhdGhlci1pY29uX19jb250YWluZXI+c3ZnIHtcclxuXHR3aWR0aDogMTByZW07XHJcbn0iXX0= */"
-
-/***/ }),
-
-/***/ "./src/app/ui/weather-card/weather-card.component.html":
-/*!*************************************************************!*\
-  !*** ./src/app/ui/weather-card/weather-card.component.html ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<section class=\"weather__card\" (click)=\"openDetails()\" [ngClass]=\"{'weather__card-dark': darkMode}\">\r\n    <!-- Tên thành phố -->\r\n    <span class=\"city-name__text\">{{cityName}}</span>\r\n    <!-- Hình ảnh mô tả cho các trạng thái thời tiết -->\r\n    <div class=\"weather-icon__container\" [ngSwitch]=\"true\">\r\n        <svg *ngSwitchCase=\"state === 'Sunny' || state === 'Clear'\" viewBox=\"2050 -845 262 262\">\r\n            <circle cx=\"131\" cy=\"131\" r=\"131\" fill=\"#ffde17\" data-name=\"Sun Icon\" transform=\"translate(2050 -845)\" />\r\n        </svg>\r\n        <svg *ngSwitchCase=\"state === 'Clouds'\" viewBox=\"2436.9 -843.1 275.5 274.1\">\r\n            <g data-name=\"cloudy icon\" transform=\"translate(84 790)\">\r\n                <circle cx=\"137\" cy=\"137\" r=\"137\" fill=\"#fff\" data-name=\"Ellipse 23\"\r\n                    transform=\"translate(2354 -1633)\" />\r\n                <path fill=\"#ffde17\"\r\n                    d=\"M2523.4-1361.5a37.2 37.2 0 0 0 8.4-23.4c0-22-19.8-40-44.1-40l-3.4.1h-.5a39.8 39.8 0 0 0-39.4-33.7 40.1 40.1 0 0 0-10 1.2 40 40 0 0 0-35.2-21.2 40.1 40.1 0 0 0-38.5 29 137.4 137.4 0 0 1-7.8-45.8 138.8 138.8 0 0 1 2.8-27.8 137 137 0 0 1 8-25.8 137.8 137.8 0 0 1 12.7-23.4 138.8 138.8 0 0 1 16.8-20.4 138.8 138.8 0 0 1 20.4-16.9 137.8 137.8 0 0 1 23.4-12.7 137 137 0 0 1 25.9-8 138.8 138.8 0 0 1 27.7-2.8 138.8 138.8 0 0 1 27.8 2.8 137 137 0 0 1 25.9 8 137.8 137.8 0 0 1 23.4 12.7 138.8 138.8 0 0 1 20.4 16.9 138.7 138.7 0 0 1 16.8 20.4 137.8 137.8 0 0 1 12.7 23.4 137 137 0 0 1 8 25.8 138.8 138.8 0 0 1 2.8 27.8 137.4 137.4 0 0 1-8 46.1 137.2 137.2 0 0 1-21.9 39.6 138.2 138.2 0 0 1-33.2 30.1 136.8 136.8 0 0 1-41.9 18z\"\r\n                    data-name=\"Subtraction 1\" />\r\n            </g>\r\n        </svg>\r\n        <svg *ngSwitchCase=\"state === 'Rain' || state === 'Drizzle' || state === 'Mist'\"\r\n            viewBox=\"3170 -843.1 163.5 242.7\">\r\n            <g data-name=\"Rain Icon\">\r\n                <g data-name=\"Water Drops\">\r\n                    <path fill=\"#0032cc\" d=\"M3295.4-824.5s85.8 133.5 0 133.5 0-133.5 0-133.5z\" data-name=\"Path 7\" />\r\n                    <path fill=\"#003eff\" d=\"M3239.4-843s-156.1 242.6 0 242.6 0-242.7 0-242.7z\" data-name=\"Path 3\" />\r\n                </g>\r\n            </g>\r\n        </svg>\r\n        <svg *ngSwitchCase=\"state === 'Haze' || state === 'Fog'\" viewBox=\"0 0 454 366\">\r\n            <path fill=\"#12bcff\"\r\n                d=\"M340 110c-40 0-75-14-110-26-30-11-61-21-92-27-35-6-65 6-89 34a28 28 0 0 1-40 3C-3 83-3 66 8 54 53 1 110-9 174 7c36 9 71 25 106 36 19 5 39 10 58 11 27 2 48-13 65-33 12-13 29-15 41-5s13 28 1 41c-28 33-63 53-105 53zM120 312c-27-1-51 11-70 34-11 13-29 15-41 4-12-10-12-28-1-40 45-53 103-63 167-47 37 10 72 25 108 36 18 6 37 10 55 11 27 2 47-12 64-32 8-9 17-15 30-12 21 4 29 28 16 45-37 45-85 65-143 51-34-8-66-21-99-32-27-9-53-18-86-18zM123 128c42 1 81 15 120 29 26 9 52 18 79 24 28 6 53-3 74-24l11-11c11-11 27-11 39-1 10 10 11 26 1 38-35 43-81 64-137 52-34-7-67-20-100-32-29-10-59-20-91-19-28 1-51 13-69 34-12 13-29 15-41 4s-12-28 0-41c30-35 68-52 114-53z\" />\r\n        </svg>\r\n        <svg *ngSwitchCase=\"state === 'Storm' || state === 'Thunderstorm'\" viewBox=\"3487.9 -810.7 291.2 200.3\">\r\n            <g data-name=\"Strom icon\" transform=\"translate(1959 -1260.7)\">\r\n                <ellipse cx=\"55.3\" cy=\"51.7\" class=\"cls-99\" data-name=\"Ellipse 14\" rx=\"55.3\" ry=\"51.7\"\r\n                    transform=\"translate(1529 490.4)\" />\r\n                <ellipse cx=\"55.3\" cy=\"51.7\" class=\"cls-99\" data-name=\"Ellipse 15\" rx=\"55.3\" ry=\"51.7\"\r\n                    transform=\"translate(1569.6 467.8)\" />\r\n                <circle cx=\"55.3\" cy=\"55.3\" r=\"55.3\" class=\"cls-99\" data-name=\"Ellipse 16\"\r\n                    transform=\"translate(1618.9 476.8)\" />\r\n                <ellipse cx=\"55.3\" cy=\"51.7\" class=\"cls-99\" data-name=\"Ellipse 17\" rx=\"55.3\" ry=\"51.7\"\r\n                    transform=\"translate(1631.8 450)\" />\r\n                <ellipse cx=\"55.3\" cy=\"51.7\" class=\"cls-99\" data-name=\"Ellipse 18\" rx=\"55.3\" ry=\"51.7\"\r\n                    transform=\"translate(1687.1 477.5)\" />\r\n                <ellipse cx=\"55.3\" cy=\"51.7\" class=\"cls-99\" data-name=\"Ellipse 19\" rx=\"55.3\" ry=\"51.7\"\r\n                    transform=\"translate(1709.6 507.3)\" />\r\n                <circle cx=\"55.3\" cy=\"55.3\" r=\"55.3\" class=\"cls-99\" data-name=\"Ellipse 20\"\r\n                    transform=\"translate(1639.6 500.1)\" />\r\n                <ellipse cx=\"55.3\" cy=\"51.7\" class=\"cls-99\" data-name=\"Ellipse 21\" rx=\"55.3\" ry=\"51.7\"\r\n                    transform=\"translate(1569.6 507.3)\" />\r\n                <path fill=\"none\" stroke=\"#fd0\" stroke-width=\"18\"\r\n                    d=\"M1732.5 644l-61.4-61.4 22.5-10.3 26.8 5.1 9.5-22.4-38-37.2\" data-name=\"Path 59\" />\r\n                <path fill=\"none\" stroke=\"#fd0\" stroke-width=\"15\" d=\"M1597.2 539.5l31.2 25.9-24.8 22.2 17.3 36.2\"\r\n                    data-name=\"Path 60\" />\r\n            </g>\r\n        </svg>\r\n    </div>\r\n    <!-- Hiển thị nhiệt độ và trạng thái thời tiết -->\r\n    <div>\r\n        <span class=\"temperature-metric__text\">{{ temp }}°</span>\r\n        <span class=\"weather-condition__text\">{{ state }}</span>\r\n    </div>\r\n    <!-- Nhiệt độ thấp nhất và cao nhất -->\r\n    <section class=\"min-max__container\">\r\n        <div class=\"min__container\">\r\n            <svg class=\"min-arrow__icon\" viewBox=\"188.5 807 21 21\">\r\n                <path fill=\"#00ff9b\" d=\"M209.5 817.5h-21L199 828z\" data-name=\"Min Arrow\" />\r\n            </svg>\r\n\r\n            <span class=\"min-temperature__text\">{{ minTemp }}</span>\r\n            <span class=\"min__text\">Min</span>\r\n        </div>\r\n        <div class=\"max__container\">\r\n            <svg class=\"max-arrow__icon\" viewBox=\"449.5 820 21 21\">\r\n                <path fill=\"red\" d=\"M449.5 830.5h21L460 820z\" data-name=\"Max Arrow\" />\r\n            </svg>\r\n            <span class=\"max-temperature__text\">{{ maxTemp }}</span>\r\n            <span class=\"max__text\">Max</span>\r\n        </div>\r\n    </section>\r\n</section>"
-
-/***/ }),
-
-/***/ "./src/app/ui/weather-card/weather-card.component.ts":
-/*!***********************************************************!*\
-  !*** ./src/app/ui/weather-card/weather-card.component.ts ***!
-  \***********************************************************/
-/*! exports provided: WeatherCardComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WeatherCardComponent", function() { return WeatherCardComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _services_weather_weather_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/weather/weather.service */ "./src/app/services/weather/weather.service.ts");
-/* harmony import */ var _services_ui_ui_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/ui/ui.service */ "./src/app/services/ui/ui.service.ts");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-
-
-
-
-
-
-var WeatherCardComponent = /** @class */ (function () {
-    function WeatherCardComponent(weather, router, ui) {
-        this.weather = weather;
-        this.router = router;
-        this.ui = ui;
-        this.cityStored = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-    }
-    Object.defineProperty(WeatherCardComponent.prototype, "city", {
-        set: function (city) {
-            var _this = this;
-            this.cityName = city;
-            this.weather.getWeather(city)
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["first"])())
-                .subscribe(function (payload) {
-                _this.state = payload.weather[0].main;
-                _this.temp = Math.ceil(payload.main.temp);
-            }, function (err) {
-                _this.errorMessage = err.error.message;
-                setTimeout(function () {
-                    _this.errorMessage = '';
-                }, 3000);
-            });
-            this.weather.getForecast(city)
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["first"])())
-                .subscribe(function (payload) {
-                _this.maxTemp = Math.round(payload[0].main.temp);
-                _this.minTemp = Math.round(payload[0].main.temp);
-                for (var _i = 0, payload_1 = payload; _i < payload_1.length; _i++) {
-                    var res = payload_1[_i];
-                    if (new Date().toLocaleDateString('en-GB') === new Date(res.dt_txt).toLocaleDateString('en-GB')) {
-                        _this.maxTemp = res.main.temp > _this.maxTemp ? Math.round(res.main.temp) : _this.maxTemp;
-                        _this.minTemp = res.main.temp < _this.minTemp ? Math.round(res.main.temp) : _this.minTemp;
-                    }
-                }
-            }, function (err) {
-                _this.errorMessage = err.error.message;
-                setTimeout(function () {
-                    _this.errorMessage = '';
-                }, 3000);
-            });
-        },
-        enumerable: true,
-        configurable: true
-    });
-    WeatherCardComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.sub1 = this.ui.darkModeState.subscribe(function (isDark) {
-            _this.darkMode = isDark;
-        });
-    };
-    WeatherCardComponent.prototype.ngOnDestroy = function () {
-        this.sub1.unsubscribe();
-    };
-    WeatherCardComponent.prototype.openDetails = function () {
-        if (!this.addMode) {
-            this.router.navigateByUrl('/details/' + this.cityName);
-        }
-    };
-    WeatherCardComponent.prototype.addCity = function () {
-        // this.fb.addCity(this.cityName).subscribe(() => {
-        //   this.cityName = null;
-        //   this.maxTemp = null;
-        //   this.minTemp = null;
-        //   this.state = null;
-        //   this.temp = null;
-        //   this.cityAdded = true;
-        //   this.cityStored.emit();
-        //   setTimeout(() => this.cityAdded = false, 2000);
-        // });
-    };
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [String])
-    ], WeatherCardComponent.prototype, "city", null);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
-    ], WeatherCardComponent.prototype, "addMode", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
-    ], WeatherCardComponent.prototype, "cityStored", void 0);
-    WeatherCardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-weather-card',
-            template: __webpack_require__(/*! ./weather-card.component.html */ "./src/app/ui/weather-card/weather-card.component.html"),
-            styles: [__webpack_require__(/*! ./weather-card.component.css */ "./src/app/ui/weather-card/weather-card.component.css")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_weather_weather_service__WEBPACK_IMPORTED_MODULE_3__["WeatherService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
-            _services_ui_ui_service__WEBPACK_IMPORTED_MODULE_4__["UiService"]])
-    ], WeatherCardComponent);
-    return WeatherCardComponent;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/environments/environment.ts":
 /*!*****************************************!*\
   !*** ./src/environments/environment.ts ***!
@@ -776,7 +776,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
 var environment = {
     production: false,
-    appID: '',
+    appID: '1f481fd4fafd2cf9425a51599c8abd7a',
     gKey: '',
     config: {
         apiKey: '',
