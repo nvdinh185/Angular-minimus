@@ -30,7 +30,8 @@ export class AppComponent {
   }
 
   /**
-   * Khi thoát khỏi trang này thì không cho phép phát ra nữa
+   * Khi thoát khỏi trang này thì hủy đối tượng darkModeState
+   * để giải phóng bộ nhớ
    */
   ngOnDestroy() {
     this.sub.unsubscribe();

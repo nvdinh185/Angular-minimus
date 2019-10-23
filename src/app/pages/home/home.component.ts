@@ -14,10 +14,10 @@ export class HomeComponent {
   ngOnInit() {
     this.cities = [
       { name: 'danang' },
-      // { name: 'paris' },
-      // { name: 'doha' },
-      // { name: 'rabat' },
-      // { name: 'tunis' }
+      { name: 'paris' },
+      { name: 'doha' },
+      { name: 'rabat' },
+      { name: 'tunis' }
     ];
   }
 }

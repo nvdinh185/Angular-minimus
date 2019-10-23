@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { WeatherService } from '../../services/weather/weather.service';
 import { Subscription } from 'rxjs';
+import { WeatherService } from '../../services/weather/weather.service';
 import { UiService } from '../../services/ui/ui.service';
-import { TwitterService } from '../../services/twitter/twitter.service';
 
 @Component({
   selector: 'app-details',
@@ -27,14 +26,16 @@ export class DetailsComponent {
   sub4: Subscription;
   sub5: Subscription;
   sub6: Subscription;
+  errorMessage: string;
 
-  constructor(public activeRouter: ActivatedRoute, public weather: WeatherService, public ui: UiService) { }
+  constructor(public activeRouter: ActivatedRoute,
+    public weather: WeatherService,
+    public ui: UiService) { }
 
   ngOnInit() {
     this.sub1 = this.ui.darkModeState.subscribe((isDark) => {
       this.darkMode = isDark;
     });
-
     this.activeRouter.paramMap.subscribe((route: any) => {
       this.city = route.params.city;
       switch (this.city.toLowerCase()) {
@@ -57,7 +58,24 @@ export class DetailsComponent {
           this.cityIllustrationPath = '../../../assets/cities/default.svg';
       }
 
-      this.sub1 = this.weather.getWeatherState(this.city).subscribe((state) => this.state = state);
+      this.sub1 = this.weather.getWeatherState(this.city)
+        .subscribe((state: any) => {
+          if (state.cod === '404') {
+            this.errorMessage = state.message;
+            setTimeout(() => {
+              this.errorMessage = '';
+            }, 3000);
+          } else {
+            this.state = state
+          }
+        },
+          (err) => {
+            this.errorMessage = err.error.message;
+            setTimeout(() => {
+              this.errorMessage = '';
+            }, 3000);
+          });
+
       this.sub2 = this.weather.getCurrentTemp(this.city).subscribe((temperature) => this.temp = temperature);
       this.sub3 = this.weather.getCurrentHum(this.city).subscribe((humidity) => this.hum = humidity);
       this.sub4 = this.weather.getCurrentWind(this.city).subscribe((windspeed) => this.wind = windspeed);
