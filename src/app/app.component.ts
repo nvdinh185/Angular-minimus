@@ -12,6 +12,7 @@ export class AppComponent {
 
   darkModeActive: boolean;
   sub: Subscription;
+  showMenu = true;
 
   constructor(public ui: UiService,
     public auth: AngularFireLiteAuth) {
@@ -24,6 +25,10 @@ export class AppComponent {
       this.darkModeActive = value;
     })
   };
+
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
+  }
 
   modeToggleSwitch() {
     //Tiếp tục phát ra đối tượng darkModeState
