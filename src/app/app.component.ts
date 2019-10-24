@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { UiService } from './services/ui/ui.service';
 import { Subscription } from 'rxjs';
+import { AngularFireLiteAuth } from 'angularfire-lite';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ export class AppComponent {
   darkModeActive: boolean;
   sub: Subscription;
 
-  constructor(public ui: UiService) {
+  constructor(public ui: UiService,
+    public auth: AngularFireLiteAuth) {
   }
 
   ngOnInit() {
@@ -35,6 +37,13 @@ export class AppComponent {
    */
   ngOnDestroy() {
     this.sub.unsubscribe();
+  }
+
+  onClick() {
+    this.auth.signin('test@gmail.com', '123456');
+    this.auth.isAuthenticated().subscribe((isAuth) => {
+      console.log(isAuth);
+  });
   }
 
 }

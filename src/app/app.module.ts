@@ -10,6 +10,8 @@ import { DetailsComponent } from './pages/details/details.component';
 import { WeatherService } from './services/weather/weather.service';
 import { UiService } from './services/ui/ui.service';
 import { ErrorComponent } from './components/error/error.component';
+import { AngularFireLite } from 'angularfire-lite';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { ErrorComponent } from './components/error/error.component';
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
+    AngularFireLite.forRoot(environment.config),
   ],
   providers: [
     WeatherService,
