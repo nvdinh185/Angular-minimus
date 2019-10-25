@@ -1,22 +1,24 @@
 <!-- Slide Menu-->
 <aside class="side-menu_container" [ngClass]="{'side-menu_container-active': showMenu}" (click)="toggleMenu()">
   <nav class="slide-menu" [ngClass]="{'slide-menu-active': showMenu, 'slide-menu-active-dark': darkModeActive}"
-       (click)="$event.stopImmediatePropagation();">
+    (click)="$event.stopImmediatePropagation();">
     <section class="menu-header" [ngClass]="{'menu-header-dark': darkModeActive}">
       <span class="greeting_text">Welcome Back</span>
       <div class="profile-image_container">
         <img src="https://www.jamf.com/jamf-nation/img/default-avatars/generic-user-purple.png" alt="profile-image"
-             class="profile_image">
+          class="profile_image">
       </div>
       <div class="account-details">
-        <span class="name_text">{{userEmail}}</span>
+        <span class="name_text">{{ userEmail }}</span>
         <span class="email_text">Free Plan</span>
       </div>
     </section>
     <section class="menu-body">
       <ul class="menu-links" [ngClass]="{'menu-links-dark': darkModeActive}">
-        <li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="" routerLinkActive="link-active" (click)="toggleMenu()">Home</li>
-        <li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="/add" routerLinkActive="link-active" (click)="toggleMenu()">Add City</li>
+        <li class="menu-link" routerLink="" routerLinkActive="link-active"
+          (click)="toggleMenu()">Home</li>
+        <li class="menu-link" routerLink="/add" routerLinkActive="link-active"
+          (click)="toggleMenu()">Add City</li>
         <li (click)="logout()" class="menu-link">Logout</li>
       </ul>
     </section>
@@ -26,34 +28,39 @@
   </nav>
 </aside>
 
-<div class="root_container">
+<main class="root_container" [ngClass]="{'root_container-dark': darkModeActive}">
   <header [ngClass]="{'main_header-dark': darkModeActive}" class="main_header">
 
     <div class="left_section">
-      
-      <!-- <svg (click)="toggleMenu()" class="hamburger_icon" viewBox="31.5 30 49.9 32">
+      <svg (click)="toggleMenu()" class="hamburger_icon" viewBox="31.5 30 49.9 32">
         <defs>
-          <style>.hamburger_icon_fill {
-            fill: #594e78
-          }</style>
+          <style>
+            .hamburger_icon_fill {
+              fill: rgb(0, 0, 0)
+            }
+
+            .hamburger_icon_fill-dark {
+              fill: #ffff;
+            }
+          </style>
         </defs>
         <rect width="49.9" height="4" [ngClass]="{'hamburger_icon_fill-dark': darkModeActive}"
-              class="hamburger_icon_fill" rx="2" transform="translate(31.5 58)"></rect>
+          class="hamburger_icon_fill" transform="translate(31.5 58)"></rect>
         <rect width="49.9" height="4" [ngClass]="{'hamburger_icon_fill-dark': darkModeActive}"
-              class="hamburger_icon_fill" rx="2" transform="translate(31.5 44)"></rect>
+          class="hamburger_icon_fill" transform="translate(31.5 44)"></rect>
         <rect width="49.9" height="4" [ngClass]="{'hamburger_icon_fill-dark': darkModeActive}"
-              class="hamburger_icon_fill" rx="2" transform="translate(31.5 30)"></rect>
-      </svg> -->
+          class="hamburger_icon_fill" transform="translate(31.5 30)"></rect>
+      </svg>
 
-      <!-- <svg class="logo_icon" viewBox="150.3 22.2 213.7 42.8">
+      <svg class="logo_icon" viewBox="150.3 22.2 213.7 42.8">
         <path fill="#00ff9b" d="M150.3 65V22.2L193 65z"></path>
         <path fill="#003eff" d="M193.1 65h-42.8L193 22.2z"></path>
         <text [ngClass]="{'logo_text-dark': darkModeActive}" class="logo_text" fill="#432c85"
-              font-family="SegoeUI-Semibold,Segoe UI" font-size="30" font-weight="600"
-              letter-spacing=".1em" transform="translate(220 56)">
+          font-family="SegoeUI-Semibold, Segoe UI" font-size="30" font-weight="600" letter-spacing=".1em"
+          transform="translate(220 56)">
           <tspan x="0" y="0">Minimus</tspan>
         </text>
-      </svg> -->
+      </svg>
 
     </div>
 
@@ -70,9 +77,9 @@
     </div>
   </header>
 
-  <main>
-    <div class="main-container_bg" [ngClass]="{'main-container_bg-dark': darkModeActive}"></div>
+  <!-- Main Content -->
+  <div class="main-container_bg">
     <router-outlet></router-outlet>
     <button ion-button (click)="onClick()">onClick</button>
-  </main>
-</div>
+  </div>
+</main>

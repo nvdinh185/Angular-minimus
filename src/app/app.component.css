@@ -9,32 +9,13 @@
 	overflow: hidden;
 	pointer-events: none;
 	z-index: 50;
-  }
-  
-  .side-menu_container-active {
+}
+
+.side-menu_container-active {
 	pointer-events: auto;
-  }
-  
-  .side-menu_container::before {
-	content: '';
-	cursor: pointer;
-	position: absolute;
-	display: block;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #0c1066;
-	opacity: 0;
-	transition: opacity 300ms linear;
-	will-change: opacity;
-  }
-  
-  .side-menu_container-active::before {
-	opacity: 0.3;
-  }
-  
-  .slide-menu {
+}
+
+.slide-menu {
 	box-sizing: border-box;
 	transform: translateX(-200%);
 	position: relative;
@@ -52,17 +33,17 @@
 	grid-gap: 1rem;
 	transition: transform 300ms linear;
 	will-change: transform;
-  }
-  
-  .slide-menu-active {
+}
+
+.slide-menu-active {
 	transform: none;
-  }
-  
-  .slide-menu-active-dark {
+}
+
+.slide-menu-active-dark {
 	background-color: #2B244D;
-  }
-  
-  .menu-header {
+}
+
+.menu-header {
 	background: linear-gradient(to right, #00FF9B, #5f84fb);
 	display: grid;
 	grid-template-rows: 1fr 4fr;
@@ -73,13 +54,13 @@
 	align-content: center;
 	color: white;
 	box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
-  }
-  
-  .menu-header-dark {
+}
+
+.menu-header-dark {
 	background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-  }
-  
-  .greeting_text {
+}
+
+.greeting_text {
 	grid-area: greeting;
 	font-size: 1.25rem;
 	letter-spacing: 0.15rem;
@@ -87,54 +68,9 @@
 	margin-top: 1rem;
 	justify-self: center;
 	align-self: center;
-  }
-  
-  .account-details {
-	grid-area: details;
-	display: flex;
-	flex-flow: column;
-	margin-left: 1rem;
-	align-self: center;
-  }
-  
-  .name_text {
-	font-size: 1.15rem;
-	margin-bottom: 0.5rem;
-  }
-  
-  .email_text {
-	font-size: 0.9rem;
-	letter-spacing: 0.1rem;
-  }
-  
-  .menu-body {
-	display: grid;
-	width: 100%;
-  }
-  
-  .menu-links {
-	display: flex;
-	flex-flow: column;
-	list-style: none;
-  }
-  .menu-links-dark {
-	color: white;
-  }
-  
-  .link-active {
-	color: #495CFC;
-	border-bottom: 1px solid #495CFC;
-  }
-  
-  .menu-link {
-	outline: none;
-	font-size: 1rem;
-	padding: 1rem 0;
-	margin: 0.5rem 0;
-	cursor: pointer;
-  }
-  
-  .profile-image_container {
+}
+
+.profile-image_container {
 	grid-area: image;
 	margin-right: 0.5rem;
 	border-radius: 50%;
@@ -147,78 +83,90 @@
 	background-color: white;
 	align-self: center;
 	margin-left: 2rem;
-  }
-  
-  .profile_image {
+}
+
+.profile_image {
 	max-width: 4rem;
-  }
-  
+}
+
+.account-details {
+	grid-area: details;
+	display: flex;
+	flex-flow: column;
+	margin-left: 1rem;
+	align-self: center;
+}
+
+.name_text {
+	font-size: 1.15rem;
+	margin-bottom: 0.5rem;
+}
+
+.email_text {
+	font-size: 0.9rem;
+	letter-spacing: 0.1rem;
+}
+
+.menu-body {
+	display: grid;
+	width: 100%;
+}
+
+.menu-links {
+	display: flex;
+	flex-flow: column;
+	list-style: none;
+}
+
+.menu-links-dark {
+	color: white;
+}
+
+.link-active {
+	color: #495CFC;
+	border-bottom: 1px solid #495CFC;
+}
+
+.menu-link {
+	outline: none;
+	font-size: 1rem;
+	padding: 1rem 0;
+	margin: 0.5rem 0;
+	cursor: pointer;
+}
+
+
 .copyright_text {
 	display: block;
 	text-align: center;
-  }
-/* 
-  .left_section {
-	display: grid;
-	grid-template-rows: 1fr;
-	grid-template-columns: 1fr 1fr;
-	max-width: 5rem;
-  }
-
-  .left_section {
-    justify-self: start;
-    max-width: none;
-    grid-template-columns: 0 5fr;
-    width: 100%;
-  }
-
-  .hamburger_icon {
-    margin-right: 0;
-  }
-
-  .hamburger_icon_fill {
-	fill: #2B244D;
-  }
-  
-  .hamburger_icon_fill-dark {
-	fill: #ffff;
-  }
-  
-.logo_icon {
-	height: 2rem;
-	margin-left: 1rem;
-  }
-  
-  .logo_text {
-	fill: #2B244D;
-  }
-  
-  .logo_text-dark {
-	fill: #ffff;
-  } */
-
-/* style cho toàn trang */
-.root_container {
-	width: 100vw;
-	height: 100vh;
-	position: relative;
 }
 
+/* style cho nội dung chính ở chế độ sáng */
+.root_container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-flow: column;
+	transition: background 300ms linear;
+}
+
+/* style cho nội dung chính ở chế độ tối */
+.root_container-dark {
+	background-image: linear-gradient(to top, #5ee7df 0%, #372865 100%);
+}
 
 /* Style cho phần header */
 .main_header {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 0.25fr;
-	grid-template-rows: 1fr;
 	box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
-	height: 4rem;
 	margin: 0;
+	min-height: 4rem;
 	align-items: center;
 	transition: background-color 500ms linear;
-	animation: 1s ease-in-out 0ms 1 fadein;
+	animation: slidedown 0.5s ease-in-out, fadein 1s ease-in-out;
 }
-
 
 /* Style cho header khi ở chế độ tối */
 .main_header-dark {
@@ -226,17 +174,44 @@
 	color: white;
 }
 
+/*
+ left section
+ */
+.left_section {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr;
+	max-width: 5rem;
+}
+
+.hamburger_icon {
+	position: relative;
+	z-index: 50;
+	height: 1rem;
+	padding: 0.5rem 1.5rem;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+
+.logo_icon {
+	height: 2rem;
+	margin-left: 1rem;
+}
+
+.logo_text {
+	fill: #2B244D;
+}
+
+.logo_text-dark {
+	fill: #ffff;
+}
 
 /* Style cho chữ */
 .date_text {
-	/* in đậm chữ */
 	text-transform: uppercase;
-	/* Khoảng cách chữ */
 	letter-spacing: 0.1rem;
-	/* Khoảng cách với lề */
 	margin: 0.5rem 0;
 }
-
 
 /* Style cho chữ của điều khiển LIGHT và DARK */
 .mode-toggle_text {
@@ -245,18 +220,16 @@
 	letter-spacing: 0.1rem;
 }
 
-
 /* Style vị trí nút trượt */
 .toggle-button_container {
 	position: relative;
+	margin: 0 0.75rem 0 0.25rem;
 }
-
 
 /* Style để ẩn nút checkbox */
 .mode-toggle_input {
 	-webkit-appearance: none;
 }
-
 
 /* Style cho thanh trượt */
 .mode-toggle_bg {
@@ -268,6 +241,10 @@
 	transition: background-color 300ms linear;
 }
 
+/* Style cho thanh trượt khi chọn (ở chế độ tối)  */
+.mode-toggle_bg-checked {
+	background-color: #FF0070;
+}
 
 /* Style cho nút trượt */
 .mode-toggle_circle {
@@ -275,44 +252,40 @@
 	width: 1.30rem;
 	background-color: #2B244D;
 	position: absolute;
-	top: -0.2rem;
+	top: -0.18rem;
 	border-radius: 50%;
 	box-shadow: 0 0 0 rgba(0, 0, 255, 0.5);
 	transition: left 300ms linear;
-	left: 0.1rem;
+	left: 0.2rem;
 }
 
-
-/* Style cho nút trượt khi chọn  */
+/* Style cho nút trượt khi chọn (ở chế độ tối)  */
 .mode-toggle_circle-checked {
 	background-color: white;
-	left: 1.75rem;
+	left: 1.2rem;
 }
 
+/* 
+	nếu chiều rộng màn hình tối đa là 959px 
+	có nghĩa là khi chiều rộng màn hình <= 959px
+	thì sử dụng các style này
+*/
+@media screen and (max-width: 959px) {
+	.main_header {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		padding: 1rem 0;
+		min-height: 8rem;
+	}
 
-/* Style cho thanh trượt khi chọn  */
-.mode-toggle_bg-checked {
-	background-color: #FF0070;
-}
+	.left_section {
+		justify-self: start;
+		max-width: none;
+		grid-template-columns: 0 5fr;
+		width: 100%;
+	}
 
-
-/* Style cho phần nội dung */
-.main-container_bg {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -2;
-	opacity: 0;
-	background: white;
-	transition: opacity 300ms linear;
-}
-
-
-/* Style cho phần nội dung ở chế độ tối */
-.main-container_bg-dark {
-	opacity: 1;
-	background: linear-gradient(to bottom, #B290FF, #2E1D65);
-	transition: opacity 300ms linear;
+	.logo_icon {
+		margin: 0 auto;
+	}
 }

@@ -12,7 +12,8 @@ export class AppComponent {
 
   darkModeActive: boolean;
   sub: Subscription;
-  showMenu = true;
+  showMenu: boolean = false;
+  userEmail: string = 'nvdinh0766777123@gmail.com'
 
   constructor(public ui: UiService,
     public auth: AngularFireLiteAuth) {
@@ -48,7 +49,7 @@ export class AppComponent {
     this.auth.signin('test@gmail.com', '123456');
     this.auth.isAuthenticated().subscribe((isAuth) => {
       console.log(isAuth);
-  });
+    });
   }
 
 }
