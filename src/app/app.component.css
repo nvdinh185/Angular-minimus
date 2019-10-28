@@ -2,37 +2,31 @@
     Slide Menu
 */
 .side-menu_container {
+	/* giữ cố định menu khi kéo chuột lên, xuống */
 	position: fixed;
-	left: 0;
-	top: 0;
+	/* chiều rộng của menu chiếm 100% bề ngang màn hình */
 	width: 100%;
-	overflow: hidden;
+	/* thuộc tính này không phản ứng với hành động kích chuột */
 	pointer-events: none;
-	z-index: 50;
+	/* thứ tự ưu tiên hiển thị của menu */
+	z-index: 2;
 }
 
 .side-menu_container-active {
+	/* thuộc tính này phản ứng với hành động kích chuột */
 	pointer-events: auto;
 }
 
 .slide-menu {
-	box-sizing: border-box;
-	transform: translateX(-200%);
-	position: relative;
-	top: 0;
-	left: 0;
-	z-index: 50;
-	min-height: 100vh;
-	width: 90%;
+	/* Dịch chuyển theo phương ngang 100px theo chiều âm, để ẩn menu đi */
+	transform: translateX(-100%);
+	/* Bề rộng tối đa của menu là 26rem */
 	max-width: 26rem;
-	background-color: white;
-	box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+	background-color: rgb(159, 217, 228);
+	/* Hiển thị theo dạng lưới */
 	display: grid;
-	grid-template-columns: 1fr;
+	/* bề rộng theo mỗi hàng */
 	grid-template-rows: 2fr 4fr 1fr;
-	grid-gap: 1rem;
-	transition: transform 300ms linear;
-	will-change: transform;
 }
 
 .slide-menu-active {
@@ -47,13 +41,8 @@
 	background: linear-gradient(to right, #00FF9B, #5f84fb);
 	display: grid;
 	grid-template-rows: 1fr 4fr;
-	grid-template-columns: 1fr 4fr;
 	grid-template-areas: "greeting greeting" "image details";
-	box-sizing: border-box;
-	width: 100%;
-	align-content: center;
 	color: white;
-	box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
 }
 
 .menu-header-dark {
@@ -67,20 +56,11 @@
 	text-transform: uppercase;
 	margin-top: 1rem;
 	justify-self: center;
-	align-self: center;
 }
 
 .profile-image_container {
-	grid-area: image;
-	margin-right: 0.5rem;
 	border-radius: 50%;
-	height: 4rem;
 	width: 4rem;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: white;
 	align-self: center;
 	margin-left: 2rem;
 }
@@ -90,10 +70,8 @@
 }
 
 .account-details {
-	grid-area: details;
 	display: flex;
 	flex-flow: column;
-	margin-left: 1rem;
 	align-self: center;
 }
 
@@ -105,11 +83,6 @@
 .email_text {
 	font-size: 0.9rem;
 	letter-spacing: 0.1rem;
-}
-
-.menu-body {
-	display: grid;
-	width: 100%;
 }
 
 .menu-links {
@@ -128,11 +101,8 @@
 }
 
 .menu-link {
-	outline: none;
-	font-size: 1rem;
 	padding: 1rem 0;
 	margin: 0.5rem 0;
-	cursor: pointer;
 }
 
 
@@ -141,30 +111,18 @@
 	text-align: center;
 }
 
-/* style cho nội dung chính ở chế độ sáng */
-.root_container {
-	width: 100%;
-	align-items: center;
-	flex-flow: column;
-	transition: background 300ms linear;
-}
-
 /* style cho nội dung chính ở chế độ tối */
 .root_container-dark {
+	/* Thay đổi màu nền theo hướng từ dưới lên trên */
 	background-image: linear-gradient(to top, #5ee7df 0%, #372865 100%);
 }
 
 /* Style cho phần header */
 .main_header {
-	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 1fr 0.25fr;
-	box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
-	margin: 0;
-	min-height: 4rem;
 	align-items: center;
-	transition: background-color 500ms linear;
-	animation: slidedown 0.5s ease-in-out, fadein 1s ease-in-out;
+	grid-template-columns: 1fr 1fr 0.25fr;
+	background-color: rgb(169, 205, 226);
 }
 
 /* Style cho header khi ở chế độ tối */
@@ -178,18 +136,17 @@
  */
 .left_section {
 	display: grid;
-	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 1fr;
 	max-width: 5rem;
 }
 
 .hamburger_icon {
-	position: relative;
-	z-index: 50;
+	z-index: 2;
 	height: 1rem;
 	padding: 0.5rem 1.5rem;
-	margin-right: 1rem;
-	cursor: pointer;
+	/* position: relative; */
+	/* margin-right: 1rem; */
+	/* cursor: pointer; */
 }
 
 .logo_icon {
@@ -198,7 +155,7 @@
 }
 
 .logo_text {
-	fill: #2B244D;
+	fill: rgb(160, 14, 75);
 }
 
 .logo_text-dark {
@@ -237,7 +194,7 @@
 	border-radius: 0.5rem;
 	background-color: rgba(0, 0, 0, 0.5);
 	display: inline-block;
-	transition: background-color 300ms linear;
+	/* transition: background-color 300ms linear; */
 }
 
 /* Style cho thanh trượt khi chọn (ở chế độ tối)  */
@@ -253,9 +210,9 @@
 	position: absolute;
 	top: -0.18rem;
 	border-radius: 50%;
-	box-shadow: 0 0 0 rgba(0, 0, 255, 0.5);
-	transition: left 300ms linear;
 	left: 0.2rem;
+	/* box-shadow: 0 0 0 rgba(0, 0, 255, 0.5); */
+	/* transition: left 300ms linear; */
 }
 
 /* Style cho nút trượt khi chọn (ở chế độ tối)  */
@@ -278,7 +235,7 @@
 	}
 
 	.left_section {
-		justify-self: start;
+		/* justify-self: start; */
 		max-width: none;
 		grid-template-columns: 0 5fr;
 		width: 100%;

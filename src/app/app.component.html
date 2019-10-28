@@ -13,7 +13,7 @@
         <span class="email_text">Free Plan</span>
       </div>
     </section>
-    <section class="menu-body">
+    <section>
       <ul class="menu-links" [ngClass]="{'menu-links-dark': darkModeActive}">
         <li class="menu-link" routerLink="" routerLinkActive="link-active"
           (click)="toggleMenu()">Home</li>
@@ -28,7 +28,7 @@
   </nav>
 </aside>
 
-<main class="root_container" [ngClass]="{'root_container-dark': darkModeActive}">
+<main [ngClass]="{'root_container-dark': darkModeActive}">
   <header [ngClass]="{'main_header-dark': darkModeActive}" class="main_header">
 
     <div class="left_section">

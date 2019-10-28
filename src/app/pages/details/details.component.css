@@ -3,47 +3,37 @@
   top: 12rem;
   left: 2.25rem;
   width: 5rem;
-  cursor: pointer;
-  z-index: 3;
+  z-index: 1;
 }
 
 .city_illustration {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
-  position: relative;
 }
 
 .header-content_wrapper {
-  z-index: 2;
-  /* color: white; */
-  top: -100px;
   display: grid;
-  grid-template-rows: 1fr;
   grid-template-columns: repeat(2, 1fr);
-  width: 100%;
-  height: 100%;
 }
 
 .today-weather_container {
-  align-self: center;
-  justify-self: center;
+  /* align-self: center; */
+  /* justify-self: center; */
   display: grid;
-  width: 100%;
-  grid-template-rows: 3fr 1fr;
-  grid-template-columns: 1fr;
+  /* width: 100%; */
+  /* grid-template-rows: 3fr 1fr; */
+  /* grid-template-columns: 1fr; */
   justify-items: center;
   grid-gap: 2rem;
 }
 
 .temp-state_container {
   display: flex;
-  justify-content: center;
   flex-flow: column;
 }
 
 .temperature_text {
   font-size: 6rem;
-  letter-spacing: 0.75rem;
 }
 
 .weather-state_text {
@@ -55,14 +45,12 @@
 
 .hum-wind_container {
   display: flex;
-  align-items: center;
   margin-left: 2rem;
 }
 
 .container {
   display: flex;
   flex-flow: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -82,13 +70,11 @@
 
 .city-name_container {
   display: flex;
-  justify-content: center;
   align-items: center;
   padding-bottom: 25%;
 }
 
 .city-name_underline {
-  background: transparent;
   border-radius: 5px;
   height: 5px;
   box-shadow: 0 3rem 0 0 #ffffff;
@@ -98,5 +84,4 @@
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   font-size: 1.75rem;
-  padding-bottom: 2rem;
 }
