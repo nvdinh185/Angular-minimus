@@ -26,9 +26,28 @@
 	margin-bottom: 1rem;
 }
 
+.weather-icon_container {
+	width: 10rem;
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+.weather-icon_container>svg {
+	width: 10rem;
+}
+
 .temperature-metric_text {
 	text-align: start;
 	font-size: 3rem;
+}
+
+.weather-condition_text {
+	display: block;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	text-align: center;
 }
 
 .min-max_container {
@@ -56,14 +75,6 @@
 	margin-bottom: -0.05rem;
 }
 
-.weather-condition_text {
-	display: block;
-	font-size: 1rem;
-	text-transform: uppercase;
-	letter-spacing: 0.1rem;
-	text-align: center;
-}
-
 .max_text {
 	color: #FF0070;
 }
@@ -82,15 +93,4 @@
 .min-temperature_text {
 	text-align: center;
 	font-size: 2rem;
-}
-
-.weather-icon_container {
-	width: 10rem;
-	margin-bottom: 2rem;
-	display: flex;
-	justify-content: center;
-}
-
-.weather-icon_container>svg {
-	width: 10rem;
 }
