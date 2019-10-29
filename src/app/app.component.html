@@ -13,7 +13,7 @@
         <span class="email_text">Free Plan</span>
       </div>
     </section>
-    <section>
+    <section class="links_container">
       <ul class="menu-links" [ngClass]="{'menu-links-dark': darkModeActive}">
         <li class="menu-link" routerLink="" routerLinkActive="link-active"
           (click)="toggleMenu()">Home</li>
@@ -22,7 +22,7 @@
         <li (click)="logout()" class="menu-link">Logout</li>
       </ul>
     </section>
-    <section>
+    <section class="copyright_container">
       <small class="copyright_text">Copyright © 2019 Minimus</small>
     </section>
   </nav>
@@ -40,7 +40,7 @@
             }
 
             .hamburger_icon_fill-dark {
-              fill: #ffff;
+              fill: #fff;
             }
           </style>
         </defs>
@@ -55,8 +55,8 @@
       <svg class="logo_icon" viewBox="150.3 22.2 213.7 42.8">
         <path fill="#00ff9b" d="M150.3 65V22.2L193 65z"></path>
         <path fill="#003eff" d="M193.1 65h-42.8L193 22.2z"></path>
-        <text [ngClass]="{'logo_text-dark': darkModeActive}" class="logo_text" fill="#432c85"
-          font-family="SegoeUI-Semibold, Segoe UI" font-size="30" font-weight="600" letter-spacing=".1em"
+        <text [ngClass]="{'logo_text-dark': darkModeActive}" class="logo_text" fill="yellow"
+          font-family="SegoeUI-Semibold, Segoe UI" font-size="30px" font-weight="bold" letter-spacing="0.1em"
           transform="translate(220 56)">
           <tspan x="0" y="0">Minimus</tspan>
         </text>

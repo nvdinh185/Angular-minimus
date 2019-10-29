@@ -18,55 +18,70 @@
 }
 
 .slide-menu {
-	/* Dịch chuyển theo phương ngang 100px theo chiều âm, để ẩn menu đi */
+	/* Dịch chuyển theo phương ngang 100% theo chiều âm, để ẩn menu đi */
 	transform: translateX(-100%);
-	/* Bề rộng tối đa của menu là 26rem */
-	max-width: 26rem;
+	/* Bề rộng của menu */
+	width: 26rem;
+	/* Màu nền khi ở chế độ sáng */
 	background-color: rgb(159, 217, 228);
 	/* Hiển thị theo dạng lưới */
 	display: grid;
-	/* bề rộng theo mỗi hàng */
+	/* tỉ lệ bề rộng theo mỗi dòng, tùy theo số dòng bên trong */
 	grid-template-rows: 2fr 4fr 1fr;
 }
 
 .slide-menu-active {
+	/* Khi đang active thì không ẩn menu */
 	transform: none;
 }
 
 .slide-menu-active-dark {
+	/* Màu nền khi ở chế độ tối */
 	background-color: #2B244D;
 }
 
+/* 
+	menu header
+*/
 .menu-header {
+	/* màu nền của menu header, thay đổi theo hướng từ trái sang phải */
 	background: linear-gradient(to right, #00FF9B, #5f84fb);
+	/* hiển thị theo dạng lưới */
 	display: grid;
-	grid-template-rows: 1fr 4fr;
-	grid-template-areas: "greeting greeting" "image details";
+	/* tỉ lệ bề rộng theo mỗi hàng, có 3 hàng */
+	grid-template-rows: 1fr 4fr 1fr;
+	/* sắp xếp bố cục theo lưới, chia làm 2 cột, lấy theo tên khai báo trong .greeting_text */
+	grid-template-areas: "greeting greeting";
+	/* chữ luôn màu trắng dù ở chế độ sáng hay tối */
 	color: white;
 }
 
 .menu-header-dark {
-	background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+	/* màu nền của menu header khi ở chế độ tối, thay đổi theo hướng từ dưới lên trên */
+	background: linear-gradient(to top, #30cfd0, #330867);
 }
 
 .greeting_text {
+	/* đặt tên cho class này, để sử dụng trong grid-template-areas */
 	grid-area: greeting;
 	font-size: 1.25rem;
 	letter-spacing: 0.15rem;
 	text-transform: uppercase;
 	margin-top: 1rem;
+	/* định dạng theo nằm ngang thì nằm chính giữa */
 	justify-self: center;
 }
 
 .profile-image_container {
-	border-radius: 50%;
-	width: 4rem;
+	/* sắp xếp theo chiều dọc thì nằm giữa */
 	align-self: center;
+	/* Khoảng cách với lề trái */
 	margin-left: 2rem;
 }
 
 .profile_image {
-	max-width: 4rem;
+	/* chiều rộng của ảnh đại diện */
+	width: 4rem;
 }
 
 .account-details {
@@ -85,17 +100,27 @@
 	letter-spacing: 0.1rem;
 }
 
+/* 
+	menu links
+*/
+.links_container{
+	align-self: start;
+}
+
 .menu-links {
+	/* hiển thị các items trong danh sách chọn */
 	display: flex;
 	flex-flow: column;
 	list-style: none;
 }
 
 .menu-links-dark {
+	/* màu chữ khi ở chế độ tối, khi ở chế độ sáng thì màu chữ lấy theo mặc định là màu đen */
 	color: white;
 }
 
 .link-active {
+	/* link nào active thì tô màu khác và gạch chân */
 	color: #495CFC;
 	border-bottom: 1px solid #495CFC;
 }
@@ -105,23 +130,34 @@
 	margin: 0.5rem 0;
 }
 
+.copyright_container {
+	/* copyright nằm giữa theo chiều dọc */
+	align-self: center;
+}
 
 .copyright_text {
 	display: block;
 	text-align: center;
+	color: white;
 }
+
+/* 
+	Main
+*/
 
 /* style cho nội dung chính ở chế độ tối */
 .root_container-dark {
-	/* Thay đổi màu nền theo hướng từ dưới lên trên */
-	background-image: linear-gradient(to top, #5ee7df 0%, #372865 100%);
+	/* áp dụng ở chế độ tối: Thay đổi màu nền theo hướng từ dưới lên trên */
+	background-image: linear-gradient(to top, #5ee7df, #372865);
 }
 
 /* Style cho phần header */
 .main_header {
-	display: grid;
+	/* hiển thị chính giữa theo chiều dọc */
 	align-items: center;
-	grid-template-columns: 1fr 1fr 0.25fr;
+	display: grid;
+	/* tỉ lệ bề rộng theo mỗi cột, chia làm 3 cột */
+	grid-template-columns: 1fr 1fr 0.5fr;
 	background-color: rgb(169, 205, 226);
 }
 
@@ -137,16 +173,13 @@
 .left_section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	max-width: 5rem;
+	width: 5rem;
 }
 
 .hamburger_icon {
 	z-index: 2;
 	height: 1rem;
 	padding: 0.5rem 1.5rem;
-	/* position: relative; */
-	/* margin-right: 1rem; */
-	/* cursor: pointer; */
 }
 
 .logo_icon {
@@ -156,6 +189,7 @@
 
 .logo_text {
 	fill: rgb(160, 14, 75);
+	transform : translate(210px, 50px);
 }
 
 .logo_text-dark {
@@ -176,7 +210,7 @@
 	letter-spacing: 0.1rem;
 }
 
-/* Style vị trí nút trượt */
+/* Style cho nút trượt */
 .toggle-button_container {
 	position: relative;
 	margin: 0 0.75rem 0 0.25rem;
@@ -190,11 +224,10 @@
 /* Style cho thanh trượt */
 .mode-toggle_bg {
 	height: 1rem;
-	width: 2rem;
+	width: 3rem;
 	border-radius: 0.5rem;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(94, 68, 68, 0.5);
 	display: inline-block;
-	/* transition: background-color 300ms linear; */
 }
 
 /* Style cho thanh trượt khi chọn (ở chế độ tối)  */
@@ -208,17 +241,15 @@
 	width: 1.30rem;
 	background-color: #2B244D;
 	position: absolute;
-	top: -0.18rem;
+	top: -0.25rem;
 	border-radius: 50%;
 	left: 0.2rem;
-	/* box-shadow: 0 0 0 rgba(0, 0, 255, 0.5); */
-	/* transition: left 300ms linear; */
 }
 
 /* Style cho nút trượt khi chọn (ở chế độ tối)  */
 .mode-toggle_circle-checked {
 	background-color: white;
-	left: 1.2rem;
+	left: 2.2rem;
 }
 
 /* 
@@ -228,20 +259,22 @@
 */
 @media screen and (max-width: 959px) {
 	.main_header {
+		/* Hiển thị theo dạng lưới (chỉ có 1 cột) */
 		grid-template-columns: 1fr;
 		justify-items: center;
 		padding: 1rem 0;
-		min-height: 8rem;
+		height: 8rem;
 	}
-
+	
 	.left_section {
-		/* justify-self: start; */
-		max-width: none;
-		grid-template-columns: 0 5fr;
+		/* Hiển thị theo dạng lưới (có 2 cột, cột đầu tiên có chiều rộng là 0) */
+		grid-template-columns: 0 1fr;
+		/* chiếm 100% chiều ngang */
 		width: 100%;
 	}
 
 	.logo_icon {
+		/* khoảng cách với lề của icon */
 		margin: 0 auto;
 	}
 }
