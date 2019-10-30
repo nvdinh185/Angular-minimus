@@ -1,7 +1,8 @@
 /* Home Layout */
 .main_container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /* hiển thị nội dung chính giữa theo phương ngang */
+    justify-content: center;
+    /* thực hiện xuống hàng nếu chiếm hết bề ngang */
     flex-wrap: wrap;
 }

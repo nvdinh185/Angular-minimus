@@ -1,32 +1,37 @@
 .back_button {
   position: absolute;
-  top: 12rem;
-  left: 2.25rem;
-  width: 5rem;
+  top: 10rem;
+  left: 1rem;
+  width: 6rem;
   z-index: 1;
 }
 
+.content {
+  /* nội dung bên trong class này được canh giữa theo phương ngang */
+  display: grid;
+  justify-items: center;
+}
+
 .city_illustration {
-  width: 100%;
+  /* chiều ngang ảnh chiếm 100% màn hình */
+  width: 80%;
   border-radius: 1rem 1rem 0 0;
 }
 
 .header-content_wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
 }
 
 .today-weather_container {
-  /* align-self: center; */
-  /* justify-self: center; */
   display: grid;
-  /* width: 100%; */
-  /* grid-template-rows: 3fr 1fr; */
-  /* grid-template-columns: 1fr; */
-  justify-items: center;
+  grid-template-rows: 3fr 1fr;
+  /* khoảng cách giữa các phần tử lưới */
   grid-gap: 2rem;
+  justify-items: center;
 }
 
+/* style cho nhiệt độ và trạng thái thời tiết */
 .temp-state_container {
   display: flex;
   flex-flow: column;

@@ -21,7 +21,7 @@
 	/* Dịch chuyển theo phương ngang 100% theo chiều âm, để ẩn menu đi */
 	transform: translateX(-100%);
 	/* Bề rộng của menu */
-	width: 26rem;
+	width: 30rem;
 	/* Màu nền khi ở chế độ sáng */
 	background-color: rgb(159, 217, 228);
 	/* Hiển thị theo dạng lưới */
@@ -51,6 +51,7 @@
 	/* tỉ lệ bề rộng theo mỗi hàng, có 3 hàng */
 	grid-template-rows: 1fr 4fr 1fr;
 	/* sắp xếp bố cục theo lưới, chia làm 2 cột, lấy theo tên khai báo trong .greeting_text */
+	/* class greeting chiếm 2 cột */
 	grid-template-areas: "greeting greeting";
 	/* chữ luôn màu trắng dù ở chế độ sáng hay tối */
 	color: white;
@@ -62,18 +63,21 @@
 }
 
 .greeting_text {
-	/* đặt tên cho class này, để sử dụng trong grid-template-areas */
+	/* đặt tên cho class này, để sử dụng trong class cha:
+	.menu-header (trong thuộc tính: grid-template-areas) */
 	grid-area: greeting;
 	font-size: 1.25rem;
 	letter-spacing: 0.15rem;
 	text-transform: uppercase;
 	margin-top: 1rem;
 	/* định dạng theo nằm ngang thì nằm chính giữa */
+	/* canh giữa chính nó trong class cha */
 	justify-self: center;
 }
 
 .profile-image_container {
 	/* sắp xếp theo chiều dọc thì nằm giữa */
+	/* các phần tử con của nó được canh giữa theo phương dọc */
 	align-self: center;
 	/* Khoảng cách với lề trái */
 	margin-left: 2rem;
@@ -86,7 +90,9 @@
 
 .account-details {
 	display: flex;
-	flex-flow: column;
+	/* sắp xếp các mục theo chiều dọc */
+	flex-direction: column;
+	/* các phần tử con của nó được canh giữa theo phương dọc */
 	align-self: center;
 }
 
@@ -101,16 +107,18 @@
 }
 
 /* 
-	menu links
+menu links
 */
 .links_container{
+	/* các phần tử con của nó nằm trên theo phương dọc, đây là mặc định */
 	align-self: start;
 }
 
 .menu-links {
-	/* hiển thị các items trong danh sách chọn */
+	/* sắp xếp các mục theo chiều dọc */
 	display: flex;
-	flex-flow: column;
+	flex-direction: column;
+	/* không cho hiển thị dấu chấm trước danh sách */
 	list-style: none;
 }
 
@@ -126,6 +134,7 @@
 }
 
 .menu-link {
+	/* đệm và lề cho các mục trong danh sách */
 	padding: 1rem 0;
 	margin: 0.5rem 0;
 }
@@ -137,6 +146,7 @@
 
 .copyright_text {
 	display: block;
+	/* nằm giữa theo phương ngang */
 	text-align: center;
 	color: white;
 }
@@ -153,10 +163,10 @@
 
 /* Style cho phần header */
 .main_header {
-	/* hiển thị chính giữa theo chiều dọc */
+	/* các mục con hiển thị chính giữa theo phương dọc */
 	align-items: center;
 	display: grid;
-	/* tỉ lệ bề rộng theo mỗi cột, chia làm 3 cột */
+	/* chia bề rộng thành cột, có 3 cột */
 	grid-template-columns: 1fr 1fr 0.5fr;
 	background-color: rgb(169, 205, 226);
 }
@@ -172,13 +182,16 @@
  */
 .left_section {
 	display: grid;
+	/* phần bên trái được chia làm 2 cột */
 	grid-template-columns: 1fr 1fr;
+	/* bề ngang của phần bên trái */
 	width: 5rem;
 }
 
 .hamburger_icon {
 	z-index: 2;
 	height: 1rem;
+	/* Phần đệm của icon menu */
 	padding: 0.5rem 1.5rem;
 }
 
@@ -193,7 +206,7 @@
 }
 
 .logo_text-dark {
-	fill: #ffff;
+	fill: #fff;
 }
 
 /* Style cho chữ */
@@ -210,15 +223,11 @@
 	letter-spacing: 0.1rem;
 }
 
-/* Style cho nút trượt */
+/* Style cho thanh và nút */
 .toggle-button_container {
+	/* đặt position: relative để những thành phần con lấy tọa độ theo tọa độ của cha */
 	position: relative;
 	margin: 0 0.75rem 0 0.25rem;
-}
-
-/* Style để ẩn nút checkbox */
-.mode-toggle_input {
-	-webkit-appearance: none;
 }
 
 /* Style cho thanh trượt */
@@ -243,13 +252,13 @@
 	position: absolute;
 	top: -0.25rem;
 	border-radius: 50%;
-	left: 0.2rem;
+	left: 0rem;
 }
 
 /* Style cho nút trượt khi chọn (ở chế độ tối)  */
 .mode-toggle_circle-checked {
 	background-color: white;
-	left: 2.2rem;
+	left: 2rem;
 }
 
 /* 
@@ -261,6 +270,7 @@
 	.main_header {
 		/* Hiển thị theo dạng lưới (chỉ có 1 cột) */
 		grid-template-columns: 1fr;
+		/* canh giữa các thành phần con theo phương ngang */
 		justify-items: center;
 		padding: 1rem 0;
 		height: 8rem;

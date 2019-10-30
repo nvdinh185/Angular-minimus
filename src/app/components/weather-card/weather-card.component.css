@@ -1,16 +1,22 @@
 .weather_card {
 	display: grid;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 2fr 1fr 1fr;
+	/* nội dung bên trong class này được canh giữa theo phương ngang */
 	justify-items: center;
+	/* khoảng cách đệm */
 	padding: 2rem;
+	/* khoảng cách lề */
 	margin: 2rem;
+	/* bề rộng */
 	width: 19rem;
+	/* chiều cao */
 	height: 30rem;
 	background-color: rgb(119, 163, 156);
 	border-radius: 1.75rem;
 }
 
 .weather_card-dark {
+	/* màu nền của card khi ở chế độ tối */
 	background: linear-gradient(to bottom, #711B86, #00057A);
 	color: white;
 }
@@ -26,7 +32,7 @@
 	margin-bottom: 2rem;
 }
 
-.weather-icon_container>svg {
+.weather-icon_container > svg {
 	width: 10rem;
 }
 
@@ -49,9 +55,10 @@
 .max_container {
 	margin: 1rem 3rem;
 	display: grid;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
 }
 
+/* style cho mũi tên */
 .min-arrow_icon,
 .max-arrow_icon {
 	height: 1.25rem;
