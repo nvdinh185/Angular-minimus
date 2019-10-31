@@ -1,5 +1,7 @@
 <!-- Slide Menu-->
 <aside class="side-menu_container" [ngClass]="{'side-menu_container-active': showMenu}" (click)="toggleMenu()">
+  <!-- phương thức $event.stopImmediatePropagation()
+    để ngăn chặn thực hiện hiện hàm toggleMenu khi kích vào menu -->
   <nav class="slide-menu" [ngClass]="{'slide-menu-active': showMenu, 'slide-menu-active-dark': darkModeActive}"
     (click)="$event.stopImmediatePropagation();">
     <section class="menu-header" [ngClass]="{'menu-header-dark': darkModeActive}">

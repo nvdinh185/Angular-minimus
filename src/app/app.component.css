@@ -169,6 +169,7 @@ menu links
 	/* chia bề rộng thành cột, có 3 cột */
 	grid-template-columns: 1fr 1fr 0.5fr;
 	background-color: rgb(169, 205, 226);
+	height: 4rem;
 }
 
 /* Style cho header khi ở chế độ tối */
@@ -225,6 +226,8 @@ menu links
 
 /* Style cho thanh và nút */
 .toggle-button_container {
+	/* hiển thị bàn tay khi đưa con trỏ vào */
+	cursor: pointer;
 	/* đặt position: relative để những thành phần con lấy tọa độ theo tọa độ của cha */
 	position: relative;
 	margin: 0 0.75rem 0 0.25rem;
@@ -252,6 +255,8 @@ menu links
 	position: absolute;
 	top: -0.25rem;
 	border-radius: 50%;
+	/* nút trượt di chuyển */
+	-webkit-transition: left .3s linear;
 	left: 0rem;
 }
 
