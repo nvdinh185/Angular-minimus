@@ -9,7 +9,7 @@
 	/* thuộc tính này không phản ứng với hành động kích chuột */
 	pointer-events: none;
 	/* thứ tự ưu tiên hiển thị của menu */
-	z-index: 2;
+	z-index: 3;
 }
 
 .side-menu_container-active {
@@ -190,7 +190,7 @@ menu links
 }
 
 .hamburger_icon {
-	z-index: 2;
+	z-index: 3;
 	height: 1rem;
 	/* Phần đệm của icon menu */
 	padding: 0.5rem 1.5rem;

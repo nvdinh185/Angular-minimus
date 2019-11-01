@@ -1,9 +1,9 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { WeatherService } from '../../services/weather/weather.service';
-import { forkJoin, Observable, Subscription } from 'rxjs';
-import { UiService } from '../../services/ui/ui.service';
 import { concatMap } from 'rxjs/operators';
+import { forkJoin, Observable, Subscription } from 'rxjs';
+import { WeatherService } from '../../services/weather/weather.service';
+import { UiService } from '../../services/ui/ui.service';
 import { TwitterService } from '../../services/twitter/twitter.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { TwitterService } from '../../services/twitter/twitter.service';
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css']
 })
-export class DetailsComponent implements OnInit, OnDestroy {
+export class DetailsComponent {
 
   darkMode: boolean;
   city: string;
@@ -27,8 +27,10 @@ export class DetailsComponent implements OnInit, OnDestroy {
   errorMessage: string;
   tweets$: Observable<any>;
 
-  constructor(public twitter: TwitterService, public activeRouter: ActivatedRoute, public weather: WeatherService, public ui: UiService) {
-
+  constructor(public twitter: TwitterService
+    , public activeRouter: ActivatedRoute
+    , public weather: WeatherService
+    , public ui: UiService) {
   }
 
   ngOnInit() {

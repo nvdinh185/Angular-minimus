@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background 5s ease-out;
+}
+
+.box:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+.box2 {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  color: yellow;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background 5s ease-out;
+  transition: color 5s ease-out;
+}
+
+.box2:hover {
+  background-color: green;
+  cursor: pointer;
+  color: red;
+}
+
+.box3 {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  color: yellow;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 5s ease-out;
+}
+
+.box3:hover {
+  background-color: green;
+  cursor: pointer;
+  color: red;
+}
+
+.box4 {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  color: yellow;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 5s linear;
+}
+
+.box4:hover {
+  background-color: green;
+  cursor: pointer;
+  color: red;
+}
+
+.box5 {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to top, #FC7DB8, #495CFC);
+  color: yellow;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background 10s linear;
+}
+
+.box5:hover {
+  background: linear-gradient(to bottom, #FF8B8B, #6676FF);
+  cursor: pointer;
+  color: red;
+}
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <div class="box2">123</div>
+  <div class="box3">123</div>
+  <div class="box4">123</div>
+  <div class="box5">123</div>
+</body>
+
+</html>
