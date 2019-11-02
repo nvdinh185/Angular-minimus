@@ -24,6 +24,7 @@ export class WeatherService {
   /**
    * Lấy thông tin thời tiết dự báo
    * trong hôm nay và 4 ngày sắp tới
+   * trả về mảng kết quả
    * @param city 
    */
   getForecast(city: string): Subject<Array<any>> {
@@ -35,6 +36,16 @@ export class WeatherService {
         dataSubject.next(err.error);
       });
     return dataSubject;
+  }
+
+  /**
+   * Lấy thông tin thời tiết dự báo
+   * trong hôm nay và 4 ngày sắp tới
+   * trả về đối tượng kết quả
+   * @param city 
+   */
+  getForecastObject(city: string): Observable<any> {
+    return this.http.get(`${this.baseURL}forecast?&units=metric&q=${city}&appid=${this.appID}`)
   }
 
   /**

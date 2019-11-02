@@ -5,7 +5,7 @@ giá trị là false
 
 - this.ui.darkModeState.next(true): tiếp tục phát ra có giá trị là true
 
-- this.sub.unsubscribe(): hủy bỏ đối tượng sub, để không cho phát ra nữa
+- this.sub.unsubscribe(): hủy bỏ đối tượng sub, để không cho phát ra nữa, giải phóng bộ nhớ
 
 - Đối tượng phát ra có thể là thuộc tính hoặc phương thức
 
@@ -28,9 +28,11 @@ BehaviorSubject để phát thuộc tính
 	+ Nhận lại giá trị của đối tượng darkModeState phát ra
 	+ Gán cho biến darkModeActive để hiện thị chế độ sáng/tối
 	+ Phương thức để thay đổi chế độ sáng/tối
+	+ Phương thức để thay đổi giá trị showMenu: Hiện hoặc ẩn menu
 	+ Khi thoát khỏi trang này thì hủy đối tượng darkModeState để giải phóng bộ nhớ
 - File app.component.html:
 	+ Hiển thị giao diện ban đầu
+	+ Có menu chọn ở góc trên bên trái
 	+ có button chọn để thay đổi chế độ sáng/tối
 	+ Render <router-outlet></router-outlet> là trang root
 	khai báo trong file app.routing.module.ts

@@ -12,6 +12,7 @@ import { UiService } from './services/ui/ui.service';
 import { ErrorComponent } from './components/error/error.component';
 import { AngularFireLite } from 'angularfire-lite';
 import { environment } from 'src/environments/environment';
+import { TwitterService } from './services/twitter/twitter.service';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { environment } from 'src/environments/environment';
   providers: [
     WeatherService,
     UiService,
+    TwitterService
   ],
   bootstrap: [AppComponent]
 })

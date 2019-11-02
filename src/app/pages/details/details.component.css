@@ -1,102 +1,369 @@
+.details-page_wrapper {
+  background: linear-gradient(to top, #86DBFF 0%, #e0c3fc 100%);
+  /* hiển thị theo flex */
+  display: flex;
+  /* nội dung ở trong được canh giữa theo phương ngang */
+  justify-content: center;
+  /* những phần trong xác định vị trí theo vị trí tương đối */
+  position: relative;
+  min-height: 110vh;
+  /* đệm trên và dưới */
+  padding: 2rem 0;
+}
+
+.details-page_wrapper-dark {
+  background: linear-gradient(#495CFC, #FC7DB8);
+}
+
+/* định dạng cho hình tròn làm nền phía sau */
+.background-gradient_circle {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  z-index: 0;
+  /* chiều cao chiếm hết màn hình */
+  height: 100%;
+  /* bề rộng chiếm hết màn hình */
+  width: 100%;
+  border-radius: 50%;
+  background: #FC7DB8;
+  /* chuyển đổi màu nền của hình tròn nền trong 4s */
+  /* mất 4s để có được màu nền này */
+  transition: background 4s ease;
+}
+
+.background-gradient_circle-dark {
+  background: #6676FF;
+  /* chuyển đổi màu nền của hình tròn nền trong 2s */
+  /* mất 2s để có được màu nền này */
+  transition: background 2s ease;
+}
+
+/* định dạng cho nút BACK ở chế độ mặc định */
+.back_button {
+  /* lấy theo tạo độ tuyệt đối */
+  position: absolute;
+  top: 3rem;
+  left: 3.25rem;
+  width: 5rem;
+  cursor: pointer;
+  z-index: 2;
+  margin-top: 2rem;
+}
+
+.main-weather_card {
+  background-color: white;
+  height: 80%;
+  width: 65%;
+  border-radius: 1rem;
+  /* position: relative; */
+  z-index: 1;
+  /* justify-items: center; */
+}
+
+/* định dạng cho hình ảnh đại diện thành phố và thời tiết hiện tại */
+.card-header_container-dark {
+  position: relative;
+}
+
+/* định dạng cho hình ảnh đại diện thành phố */
+.city_illustration {
+  width: 100%;
+  height: 510px;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  display: block;
+}
+
+/* định dạng cho vùng ghi thông tin thời tiết hiện tại */
+.header-content_wrapper {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: 3rem;
+  display: grid;
+  /* chia làm 2 cột, mỗi cột rộng 1fr */
+  grid-template-columns: repeat(2, 1fr);
+  /* chiếm 100% chiều rộng */
+  width: 100%;
+}
+
+/* định dạng cho vùng ghi thông tin thời tiết */
+.today-weather_container {
+  display: grid;
+  /* width: 100%; */
+  grid-template-rows: 3fr 1fr;
+  /* nội dung của nó nằm chính giữa theo phương ngang */
+  justify-items: center;
+  /* khoảng cách với phần lưới trên */
+  grid-gap: 2rem;
+}
+
+/* vùng ghi nhiệt độ và độ ẩm */
+.temp-state_container {
+  display: flex;
+  /* sắp xếp các mục theo chiều dọc */
+	flex-direction: column;
+}
+
+.temperature_text {
+  font-size: 6rem;
+  letter-spacing: 0.75rem;
+}
+
+.weather-state_text {
+  letter-spacing: 0.5rem;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+/* vùng ghi độ ẩm và gió */
+.hum-wind_container {
+  display: flex;
+  /* canh giữa theo phương dọc */
+  align-items: center;
+  /* lề trái là -4rem */
+  margin-left: -4rem;
+}
+
+.hum_text, .wind_text {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.hum_container, .wind_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hum-wind_separator {
+  margin: 0 2rem;
+  width: 2px;
+  height: 2.5rem;
+  background-color: white;
+}
+
+.city-name_container {
+  display: flex;
+  /* canh giữa theo phương ngang */
+  justify-content: center;
+  /* canh giữa theo phương dọc */
+  align-items: center;
+  padding-bottom: 25%;
+}
+
+.city-name_underline {
+  border-radius: 5px;
+  height: 5px;
+  box-shadow: 0 3rem 0 0 #ffffff;
+}
+
+.city-name_text {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 1.75rem;
+}
+
+/*
+================
+     BODY
+================
+*/
+
+.body-content_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  /* grid-template-rows: 1fr; */
+  /* justify-content: center; */
+  /* align-content: start; */
+  /* align-items: start; */
+  /* khoảng cách giữa 2 cột */
+  grid-column-gap: 1rem;
+  /* width: 100%; */
+  padding: 2rem;
+}
+
+/* phần twitter */
+.twitter-feed_container {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.twitter-feed_body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-flow: column;
+}
+
+.twitter_loader {
+  border: 3px solid hsla(185, 100%, 62%, 0.2);
+  border-top-color: #3cefff;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  animation: spin 1s linear infinite;
+  justify-self: center;
+  align-self: center;
+  margin-top: 3rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.twitter-no-tweets_text {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.twitter-feed_text {
+  color: #0c1066;
+  font-size: 1.25rem;
+}
+
+.twitter_icon {
+  width: 1.5rem;
+}
+
+.twitter-feed-tag_text {
+  font-size: 0.85rem;
+  color: #5f84fb;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.twitter-feed_header {
+  display: grid;
+  grid-template-rows: 2rem;
+  grid-template-columns: 0.5fr 1.5fr 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+
+.twitter-tweet_container {
+  margin-top: 2rem;
+}
+
+.tweet-user_wrapper {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.tweet-avatar_image {
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+.tweet-username_text {
+  display: block;
+  font-weight: bold;
+}
+
+.tweet_text {
+  margin-top: 0
+}
+
+/* forecast_container */
+.forecast_container {
+  display: flex;
+  margin-left: 1rem;
+  flex-wrap: wrap;
+}
+
+.day-weather_container {
+  display: flex;
+  flex-flow: column;
+  margin: 2rem 1.5rem;
+  align-items: center;
+}
+
+.day-name_text {
+  font-size: 1.5rem;
+  color: #39437a;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.forecast-condition_icon {
+  height: 4rem;
+}
+
+.day-temp_text {
+  font-size: 1.85rem;
+  color: #0c1066;
+  letter-spacing: 0.25rem;
+  margin: 0.75rem 0;
+  padding-left: 0.35rem;
+}
+
+.day-state_text {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #2B244D;
+}
+
+/* khi chiều rộng màn hình <= 1919px */
+@media screen and (max-width: 1919px) {
+  .main-weather_card {
+    height: 80%;
+    width: 75%;
+  }
+}
+
+/* khi chiều rộng màn hình <= 1279px */
+@media screen and (max-width: 1279px) {
   .back_button {
-    position: absolute;
-    top: 12rem;
-    left: 2.25rem;
-    width: 5rem;
-    cursor: pointer;
-    z-index: 3;
+    top: 1rem;
   }
   
-  .city_illustration {
-    width: 100%;
-    border-radius: 1rem 1rem 0 0;
-    position: relative;
+  .main-weather_card {
+    width: 80%;
   }
   
-  .header-content_wrapper {
-    z-index: 2;
-    /* color: white; */
-    top: -100px;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    height: 100%;
-  }
-  
-  .today-weather_container {
-    align-self: center;
-    justify-self: center;
-    display: grid;
-    width: 100%;
-    grid-template-rows: 3fr 1fr;
+  .body-content_wrapper {
     grid-template-columns: 1fr;
     justify-items: center;
-    grid-gap: 2rem;
   }
-  
-  .temp-state_container {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
+}
+
+/* khi chiều rộng màn hình <= 959px */
+@media screen and (max-width: 959px) {
+  .header-content_wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
   }
-  
-  .temperature_text {
-    font-size: 6rem;
-    letter-spacing: 0.75rem;
-  }
-  
-  .weather-state_text {
-    letter-spacing: 0.5rem;
-    font-size: 1.15rem;
-    text-transform: uppercase;
-    margin-top: 0.25rem;
-  }
-  
-  .hum-wind_container {
-    display: flex;
-    align-items: center;
-    margin-left: 2rem;
-  }
-  
-  .container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .text {
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    font-size: 0.8rem;
+
+  .back_button {
+    position: static;
     margin-bottom: 1rem;
   }
-  
-  .separator {
-    margin: 0 2rem;
-    width: 2px;
-    height: 2.5rem;
-    background-color: white;
-  } 
-  
-  .city-name_container {
-    display: flex;
-    justify-content: center;
+
+  .details-page_wrapper {
+    flex-flow: column;
     align-items: center;
     padding-bottom: 25%;
   }
-  
-  .city-name_underline {
-    background: transparent;
-    border-radius: 5px;
-    height: 5px;
-    box-shadow: 0 3rem 0 0 #ffffff;
+
+  .hum-wind_container, .temp-state_container {
+    margin: 0 auto;
   }
-  
-  .city-name_text {
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    font-size: 1.75rem;
-    padding-bottom: 2rem;
+
+  .city-name_container {
+    padding-bottom: 0;
   }
+
+}
