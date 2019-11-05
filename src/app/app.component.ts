@@ -45,11 +45,11 @@ export class AppComponent {
     this.sub.unsubscribe();
   }
 
-  onClick() {
+  /* onClick() {
     this.auth.signin('test@gmail.com', '123456');
     this.auth.isAuthenticated().subscribe((isAuth) => {
       console.log(isAuth);
     });
-  }
+  } */
 
 }
