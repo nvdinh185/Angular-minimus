@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { UiService } from './services/ui/ui.service';
 import { Subscription } from 'rxjs';
-import { AngularFireLiteAuth } from 'angularfire-lite';
 
 @Component({
   selector: 'app-root',
@@ -15,12 +14,11 @@ export class AppComponent {
   showMenu: boolean = false;
   userEmail: string = 'nvdinh0766777123@gmail.com'
 
-  constructor(public ui: UiService,
-    public auth: AngularFireLiteAuth) {
+  constructor(public ui: UiService) {
   }
 
   ngOnInit() {
-    //Nhận lại đối tượng darkModeState phát ra
+    //Nhận lại thuộc tính darkModeState phát ra
     //gán cho biến darkModeActive
     this.sub = this.ui.darkModeState.subscribe((value) => {
       this.darkModeActive = value;
@@ -44,12 +42,5 @@ export class AppComponent {
   ngOnDestroy() {
     this.sub.unsubscribe();
   }
-
-  /* onClick() {
-    this.auth.signin('test@gmail.com', '123456');
-    this.auth.isAuthenticated().subscribe((isAuth) => {
-      console.log(isAuth);
-    });
-  } */
 
 }

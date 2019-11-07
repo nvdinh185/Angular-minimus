@@ -49,11 +49,11 @@
           </style>
         </defs>
         <rect [ngClass]="{'hamburger_icon_fill-dark': darkModeActive}"
+        class="hamburger_icon_fill" transform="translate(31.5 30)"></rect>
+        <rect [ngClass]="{'hamburger_icon_fill-dark': darkModeActive}"
+        class="hamburger_icon_fill" transform="translate(31.5 44)"></rect>
+        <rect [ngClass]="{'hamburger_icon_fill-dark': darkModeActive}"
           class="hamburger_icon_fill" transform="translate(31.5 58)"></rect>
-        <rect [ngClass]="{'hamburger_icon_fill-dark': darkModeActive}"
-          class="hamburger_icon_fill" transform="translate(31.5 44)"></rect>
-        <rect [ngClass]="{'hamburger_icon_fill-dark': darkModeActive}"
-          class="hamburger_icon_fill" transform="translate(31.5 30)"></rect>
       </svg>
 
       <svg class="logo_icon" viewBox="150.3 22.2 213.7 42.8">
@@ -84,6 +84,5 @@
   <!-- Main Content -->
   <div>
     <router-outlet></router-outlet>
-    <!-- <button ion-button (click)="onClick()">onClick</button> -->
   </div>
 </main>

@@ -77,7 +77,7 @@
 
 .profile-image_container {
 	/* sắp xếp theo chiều dọc thì nằm giữa */
-	/* các phần tử con của nó được canh giữa theo phương dọc */
+	/* được canh giữa theo phương dọc so với class cha */
 	align-self: center;
 	/* Khoảng cách với lề trái */
 	margin-left: 2rem;
@@ -92,7 +92,7 @@
 	display: flex;
 	/* sắp xếp các mục theo chiều dọc */
 	flex-direction: column;
-	/* các phần tử con của nó được canh giữa theo phương dọc */
+	/* được canh giữa theo phương dọc so với class cha */
 	align-self: center;
 }
 
@@ -109,8 +109,8 @@
 /* 
 menu links
 */
-.links_container{
-	/* các phần tử con của nó nằm trên theo phương dọc, đây là mặc định */
+.links_container {
+	/* nằm phía trên theo phương dọc so với class cha, đây là mặc định */
 	align-self: start;
 }
 
@@ -140,7 +140,7 @@ menu links
 }
 
 .copyright_container {
-	/* copyright nằm giữa theo chiều dọc */
+	/* được canh giữa theo phương dọc so với class cha */
 	align-self: center;
 }
 
@@ -186,7 +186,7 @@ menu links
 	/* phần bên trái được chia làm 2 cột */
 	grid-template-columns: 1fr 1fr;
 	/* bề ngang của phần bên trái */
-	width: 5rem;
+	width: 6rem;
 }
 
 .hamburger_icon {
@@ -203,7 +203,7 @@ menu links
 
 .logo_text {
 	fill: rgb(160, 14, 75);
-	transform : translate(210px, 50px);
+	transform : translate(210px, 56px);
 }
 
 .logo_text-dark {
@@ -224,7 +224,7 @@ menu links
 	letter-spacing: 0.1rem;
 }
 
-/* Style cho thanh và nút */
+/* Style cho khung chứa thanh và nút */
 .toggle-button_container {
 	/* hiển thị bàn tay khi đưa con trỏ vào */
 	cursor: pointer;
