@@ -1,6 +1,6 @@
 <div class="details-page_wrapper" [ngClass]="{'details-page_wrapper-dark': darkMode}">
   <div class="background-gradient_circle" [ngClass]="{'background-gradient_circle-dark': darkMode}"></div>
-  <svg class="back_button" routerLink="" viewBox="4085 152 98.5 126" tabindex="0">
+  <svg class="back_button" routerLink="" viewBox="4085 152 98.5 126">
     <defs>
       <style>
         .a {
@@ -8,20 +8,11 @@
         }
 
         .b {
-          fill: rgba(0, 0, 0, 0);
-        }
-
-        .b,
-        .c {
           stroke: #fff;
           stroke-width: 2px;
         }
 
         .c {
-          fill: none;
-        }
-
-        .d {
           fill: #fff;
           font-size: 15px;
           font-family: SegoeUI, Segoe UI, sans-serif;
@@ -33,19 +24,19 @@
       <circle class="a" cx="39" cy="39" r="39" transform="translate(105 152)"></circle>
       <line class="b" transform="translate(123.5 190.5)" x1="80"></line>
       <line class="b" transform="translate(123.5 164.5)" x2="26" y1="26"></line>
-      <line class="c" transform="translate(123.5 190.5)" x1="26" y1="27"></line>
-      <text class="d" transform="translate(117 274)">
+      <line class="b" transform="translate(123.5 190.5)" x1="26" y1="27"></line>
+      <text class="c" transform="translate(117 274)">
         <tspan x="0" y="0">BACK</tspan>
       </text>
     </g>
   </svg>
   <section class="main-weather_card">
-    <section class="card-header_container-dark">
+    <section>
       <img class="city_illustration" [src]="cityIllustrationPath" />
       <div class="header-content_wrapper">
         <div class="today-weather_container">
-          <!-- {{today}} -->
           <div class="temp-state_container">
+            <span>{{ today }}</span>
             <span class="temperature_text">{{ temp }}°</span>
             <span class="weather-state_text">{{ state }}</span>
           </div>

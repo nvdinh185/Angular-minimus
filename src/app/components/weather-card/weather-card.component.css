@@ -34,7 +34,8 @@
 }
 
 .weather-icon_container > svg {
-	width: 10rem;
+	width: 15rem;
+    height: 15rem;
 }
 
 .temperature-metric_text {
