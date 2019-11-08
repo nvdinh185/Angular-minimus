@@ -557,7 +557,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\MYDATA\LapTrinhDiDong\ANGULAR\angular-minimus\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! D:\DINHNV\MyData\LapTrinhDiDong\Angular\angular-minimus\src\styles.css */"./src/styles.css");
 
 
 /***/ })
