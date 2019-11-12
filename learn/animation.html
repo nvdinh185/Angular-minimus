@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+	.div1 {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		border-radius: 50%;
+		position: relative;
+		animation: div1 5s ease-in-out 5s reverse 2 backwards;
+	}
+	
+	@keyframes div1 {
+		0%   {background-color:red; left:0px; top:0px;}
+		25%  {background-color:yellow; left:200px; top:0px;}
+		50%  {background-color:blue; left:200px; top:200px;}
+		75%  {background-color:green; left:0px; top:200px;}
+		100% {background-color:red; left:0px; top:0px;}
+	}
+	
+	.div2{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		position: relative;
+		animation-name: div2;
+		animation-duration: 5s; /* Thời gian diễn ra tính bằng giây*/
+		animation-timing-function: linear; /* Hàm quá trình: ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(n,n,n,n) */
+		animation-delay: 2s; /* Thời gian bắt đầu tính bằng giây */
+		animation-iteration-count: 2; /* Lặp lại bao nhiêu lần: 1, 2, 3, ..., infinite */
+		animation-fill-mode: forwards; /* chế độ điền cho ảnh động: none, forwards, backwards, both */
+		animation-direction: alternate; /*Hướng chuyển động: normal, reverse, alternate, alternate-reverse*/
+	}
+	
+	@keyframes div2 {
+		0%   {background-color:black; left:0px; top:0px;}
+		25%  {background-color:yellow; left:200px; top:0px;}
+		50%  {background-color:blue; left:200px; top:200px;}
+		75%  {background-color:green; left:0px; top:200px;}
+		100% {background-color:red; left:0px; top:0px;}
+	}
+	
+	.div3 {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		height: 10rem;
+		width: 10rem;
+		border-radius: 50%;
+		background: linear-gradient(-225deg, #ffffff 0%, #FFE29F 10%, #FFA99F 48%, #ffd1ff 100%);
+		animation: div3 9s ease-in-out forwards;
+	}
+	
+	@keyframes div3 {
+		0%   {left:200px; top:0px;}
+		20%  {left:400px; top:0px;}
+		40%  {left:400px; top:200px;}
+		60%  {left:200px; top:200px;}
+		80%  {left:200px; top:0px;}
+		100% {left:300px; top:300px;}
+	}
+	
+	.div4 {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		height: 10rem;
+		width: 10rem;
+		border-radius: 50%;
+		background: linear-gradient(-225deg, #ffffff 0%, #FFE29F 10%, #FFA99F 48%, #ffd1ff 100%);
+		animation: div4 9s ease-in-out forwards;
+	}
+	
+	@keyframes div4 {
+		0%   {height: 1rem; width: 1rem; left:200px; top:0px;}
+		20%  {height: 2rem; width: 2rem; left:400px; top:0px;}
+		40%  {height: 3rem; width: 3rem; left:400px; top:200px;}
+		60%  {height: 4rem; width: 4rem; left:200px; top:200px;}
+		80%  {height: 5rem; width: 5rem; left:200px; top:0px;}
+		100% {height: 6rem; width: 6rem; left:400px; top:400px;}
+	}
+	
+	.div5 {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		height: 10rem;
+		width: 10rem;
+		border-radius: 50%;
+		background: linear-gradient(-225deg, #ffffff 0%, #FFE29F 10%, #FFA99F 48%, #ffd1ff 100%);
+		animation: div5 9s ease-in-out forwards;
+	}
+	
+	@keyframes div5 {
+		0%   {height: 3rem; width: 3rem; left:0; top:0;}
+		20%  {height: 6rem; width: 6rem; left:100px; top:100px;}
+		40%  {height: 9rem; width: 9rem; left:200px; top:200px;}
+		60%  {height: 12rem; width: 12rem; left:300px; top:300px;}
+		80%  {height: 15rem; width: 15rem; left:400px; top:400px;}
+		100% {height: 18rem; width: 18rem; left:500px; top:500px;}
+	}
+	
+	.div6 {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		height: 10rem;
+		width: 10rem;
+		border-radius: 50%;
+		background: linear-gradient(-225deg, #ffffff 0%, #FFE29F 10%, #FFA99F 48%, #ffd1ff 100%);
+		animation: div6 0.5s ease-in-out forwards;
+	}
+	
+	@keyframes div6 {
+		0%   {height: 3rem; width: 3rem; left:0; top:0;}
+		100% {height: 18rem; width: 18rem; left:400px; top:400px;}
+	}
+	
+	.div7 {
+		position: absolute;
+		top: 50%;
+		left: 0%;
+		height: 100rem;
+		width: 100rem;
+		border-radius: 50%;
+		background: linear-gradient(-225deg, #ffffff 0%, #FFE29F 10%, #FFA99F 48%, #ffd1ff 100%);
+		animation: div7 0.5s ease-in-out forwards;
+	}
+	
+	@keyframes div7 {
+		0% {
+			transform-origin: top;
+			transform: scale(0) translateY(-50%) rotate(0);
+		}
+		
+		100% {
+			transform-origin: center;
+			transform: scale(1) translateY(-50%) rotate(360deg);
+		}
+	}
+  </style>
+</head>
+
+<body>
+
+	<div class="div7"></div>
+  
+</body>
+</html>

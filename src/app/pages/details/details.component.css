@@ -1,4 +1,4 @@
-.details-page_wrapper {
+.details-page-wrapper {
   background: linear-gradient(to top, #86DBFF 0%, #e0c3fc 100%);
   /* hiển thị theo flex */
   display: flex;
@@ -6,20 +6,19 @@
   justify-content: center;
   /* những phần trong xác định vị trí theo vị trí tương đối */
   position: relative;
-  /* min-height: 110vh; */
+  /* min-height: 100vh; */
   /* đệm trên và dưới */
   padding: 2rem 0;
 }
 
-.details-page_wrapper-dark {
+.details-page-wrapper-dark {
   background: linear-gradient(#495CFC, #FC7DB8);
 }
 
 /* định dạng cho hình tròn làm nền phía sau */
-.background-gradient_circle {
+.background-gradient-circle {
   position: absolute;
-  top: 0%;
-  right: 0%;
+  top: 50%;
   z-index: 0;
   /* chiều cao chiếm hết màn hình */
   height: 100%;
@@ -30,50 +29,69 @@
   /* chuyển đổi màu nền của hình tròn nền trong 4s */
   /* mất 4s để có được màu nền này */
   transition: background 4s ease;
+  /* sử dụng hoạt ảnh định nghĩa trong biến scaleup-circle */
+  animation: scaleup-circle 0.5s ease-in-out forwards;
 }
 
-.background-gradient_circle-dark {
+.background-gradient-circle-dark {
   background: #6676FF;
   /* chuyển đổi màu nền của hình tròn nền trong 2s */
   /* mất 2s để có được màu nền này */
   transition: background 2s ease;
+  /* sử dụng hoạt ảnh định nghĩa trong biến scaleup-circle */
+  animation: scaleup-circle 0.5s ease-in-out forwards;
 }
 
-/* định dạng cho nút BACK ở chế độ mặc định */
-.back_button {
+@keyframes scaleup-circle {
+  0% {
+    transform-origin: top;
+    transform: scale(0) translateY(-50%) rotate(0);
+  }
+  
+  100% {
+    transform-origin: center;
+    transform: scale(1) translateY(-50%) rotate(360deg);
+  }
+}
+
+/* định dạng cho nút BACK */
+.back-button {
   position: absolute;
+  /* khoảng cách với cạnh trên */
   top: 3rem;
   left: 3.25rem;
   width: 5rem;
   cursor: pointer;
   z-index: 2;
-  margin-top: 2rem;
+  /* lề trên */
+  margin-top: 3rem;
 }
 
-.main-weather_card {
+.main-weather-card {
   position: relative;
   /* màu nền */
   background-color: white;
-  height: 80%;
+  height: 100%;
   width: 75%;
   border-radius: 1rem;
   z-index: 1;
 }
 
 /* định dạng cho hình ảnh đại diện thành phố */
-.city_illustration {
+.city-illustration {
   width: 100%;
+  /* chiều cao luôn là 420px không phụ thuộc vào chiều rộng màn hình */
   height: 420px;
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
 }
 
 /* định dạng cho vùng ghi thông tin thời tiết hiện tại */
-.header-content_wrapper {
+.header-content-wrapper {
   position: absolute;
   z-index: 1;
-  color: white;
-  top: 3rem;
+  color: rgb(255, 255, 255);
+  top: 1rem;
   display: grid;
   /* chia làm 2 cột, mỗi cột rộng 1fr */
   grid-template-columns: repeat(2, 1fr);
@@ -82,7 +100,7 @@
 }
 
 /* định dạng cho vùng ghi thông tin thời tiết */
-.today-weather_container {
+.today-weather-container {
   display: grid;
   grid-template-rows: 3fr 1fr;
   /* nội dung của nó nằm chính giữa theo phương ngang */
@@ -92,18 +110,18 @@
 }
 
 /* vùng ghi nhiệt độ và độ ẩm */
-.temp-state_container {
+.temp-state-container {
   display: flex;
   /* sắp xếp các mục theo chiều dọc */
 	flex-direction: column;
 }
 
-.temperature_text {
+.temperature-text {
   font-size: 6rem;
   letter-spacing: 0.75rem;
 }
 
-.weather-state_text {
+.weather-state-text {
   letter-spacing: 0.5rem;
   font-size: 1.15rem;
   text-transform: uppercase;
@@ -111,7 +129,7 @@
 }
 
 /* vùng ghi độ ẩm và gió */
-.hum-wind_container {
+.hum-wind-container {
   display: flex;
   /* canh giữa theo phương dọc */
   align-items: center;
@@ -119,27 +137,27 @@
   margin-left: -4rem;
 }
 
-.hum_text, .wind_text {
+.hum-text, .wind-text {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
   margin-bottom: 1rem;
 }
 
-.hum_container, .wind_container {
+.hum-container, .wind-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.hum-wind_separator {
+.hum-wind-separator {
   margin: 0 2rem;
   width: 2px;
   height: 2.5rem;
   background-color: white;
 }
 
-.city-name_container {
+.city-name-container {
   display: flex;
   /* canh giữa theo phương ngang */
   justify-content: center;
@@ -148,13 +166,13 @@
   padding-bottom: 25%;
 }
 
-.city-name_underline {
+.city-name-underline {
   border-radius: 5px;
   height: 5px;
   box-shadow: 0 3rem 0 0 #ffffff;
 }
 
-.city-name_text {
+.city-name-text {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   font-size: 1.75rem;
@@ -166,7 +184,7 @@
 ================
 */
 
-.body-content_wrapper {
+.body-content-wrapper {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   /* khoảng cách giữa 2 cột */
@@ -175,19 +193,19 @@
 }
 
 /* phần twitter */
-.twitter-feed_container {
+.twitter-feed-container {
   margin-top: 1rem;
   width: 100%;
 }
 
-.twitter-feed_body {
+.twitter-feed-body {
   display: flex;
   width: 100%;
   height: 100%;
   flex-flow: column;
 }
 
-.twitter_loader {
+.twitter-loader {
   border: 3px solid hsla(185, 100%, 62%, 0.2);
   border-top-color: #3cefff;
   border-radius: 50%;
@@ -206,28 +224,28 @@
 }
 
 
-.twitter-no-tweets_text {
+.twitter-no-tweets-text {
   margin-top: 3rem;
   text-align: center;
 }
 
-.twitter-feed_text {
+.twitter-feed-text {
   color: #0c1066;
   font-size: 1.25rem;
 }
 
-.twitter_icon {
+.twitter-icon {
   width: 1.5rem;
 }
 
-.twitter-feed-tag_text {
+.twitter-feed-tag-text {
   font-size: 0.85rem;
   color: #5f84fb;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
 }
 
-.twitter-feed_header {
+.twitter-feed-header {
   display: grid;
   grid-template-rows: 2rem;
   grid-template-columns: 0.5fr 1.5fr 1fr;
@@ -237,46 +255,46 @@
 }
 
 
-.twitter-tweet_container {
+.twitter-tweet-container {
   margin-top: 2rem;
 }
 
-.tweet-user_wrapper {
+.tweet-user-wrapper {
   display: flex;
   margin-bottom: 0.5rem;
 }
 
-.tweet-avatar_image {
+.tweet-avatar-image {
   margin-right: 0.5rem;
   border-radius: 50%;
   height: 3rem;
   width: 3rem;
 }
 
-.tweet-username_text {
+.tweet-username-text {
   display: block;
   font-weight: bold;
 }
 
-.tweet_text {
+.tweet-text {
   margin-top: 0
 }
 
-/* forecast_container */
-.forecast_container {
+/* forecast-container */
+.forecast-container {
   display: flex;
   margin-left: 1rem;
   flex-wrap: wrap;
 }
 
-.day-weather_container {
+.day-weather-container {
   display: flex;
   flex-flow: column;
   margin: 2rem 1.5rem;
   align-items: center;
 }
 
-.day-name_text {
+.day-name-text {
   font-size: 1.5rem;
   color: #39437a;
   font-weight: bold;
@@ -284,11 +302,11 @@
   margin-bottom: 0.5rem;
 }
 
-.forecast-condition_icon {
+.forecast-condition-icon {
   height: 4rem;
 }
 
-.day-temp_text {
+.day-temp-text {
   font-size: 1.85rem;
   color: #0c1066;
   letter-spacing: 0.25rem;
@@ -296,7 +314,7 @@
   padding-left: 0.35rem;
 }
 
-.day-state_text {
+.day-state-text {
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -305,15 +323,18 @@
 
 /* khi chiều rộng màn hình <= 1279px */
 @media screen and (max-width: 1279px) {
-  .back_button {
-    top: 1rem;
+  .back-button {
+    /* khoảng cách với cạnh trên */
+    top: 2rem;
+    /* lề trên */
+    margin-top: 2rem;
   }
   
-  .main-weather_card {
+  .main-weather-card {
     width: 80%;
   }
   
-  .body-content_wrapper {
+  .body-content-wrapper {
     grid-template-columns: 1fr;
     justify-items: center;
   }
@@ -321,27 +342,28 @@
 
 /* khi chiều rộng màn hình <= 959px */
 @media screen and (max-width: 959px) {
-  .header-content_wrapper {
+  .header-content-wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr;
+    grid-gap: 2rem;
   }
 
-  .back_button {
+  .back-button {
     position: static;
     margin-bottom: 1rem;
   }
 
-  .details-page_wrapper {
+  .details-page-wrapper {
     flex-flow: column;
     align-items: center;
     padding-bottom: 25%;
   }
 
-  .hum-wind_container, .temp-state_container {
+  .hum-wind-container, .temp-state-container {
     margin: 0 auto;
   }
 
-  .city-name_container {
+  .city-name-container {
     padding-bottom: 0;
   }
 

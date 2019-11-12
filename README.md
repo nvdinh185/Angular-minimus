@@ -1,4 +1,4 @@
-- this.darkModeState = new BehaviorSubject<boolean>(false): phát ra một giá trị có kiểu boolean, 
+- this.darkModeState = new BehaviorSubject<boolean>(false): phát ra một thuộc tính có kiểu boolean, 
 giá trị là false
 
 - this.ui.darkModeState.subscribe((value) => console.log(value)): Nhận lại giá trị vừa phát ra

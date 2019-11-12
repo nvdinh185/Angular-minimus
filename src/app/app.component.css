@@ -185,7 +185,8 @@ menu links
 	display: grid;
 	/* phần bên trái được chia làm 2 cột */
 	grid-template-columns: 1fr 1fr;
-	/* bề ngang của phần bên trái */
+	/* bề ngang của phần bên trái,
+	nếu không đặt thì tự động lấy bằng định nghĩa trong .main_header */
 	width: 6rem;
 }
 
@@ -289,7 +290,8 @@ menu links
 	}
 
 	.logo_icon {
-		/* khoảng cách với lề của icon */
+		/* khoảng cách với lề của icon
+		canh giữa icon */
 		margin: 0 auto;
 	}
 }
