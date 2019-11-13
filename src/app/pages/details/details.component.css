@@ -2,7 +2,8 @@
   background: linear-gradient(to top, #86DBFF 0%, #e0c3fc 100%);
   /* hiển thị theo flex */
   display: flex;
-  /* nội dung ở trong được canh giữa theo phương ngang */
+  /* nội dung ở trong được canh giữa theo phương ngang,
+  chỉ khi flex theo mặc định (theo phương ngang) */
   justify-content: center;
   /* những phần trong xác định vị trí theo vị trí tương đối */
   position: relative;
@@ -15,14 +16,18 @@
   background: linear-gradient(#495CFC, #FC7DB8);
 }
 
-/* định dạng cho hình tròn làm nền phía sau */
+/* hình tròn làm nền phía sau */
 .background-gradient-circle {
+  /* lấy theo tọa độ của class cha: .details-page-wrapper
+  class cha phải đặt position: relative; */
   position: absolute;
   top: 50%;
   z-index: 0;
-  /* chiều cao chiếm hết màn hình */
+  /* chiều cao chiếm hết màn hình,
+  chỉ đặt % khi position cha là relative và con là absolute */
   height: 100%;
-  /* bề rộng chiếm hết màn hình */
+  /* bề rộng chiếm hết màn hình,
+  đặt % được không phụ thuộc position */
   width: 100%;
   border-radius: 50%;
   background: #FC7DB8;
@@ -54,7 +59,7 @@
   }
 }
 
-/* định dạng cho nút BACK */
+/* nút BACK */
 .back-button {
   position: absolute;
   /* khoảng cách với cạnh trên */
@@ -67,18 +72,21 @@
   margin-top: 3rem;
 }
 
+/* vùng ghi thông tin thời tiết */
 .main-weather-card {
   position: relative;
   /* màu nền */
   background-color: white;
-  height: 100%;
+  /* đặt % chiều ngang không phụ thuộc position,
+  chiều cao sẽ do các thành phần bên trong chiếm, không cần đặt */
   width: 75%;
   border-radius: 1rem;
   z-index: 1;
 }
 
-/* định dạng cho hình ảnh đại diện thành phố */
+/* hình ảnh đại diện thành phố */
 .city-illustration {
+  /* chiếm hết bề ngang của class cha */
   width: 100%;
   /* chiều cao luôn là 420px không phụ thuộc vào chiều rộng màn hình */
   height: 420px;
@@ -86,7 +94,7 @@
   object-fit: cover;
 }
 
-/* định dạng cho vùng ghi thông tin thời tiết hiện tại */
+/* vùng ghi thông tin thời tiết hiện tại của thành phố nào đó */
 .header-content-wrapper {
   position: absolute;
   z-index: 1;
@@ -99,7 +107,7 @@
   width: 100%;
 }
 
-/* định dạng cho vùng ghi thông tin thời tiết */
+/* vùng ghi nhiệt độ và trạng thái thời tiết */
 .today-weather-container {
   display: grid;
   grid-template-rows: 3fr 1fr;
@@ -282,15 +290,18 @@
 
 /* forecast-container */
 .forecast-container {
+  /* hiển thị dạng flex (hàng ngang) */
   display: flex;
-  margin-left: 1rem;
+  /* tự động xuống hàng nếu chiếm hết bề ngang */
   flex-wrap: wrap;
 }
 
 .day-weather-container {
   display: flex;
+  /* hiển thị theo cột (hàng dọc) */
   flex-flow: column;
   margin: 2rem 1.5rem;
+  /* canh giữa các phần tử ở trong */
   align-items: center;
 }
 
@@ -323,6 +334,7 @@
 
 /* khi chiều rộng màn hình <= 1279px */
 @media screen and (max-width: 1279px) {
+  
   .back-button {
     /* khoảng cách với cạnh trên */
     top: 2rem;
@@ -342,21 +354,26 @@
 
 /* khi chiều rộng màn hình <= 959px */
 @media screen and (max-width: 959px) {
+
+  .details-page-wrapper {
+    /* sắp xếp hiển thị theo chiều dọc */
+    flex-flow: column;
+    /* canh giữa theo phương ngang
+      (chỉ khi hiển thị theo chiều dọc) */
+    align-items: center;
+    padding-bottom: 25%;
+  }
+
+  .back-button {
+    /* khi ở kích thước màn hình này thì button không dùng position */
+    position: static;
+    margin-bottom: 1rem;
+  }
+  
   .header-content-wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr;
     grid-gap: 2rem;
-  }
-
-  .back-button {
-    position: static;
-    margin-bottom: 1rem;
-  }
-
-  .details-page-wrapper {
-    flex-flow: column;
-    align-items: center;
-    padding-bottom: 25%;
   }
 
   .hum-wind-container, .temp-state-container {

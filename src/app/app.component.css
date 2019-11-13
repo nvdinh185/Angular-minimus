@@ -257,7 +257,7 @@ menu links
 	top: -0.25rem;
 	border-radius: 50%;
 	/* nút trượt di chuyển */
-	-webkit-transition: left .3s linear;
+	transition: left .3s linear;
 	left: 0rem;
 }
 
@@ -265,6 +265,13 @@ menu links
 .mode-toggle_circle-checked {
 	background-color: white;
 	left: 2rem;
+}
+
+@media screen and (max-width: 1279px) {
+
+	.main_header-dark {
+		color: rgb(22, 138, 206);
+	}
 }
 
 /* 
@@ -293,5 +300,9 @@ menu links
 		/* khoảng cách với lề của icon
 		canh giữa icon */
 		margin: 0 auto;
+	}
+
+	.main_header-dark {
+		color: rgb(22, 206, 83);
 	}
 }
