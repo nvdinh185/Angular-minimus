@@ -7,7 +7,6 @@
   justify-content: center;
   /* những phần trong xác định vị trí theo vị trí tương đối */
   position: relative;
-  /* min-height: 100vh; */
   /* đệm trên và dưới */
   padding: 2rem 0;
 }
@@ -21,6 +20,7 @@
   /* lấy theo tọa độ của class cha: .details-page-wrapper
   class cha phải đặt position: relative; */
   position: absolute;
+  /* khoảng cách với cạnh trên (% or px), phải có position */
   top: 50%;
   z-index: 0;
   /* chiều cao chiếm hết màn hình,
@@ -91,10 +91,11 @@
   /* chiều cao luôn là 420px không phụ thuộc vào chiều rộng màn hình */
   height: 420px;
   border-radius: 1rem 1rem 0 0;
+  /* chiếm hết diện tích, không có lề trên và dưới */
   object-fit: cover;
 }
 
-/* vùng ghi thông tin thời tiết hiện tại của thành phố nào đó */
+/* vùng ghi thông tin thời tiết hiện tại và tên thành phố đó */
 .header-content-wrapper {
   position: absolute;
   z-index: 1;
@@ -107,21 +108,22 @@
   width: 100%;
 }
 
-/* vùng ghi nhiệt độ và trạng thái thời tiết */
+/* vùng ghi nhiệt độ, trạng thái thời tiết, độ ẩm, gió */
 .today-weather-container {
   display: grid;
-  grid-template-rows: 3fr 1fr;
   /* nội dung của nó nằm chính giữa theo phương ngang */
   justify-items: center;
   /* khoảng cách với phần lưới trên */
   grid-gap: 2rem;
 }
 
-/* vùng ghi nhiệt độ và độ ẩm */
+/* vùng ghi nhiệt độ và trạng thái thời tiết */
 .temp-state-container {
   display: flex;
   /* sắp xếp các mục theo chiều dọc */
-	flex-direction: column;
+  flex-direction: column;
+  /* canh giữa các phần tử ở trong */
+  align-items: center;
 }
 
 .temperature-text {
@@ -138,11 +140,16 @@
 
 /* vùng ghi độ ẩm và gió */
 .hum-wind-container {
+  /* flex mặc định theo chiều ngang */
   display: flex;
   /* canh giữa theo phương dọc */
   align-items: center;
-  /* lề trái là -4rem */
-  margin-left: -4rem;
+}
+
+.hum-container, .wind-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hum-text, .wind-text {
@@ -152,12 +159,6 @@
   margin-bottom: 1rem;
 }
 
-.hum-container, .wind-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .hum-wind-separator {
   margin: 0 2rem;
   width: 2px;
@@ -165,6 +166,7 @@
   background-color: white;
 }
 
+/* vùng ghi thành phố */
 .city-name-container {
   display: flex;
   /* canh giữa theo phương ngang */
@@ -343,10 +345,12 @@
   }
   
   .main-weather-card {
+    /* chiều ngang chiếm 80% */
     width: 80%;
   }
   
   .body-content-wrapper {
+    /* hiển thị theo cột */
     grid-template-columns: 1fr;
     justify-items: center;
   }
@@ -371,16 +375,15 @@
   }
   
   .header-content-wrapper {
+    /* hiển thị theo chiều dọc */
     grid-template-columns: 1fr;
+    /* chiều cao của 2 hàng */
     grid-template-rows: 2fr 1fr;
     grid-gap: 2rem;
   }
 
-  .hum-wind-container, .temp-state-container {
-    margin: 0 auto;
-  }
-
   .city-name-container {
+    /* đệm dưới bằng 0 */
     padding-bottom: 0;
   }
 
