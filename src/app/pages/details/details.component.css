@@ -5,6 +5,9 @@
   /* nội dung ở trong được canh giữa theo phương ngang,
   chỉ khi flex theo mặc định (theo phương ngang) */
   justify-content: center;
+  /* nội dung ở trong được canh giữa theo phương dọc,
+  chỉ khi flex theo mặc định (theo phương ngang) */
+  align-items: center;
   /* những phần trong xác định vị trí theo vị trí tương đối */
   position: relative;
   /* đệm trên và dưới */
@@ -40,11 +43,6 @@
 
 .background-gradient-circle-dark {
   background: #6676FF;
-  /* chuyển đổi màu nền của hình tròn nền trong 2s */
-  /* mất 2s để có được màu nền này */
-  transition: background 2s ease;
-  /* sử dụng hoạt ảnh định nghĩa trong biến scaleup-circle */
-  animation: scaleup-circle 0.5s ease-in-out forwards;
 }
 
 @keyframes scaleup-circle {
@@ -82,6 +80,27 @@
   width: 75%;
   border-radius: 1rem;
   z-index: 1;
+  animation: 1s ease-out .3s scaleup, 1.25s ease-out .3s forwards fadein;
+}
+
+@keyframes scaleup {
+  0% {
+    transform: scale(0);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
 }
 
 /* hình ảnh đại diện thành phố */
@@ -123,7 +142,7 @@
   /* sắp xếp các mục theo chiều dọc */
   flex-direction: column;
   /* canh giữa các phần tử ở trong */
-  align-items: center;
+  /* align-items: center; */
 }
 
 .temperature-text {
@@ -173,7 +192,7 @@
   justify-content: center;
   /* canh giữa theo phương dọc */
   align-items: center;
-  padding-bottom: 25%;
+  padding-bottom: 20%;
 }
 
 .city-name-underline {
@@ -294,6 +313,7 @@
 .forecast-container {
   /* hiển thị dạng flex (hàng ngang) */
   display: flex;
+  justify-content: center;
   /* tự động xuống hàng nếu chiếm hết bề ngang */
   flex-wrap: wrap;
 }
@@ -352,7 +372,6 @@
   .body-content-wrapper {
     /* hiển thị theo cột */
     grid-template-columns: 1fr;
-    justify-items: center;
   }
 }
 
@@ -365,6 +384,9 @@
     /* canh giữa theo phương ngang
       (chỉ khi hiển thị theo chiều dọc) */
     align-items: center;
+    /* nội dung ở trong được canh giữa theo phương dọc,
+      (chỉ khi hiển thị theo chiều dọc) */
+    justify-content: center;
     padding-bottom: 25%;
   }
 

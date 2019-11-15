@@ -1,0 +1,18 @@
+1. flex: hiển thị theo phương ngang (mặc định)
+Khi đó:
+	- justify-content: center; canh giữa theo phương ngang (flex-start, center, flex-end)
+	- align-items: center; canh giữa theo phương dọc (flex-start, center, flex-end)
+2. flex:
+	- flex-flow: column; hiển thị theo phương dọc
+	- align-items: center; canh giữa theo phương ngang (flex-start, center, flex-end)
+	- justify-content: flex-end; canh chỉnh theo phương dọc (flex-start, center, flex-end)
+	
+3. class cha => position: relative; các class con lấy theo tọa độ tương đối với class cha
+	- class con: position: absolute;lấy tọa độ theo tọa độ của class cha
+	- height: 100%; chiều cao chiếm hết chiều cao của class cha
+	(chỉ có tác dụng khi class cha là relative, class con là absolute)
+	- width: 100%; bề rộng chiếm hết bề rộng của class cha
+	(có tác dụng không phụ thuộc class cha)
+	- top: 50%; khoảng cách với cạnh trên (có tác dụng khi class cha là relative, class con là absolute)
+	- left: 20%; khoảng cách với cạnh trái (có tác dụng khi class cha là relative, class con là absolute)
+	- chiều cao không cần đặt, sẽ tự động lấy theo chiều cao của các thành phần bên trong

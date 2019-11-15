@@ -1,6 +1,6 @@
-.weather_card {
+.weather-card {
 	display: grid;
-	grid-template-rows: 1fr 2fr 1fr 1fr;
+	/* grid-template-rows: 1fr 2fr 1fr 1fr; */
 	/* nội dung bên trong class này được canh giữa theo phương ngang */
 	justify-items: center;
 	/* khoảng cách đệm */
@@ -14,77 +14,98 @@
 	cursor: pointer;
 	background-color: rgb(119, 163, 156);
 	border-radius: 1.75rem;
+	animation: 1s ease-in-out slideup, 1.25s ease-in-out fadein;
 }
 
-.weather_card-dark {
+.weather-card-dark {
 	/* màu nền của card khi ở chế độ tối */
 	background: linear-gradient(to bottom, #711B86, #00057A);
 	color: white;
 }
 
-.city-name_text {
+@keyframes slideup {
+	0% {
+    	transform: translateY(50%);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
+
+.city-name-text {
 	text-transform: uppercase;
 	font-size: 1.4rem;
 	letter-spacing: 0.1rem;
 	margin-bottom: 1rem;
 }
 
-.weather-icon_container {
+.weather-icon-container {
 	margin-bottom: 2rem;
 }
 
-.weather-icon_container > svg {
+.weather-icon-container > svg {
 	width: 15rem;
     height: 15rem;
 }
 
-.temperature-metric_text {
+.temperature-metric-text {
 	font-size: 3rem;
 }
 
-.weather-condition_text {
+.weather-condition-text {
 	display: block;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 }
 
-.min-max_container {
+.min-max-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
 
-.min_container,
-.max_container {
+.min-container,
+.max-container {
 	margin: 1rem 3rem;
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
 }
 
 /* style cho mũi tên */
-.min-arrow_icon,
-.max-arrow_icon {
+.min-arrow-icon,
+.max-arrow-icon {
 	height: 1.25rem;
 	margin: auto;
 }
 
-.max-arrow_icon {
+.max-arrow-icon {
 	margin-bottom: -0.05rem;
 }
 
-.max_text {
+.max-text {
 	color: #FF0070;
 }
 
-.min_text {
+.min-text {
 	color: #00FF9B;
 }
 
-.max_text,
-.min_text {
+.max-text,
+.min-text {
 	text-align: center;
 }
 
-.max-temperature_text,
-.min-temperature_text {
+.max-temperature-text,
+.min-temperature-text {
 	font-size: 2rem;
 }

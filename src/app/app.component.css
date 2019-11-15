@@ -1,8 +1,9 @@
 /*
     Slide Menu
 */
-.side-menu_container {
-	/* giữ cố định menu khi kéo chuột lên, xuống */
+.side-menu-container {
+	/* giữ cố định menu khi kéo chuột lên, xuống
+		menu sẽ nằm nổi trên các phần khác */
 	position: fixed;
 	/* chiều rộng của menu chiếm 100% bề ngang màn hình */
 	width: 100%;
@@ -12,7 +13,7 @@
 	z-index: 3;
 }
 
-.side-menu_container-active {
+.side-menu-container-active {
 	/* thuộc tính này phản ứng với hành động kích chuột */
 	pointer-events: auto;
 }
@@ -50,7 +51,7 @@
 	display: grid;
 	/* tỉ lệ bề rộng theo mỗi hàng, có 3 hàng */
 	grid-template-rows: 1fr 4fr 1fr;
-	/* sắp xếp bố cục theo lưới, chia làm 2 cột, lấy theo tên khai báo trong .greeting_text */
+	/* sắp xếp bố cục theo lưới, chia làm 2 cột, lấy theo tên khai báo trong .greeting-text */
 	/* class greeting chiếm 2 cột */
 	grid-template-areas: "greeting greeting";
 	/* chữ luôn màu trắng dù ở chế độ sáng hay tối */
@@ -62,7 +63,7 @@
 	background: linear-gradient(to top, #30cfd0, #330867);
 }
 
-.greeting_text {
+.greeting-text {
 	/* đặt tên cho class này, để sử dụng trong class cha:
 	.menu-header (trong thuộc tính: grid-template-areas) */
 	grid-area: greeting;
@@ -75,7 +76,7 @@
 	justify-self: center;
 }
 
-.profile-image_container {
+.profile-image-container {
 	/* sắp xếp theo chiều dọc thì nằm giữa */
 	/* được canh giữa theo phương dọc so với class cha */
 	align-self: center;
@@ -83,7 +84,7 @@
 	margin-left: 2rem;
 }
 
-.profile_image {
+.profile-image {
 	/* chiều rộng của ảnh đại diện */
 	width: 4rem;
 }
@@ -96,12 +97,12 @@
 	align-self: center;
 }
 
-.name_text {
+.name-text {
 	font-size: 1.15rem;
 	margin-bottom: 0.5rem;
 }
 
-.email_text {
+.email-text {
 	font-size: 0.9rem;
 	letter-spacing: 0.1rem;
 }
@@ -109,7 +110,7 @@
 /* 
 menu links
 */
-.links_container {
+.links-container {
 	/* nằm phía trên theo phương dọc so với class cha, đây là mặc định */
 	align-self: start;
 }
@@ -139,12 +140,12 @@ menu links
 	margin: 0.5rem 0;
 }
 
-.copyright_container {
+.copyright-container {
 	/* được canh giữa theo phương dọc so với class cha */
 	align-self: center;
 }
 
-.copyright_text {
+.copyright-text {
 	display: block;
 	/* nằm giữa theo phương ngang */
 	text-align: center;
@@ -156,13 +157,13 @@ menu links
 */
 
 /* style cho nội dung chính ở chế độ tối */
-.root_container-dark {
+.root-container-dark {
 	/* áp dụng ở chế độ tối: Thay đổi màu nền theo hướng từ dưới lên trên */
 	background-image: linear-gradient(to top, #5ee7df, #372865);
 }
 
 /* Style cho phần header */
-.main_header {
+.main-header {
 	/* các mục con hiển thị chính giữa theo phương dọc */
 	align-items: center;
 	display: grid;
@@ -173,7 +174,7 @@ menu links
 }
 
 /* Style cho header khi ở chế độ tối */
-.main_header-dark {
+.main-header-dark {
 	background-color: #2B244D;
 	color: white;
 }
@@ -181,52 +182,52 @@ menu links
 /*
  left section
  */
-.left_section {
+.left-section {
 	display: grid;
 	/* phần bên trái được chia làm 2 cột */
 	grid-template-columns: 1fr 1fr;
 	/* bề ngang của phần bên trái,
-	nếu không đặt thì tự động lấy bằng định nghĩa trong .main_header */
+	nếu không đặt thì tự động lấy bằng định nghĩa trong .main-header */
 	width: 6rem;
 }
 
-.hamburger_icon {
+.hamburger-icon {
 	z-index: 3;
 	height: 1rem;
 	/* Phần đệm của icon menu */
 	padding: 0.5rem 1.5rem;
 }
 
-.logo_icon {
+.logo-icon {
 	height: 2rem;
 	margin-left: 1rem;
 }
 
-.logo_text {
+.logo-text {
 	fill: rgb(160, 14, 75);
 	transform : translate(210px, 56px);
 }
 
-.logo_text-dark {
+.logo-text-dark {
 	fill: #fff;
 }
 
 /* Style cho chữ */
-.date_text {
+.date-text {
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	margin: 0.5rem 0;
 }
 
 /* Style cho chữ của điều khiển LIGHT và DARK */
-.mode-toggle_text {
+.mode-toggle-text {
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 }
 
 /* Style cho khung chứa thanh và nút */
-.toggle-button_container {
+.toggle-button-container {
 	/* hiển thị bàn tay khi đưa con trỏ vào */
 	cursor: pointer;
 	/* đặt position: relative để những thành phần con lấy tọa độ theo tọa độ của cha */
@@ -235,7 +236,7 @@ menu links
 }
 
 /* Style cho thanh trượt */
-.mode-toggle_bg {
+.mode-toggle-bg {
 	height: 1rem;
 	width: 3rem;
 	border-radius: 0.5rem;
@@ -244,12 +245,12 @@ menu links
 }
 
 /* Style cho thanh trượt khi chọn (ở chế độ tối)  */
-.mode-toggle_bg-checked {
+.mode-toggle-bg-checked {
 	background-color: #FF0070;
 }
 
 /* Style cho nút trượt */
-.mode-toggle_circle {
+.mode-toggle-circle {
 	height: 1.30rem;
 	width: 1.30rem;
 	background-color: #2B244D;
@@ -262,16 +263,9 @@ menu links
 }
 
 /* Style cho nút trượt khi chọn (ở chế độ tối)  */
-.mode-toggle_circle-checked {
+.mode-toggle-circle-checked {
 	background-color: white;
 	left: 2rem;
-}
-
-@media screen and (max-width: 1279px) {
-
-	.main_header-dark {
-		color: rgb(22, 138, 206);
-	}
 }
 
 /* 
@@ -280,7 +274,7 @@ menu links
 	thì sử dụng các style này
 */
 @media screen and (max-width: 959px) {
-	.main_header {
+	.main-header {
 		/* Hiển thị theo dạng lưới (chỉ có 1 cột) */
 		grid-template-columns: 1fr;
 		/* canh giữa các thành phần con theo phương ngang */
@@ -289,20 +283,16 @@ menu links
 		height: 8rem;
 	}
 	
-	.left_section {
+	.left-section {
 		/* Hiển thị theo dạng lưới (có 2 cột, cột đầu tiên có chiều rộng là 0) */
 		grid-template-columns: 0 1fr;
 		/* chiếm 100% chiều ngang */
 		width: 100%;
 	}
 
-	.logo_icon {
+	.logo-icon {
 		/* khoảng cách với lề của icon
 		canh giữa icon */
 		margin: 0 auto;
-	}
-
-	.main_header-dark {
-		color: rgb(22, 206, 83);
 	}
 }
