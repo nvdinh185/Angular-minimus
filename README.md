@@ -31,8 +31,9 @@ BehaviorSubject để phát thuộc tính
 	+ Phương thức để thay đổi giá trị showMenu: Hiện hoặc ẩn menu
 	+ Khi thoát khỏi trang này thì hủy đối tượng darkModeState để giải phóng bộ nhớ
 - File app.component.html:
-	+ Hiển thị giao diện ban đầu
+	Hiển thị giao diện ban đầu
 	+ Có menu chọn ở góc trên bên trái
+	+ có logo ở góc trên bên trái
 	+ có button chọn để thay đổi chế độ sáng/tối
 	+ Render <router-outlet></router-outlet> là trang root
 	khai báo trong file app.routing.module.ts

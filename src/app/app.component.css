@@ -22,7 +22,7 @@
 	/* Dịch chuyển theo phương ngang 100% theo chiều âm, để ẩn menu đi */
 	transform: translateX(-100%);
 	/* Bề rộng của menu */
-	width: 30rem;
+	width: 27rem;
 	/* Màu nền khi ở chế độ sáng */
 	background-color: rgb(159, 217, 228);
 	/* Hiển thị theo dạng lưới */
@@ -138,6 +138,7 @@ menu links
 	/* đệm và lề cho các mục trong danh sách */
 	padding: 1rem 0;
 	margin: 0.5rem 0;
+	cursor: pointer;
 }
 
 .copyright-container {
@@ -185,10 +186,9 @@ menu links
 .left-section {
 	display: grid;
 	/* phần bên trái được chia làm 2 cột */
-	grid-template-columns: 1fr 1fr;
-	/* bề ngang của phần bên trái,
-	nếu không đặt thì tự động lấy bằng định nghĩa trong .main-header */
-	width: 6rem;
+	grid-template-columns: 1fr 7fr;
+	/* không cần đặt bề ngang của phần bên trái,
+	sẽ tự động lấy bằng định nghĩa trong .main-header */
 }
 
 .hamburger-icon {
@@ -201,6 +201,7 @@ menu links
 .logo-icon {
 	height: 2rem;
 	margin-left: 1rem;
+	width: 96%;
 }
 
 .logo-text {
