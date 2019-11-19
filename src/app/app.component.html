@@ -17,10 +17,8 @@
     </section>
     <section class="links-container">
       <ul class="menu-links" [ngClass]="{'menu-links-dark': darkModeActive}">
-        <li class="menu-link" routerLink="" routerLinkActive="link-active"
-          (click)="toggleMenu()">Home</li>
-        <li class="menu-link" routerLink="/add" routerLinkActive="link-active"
-          (click)="toggleMenu()">Add City</li>
+        <li class="menu-link" routerLink="" routerLinkActive="link-active" (click)="toggleMenu()">Home</li>
+        <li class="menu-link" routerLink="/add" routerLinkActive="link-active" (click)="toggleMenu()">Add City</li>
         <li (click)="logout()" class="menu-link">Logout</li>
       </ul>
     </section>
@@ -48,15 +46,15 @@
             }
           </style>
         </defs>
-        <rect [ngClass]="{'hamburger-icon-fill-dark': darkModeActive}"
-        class="hamburger-icon-fill" transform="translate(31.5 35)"></rect>
-        <rect [ngClass]="{'hamburger-icon-fill-dark': darkModeActive}"
-        class="hamburger-icon-fill" transform="translate(31.5 47)"></rect>
-        <rect [ngClass]="{'hamburger-icon-fill-dark': darkModeActive}"
-          class="hamburger-icon-fill" transform="translate(31.5 58)"></rect>
+        <rect [ngClass]="{'hamburger-icon-fill-dark': darkModeActive}" class="hamburger-icon-fill"
+          transform="translate(31.5 35)"></rect>
+        <rect [ngClass]="{'hamburger-icon-fill-dark': darkModeActive}" class="hamburger-icon-fill"
+          transform="translate(31.5 47)"></rect>
+        <rect [ngClass]="{'hamburger-icon-fill-dark': darkModeActive}" class="hamburger-icon-fill"
+          transform="translate(31.5 58)"></rect>
       </svg>
 
-      <svg class="logo-icon" viewBox="360.3 22.2 213.7 42.8">
+      <svg class="logo-icon" viewBox="195.3 22.2 213.7 42.8">
         <!-- tam giác màu xanh lục -->
         <path fill="#00ff9b" d="M150.3 65V22.2L193 65z"></path>
         <!-- tam giác màu xanh dương -->
@@ -82,7 +80,5 @@
   </header>
 
   <!-- Main Content -->
-  <div>
-    <router-outlet></router-outlet>
-  </div>
+  <router-outlet></router-outlet>
 </main>

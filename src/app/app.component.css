@@ -172,6 +172,7 @@ menu links
 	grid-template-columns: 1fr 1fr 0.5fr;
 	background-color: rgb(169, 205, 226);
 	height: 4rem;
+	justify-items: center;
 }
 
 /* Style cho header khi ở chế độ tối */
@@ -200,8 +201,7 @@ menu links
 
 .logo-icon {
 	height: 2rem;
-	margin-left: 1rem;
-	width: 96%;
+	width: 45%;
 }
 
 .logo-text {
@@ -279,7 +279,6 @@ menu links
 		/* Hiển thị theo dạng lưới (chỉ có 1 cột) */
 		grid-template-columns: 1fr;
 		/* canh giữa các thành phần con theo phương ngang */
-		justify-items: center;
 		padding: 1rem 0;
 		height: 8rem;
 	}
@@ -295,5 +294,7 @@ menu links
 		/* khoảng cách với lề của icon
 		canh giữa icon */
 		margin: 0 auto;
+		/* chiếm 50% chiều ngang, nằm giữa */
+		width: 50%;
 	}
 }

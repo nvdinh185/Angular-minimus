@@ -1,16 +1,15 @@
 .weather-card {
 	display: grid;
-	/* grid-template-rows: 1fr 2fr 1fr 1fr; */
 	/* nội dung bên trong class này được canh giữa theo phương ngang */
 	justify-items: center;
 	/* khoảng cách đệm */
 	padding: 2rem;
 	/* khoảng cách lề */
 	margin: 2rem;
-	/* bề rộng */
-	width: 19rem;
+	/* bề rộng và chiều cao do những thành phần bên trong chiếm (nếu không đặt) */
+	/* width: 19rem; */
 	/* chiều cao */
-	height: 30rem;
+	/* height: 30rem; */
 	cursor: pointer;
 	background-color: rgb(119, 163, 156);
 	border-radius: 1.75rem;
@@ -56,7 +55,6 @@
 
 .weather-icon-container > svg {
 	width: 15rem;
-    height: 15rem;
 }
 
 .temperature-metric-text {

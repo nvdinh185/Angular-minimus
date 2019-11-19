@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+	.div1 {
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		height: 30rem;
+		width: 30rem;
+		border-radius: 50%;
+		background: linear-gradient(-225deg, #ffffff 0%, #FFE29F 10%, #FFA99F 48%, #ffd1ff 100%);
+		animation: 3s ease-in-out div1, 5s ease-in-out div2;
+	}
+	
+	@keyframes div1 {
+		0% {
+			transform: translateY(50%);
+		}
+		
+		100% {
+			transform: translateY(0);
+		}
+	}	
+	
+	@keyframes div2 {
+		0% {
+			opacity: 0;
+		}
+		
+		100% {
+			opacity: 1;
+		}
+	}
+  </style>
+</head>
+
+<body>
+
+	<div class="div1"></div>
+  
+</body>
+</html>
