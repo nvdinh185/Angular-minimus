@@ -187,9 +187,7 @@ menu links
 .left-section {
 	display: grid;
 	/* phần bên trái được chia làm 2 cột */
-	grid-template-columns: 1fr 7fr;
-	/* không cần đặt bề ngang của phần bên trái,
-	sẽ tự động lấy bằng định nghĩa trong .main-header */
+	grid-template-columns: 1fr 9fr;
 }
 
 .hamburger-icon {
@@ -201,7 +199,7 @@ menu links
 
 .logo-icon {
 	height: 2rem;
-	width: 45%;
+	width: 100%;
 }
 
 .logo-text {
@@ -278,7 +276,6 @@ menu links
 	.main-header {
 		/* Hiển thị theo dạng lưới (chỉ có 1 cột) */
 		grid-template-columns: 1fr;
-		/* canh giữa các thành phần con theo phương ngang */
 		padding: 1rem 0;
 		height: 8rem;
 	}
@@ -294,7 +291,5 @@ menu links
 		/* khoảng cách với lề của icon
 		canh giữa icon */
 		margin: 0 auto;
-		/* chiếm 50% chiều ngang, nằm giữa */
-		width: 50%;
 	}
 }

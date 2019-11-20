@@ -20,6 +20,31 @@ BehaviorSubject để phát thuộc tính
 
 - new Date() => Mon Oct 21 2019 08:54:46 GMT+0700 (Giờ Đông Dương)
 - new Date().toLocaleDateString('en-GB') => 21/10/2019
+- Number("123") => chuyển chuỗi "123" thành kiểu số, giống hàm ParseInt
+- let a = 2019-11-20 09:00:00
+- new Date(a) => Wed Nov 20 2019 09:00:00 GMT+0700 (Giờ Đông Dương)
+- new Date(a).toDateString() => Wed Nov 20 2019
+- new Date(a).toDateString().split(' ')[0] => Wed
+
+* Phương thức Object.keys(object1) : chuyển một đối tượng thành mảng,
+giá trị của mảng là các thuộc tính của đối tượng
+- const object1 = {
+			a: 'somestring',
+			b: 42,
+			c: false
+		};
+- let a = Object.keys(object1)
+- console.log(a) =>  ["a", "b", "c"]
+- a.forEach((day) => {
+        console.log(day)
+        console.log(object1[day])
+      })
+	  => a
+		somestring
+		b
+		42
+		c
+		false
 
 ========================================================================
 - File app.module.ts: Khai báo các module, component, service
@@ -56,4 +81,4 @@ BehaviorSubject để phát thuộc tính
 	+ error: Nếu có lỗi thì hiển thị thông báo lỗi
 - Trong thư mục service: các dịch vụ
 	+ ui.service.ts: dùng BehaviorSubject để phát ra giá trị true
-	+ weather.service.ts: Lấy các thông tin thời tiết hiện tại và dự báo	
+	+ weather.service.ts: Lấy các thông tin thời tiết hiện tại và dự báo

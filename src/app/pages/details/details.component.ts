@@ -67,9 +67,9 @@ export class DetailsComponent {
     })
     ).subscribe((payload: any) => {
       this.state = payload[0].weather[0].main;
-      this.temp = Math.ceil(Number(payload[0].main.temp));
+      this.temp = Math.ceil(payload[0].main.temp);
       this.hum = payload[0].main.humidity;
-      this.wind = Math.round(Math.round(payload[0].wind.speed));
+      this.wind = Math.round(payload[0].wind.speed);
       const dates = {};
       for (const res of payload[1].list) {
         const date = new Date(res.dt_txt).toDateString().split(' ')[0];
@@ -84,11 +84,19 @@ export class DetailsComponent {
           };
         }
       }
+      // console.log(dates) => {Wed: {…}, Thu: {…}, Fri: {…}, Sat: {…}, Sun: {…}, …}
+      // console.log(dates["Wed"]) => {state: "Rain", temp: 85.82000000000001, counter: 4}
       Object.keys(dates).forEach((day) => {
+        // tính nhiệt độ trung bình
         dates[day].temp = Math.round(dates[day].temp / dates[day].counter);
       });
+      console.log(dates)
+      console.log(dates["Wed"])
+      // xóa 1 thuộc tính của đối tượng
       delete dates[Object.keys(dates)[0]];
       this.daysForecast = dates;
+      console.log(dates)
+      console.log(dates["Wed"])
     }, (err) => {
       this.errorMessage = err.error.message;
       setTimeout(() => {

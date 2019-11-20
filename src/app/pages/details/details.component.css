@@ -60,8 +60,11 @@
 /* nút BACK */
 .back-button {
   position: absolute;
-  /* khoảng cách với cạnh trên */
+  /* khoảng cách với cạnh trên,
+  nếu không đặt thì lấy theo định nghĩa trong .details-page-wrapper */
   top: 3rem;
+  /* khoảng cách với cạnh trái,
+  nếu không đặt thì lấy theo định nghĩa trong .details-page-wrapper */
   left: 3.25rem;
   width: 5rem;
   cursor: pointer;
@@ -116,6 +119,7 @@
 
 /* vùng ghi thông tin thời tiết hiện tại và tên thành phố đó */
 .header-content-wrapper {
+  /* lấy tọa độ dựa vào tọa độ của class cha gần nhất */
   position: absolute;
   z-index: 1;
   color: rgb(255, 255, 255);
@@ -127,7 +131,7 @@
   width: 100%;
 }
 
-/* vùng ghi nhiệt độ, trạng thái thời tiết, độ ẩm, gió */
+/* vùng ghi nhiệt độ, trạng thái thời tiết, độ ẩm, gió hiện tại */
 .today-weather-container {
   display: grid;
   /* nội dung của nó nằm chính giữa theo phương ngang */
@@ -157,7 +161,7 @@
   margin-top: 0.25rem;
 }
 
-/* vùng ghi độ ẩm và gió */
+/* vùng ghi độ ẩm và gió hiện tại */
 .hum-wind-container {
   /* flex mặc định theo chiều ngang */
   display: flex;
@@ -224,7 +228,7 @@
 /* phần twitter */
 .twitter-feed-container {
   margin-top: 1rem;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .twitter-feed-body {

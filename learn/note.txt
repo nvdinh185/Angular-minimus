@@ -16,3 +16,8 @@ Khi đó:
 	- top: 50%; khoảng cách với cạnh trên (có tác dụng khi class cha là relative, class con là absolute)
 	- left: 20%; khoảng cách với cạnh trái (có tác dụng khi class cha là relative, class con là absolute)
 	- chiều cao không cần đặt, sẽ tự động lấy theo chiều cao của các thành phần bên trong
+	
+4. display: flex;
+- justify-content: center; //nội dung ở trong được canh giữa theo phương ngang, chỉ khi flex theo mặc định (theo phương ngang)
+- align-items: center; //nội dung ở trong được canh giữa theo phương dọc, chỉ khi flex theo mặc định (theo phương ngang)
+- position: relative; //những phần trong xác định vị trí theo vị trí tương đối (theo tọa độ của class cha)
