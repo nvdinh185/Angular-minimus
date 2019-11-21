@@ -25,9 +25,9 @@
 	width: 27rem;
 	/* Màu nền khi ở chế độ sáng */
 	background-color: rgb(159, 217, 228);
-	/* Hiển thị theo dạng lưới */
+	/* Hiển thị theo dạng cột */
 	display: grid;
-	/* tỉ lệ bề rộng theo mỗi dòng, tùy theo số dòng bên trong */
+	/* tỉ lệ bề rộng theo mỗi dòng, đúng theo số phần tử con bên trong */
 	grid-template-rows: 2fr 4fr 1fr;
 }
 
@@ -47,12 +47,12 @@
 .menu-header {
 	/* màu nền của menu header, thay đổi theo hướng từ trái sang phải */
 	background: linear-gradient(to right, #00FF9B, #5f84fb);
-	/* hiển thị theo dạng lưới */
+	/* hiển thị theo dạng cột */
 	display: grid;
 	/* tỉ lệ bề rộng theo mỗi hàng, có 3 hàng */
 	grid-template-rows: 1fr 4fr 1fr;
 	/* sắp xếp bố cục theo lưới, chia làm 2 cột, lấy theo tên khai báo trong .greeting-text */
-	/* class greeting chiếm 2 cột */
+	/* class greeting chiếm 2 cột, các thành phần ở sau sẽ tự động sắp xếp cho đủ cột/dòng */
 	grid-template-areas: "greeting greeting";
 	/* chữ luôn màu trắng dù ở chế độ sáng hay tối */
 	color: white;
@@ -71,13 +71,11 @@
 	letter-spacing: 0.15rem;
 	text-transform: uppercase;
 	margin-top: 1rem;
-	/* định dạng theo nằm ngang thì nằm chính giữa */
-	/* canh giữa chính nó trong class cha */
+	/* canh giữa chính nó theo phương ngang trong class cha */
 	justify-self: center;
 }
 
 .profile-image-container {
-	/* sắp xếp theo chiều dọc thì nằm giữa */
 	/* được canh giữa theo phương dọc so với class cha */
 	align-self: center;
 	/* Khoảng cách với lề trái */
@@ -156,7 +154,6 @@ menu links
 /* 
 	Main
 */
-
 /* style cho nội dung chính ở chế độ tối */
 .root-container-dark {
 	/* áp dụng ở chế độ tối: Thay đổi màu nền theo hướng từ dưới lên trên */
@@ -172,6 +169,7 @@ menu links
 	grid-template-columns: 1fr 1fr 0.5fr;
 	background-color: rgb(169, 205, 226);
 	height: 4rem;
+	/* các mục con hiển thị chính giữa theo phương ngang */
 	justify-items: center;
 }
 

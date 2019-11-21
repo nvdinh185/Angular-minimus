@@ -37,36 +37,45 @@ giá trị của mảng là các thuộc tính của đối tượng
 - console.log(a) =>  ["a", "b", "c"]
 - a.forEach((day) => {
         console.log(day)
+		// => a b c
         console.log(object1[day])
+		// => somestring 42 false
       })
-	  => a
-		somestring
-		b
-		42
-		c
-		false
+- xóa 1 thuộc tính của 1 đối tượng
+vd:  	var Employee = {
+		  firstname: "John",
+		  lastname: "Doe"
+		}
+delete Employee.firstname;
+console.log(Employee); => { lastname: "Doe" }
+- file HTML: pipe keyvalue: Chuyển một đối tượng thành một mảng với key và value
+vd: {Fri: {…}, Sat: {…}, Sun: {…}, Mon: {…}, Tue: {…}} => [ { "key": "Fri", "value": { "state": "Rain", "temp": 19, "counter": 8 } }, { "key": "Sat", "value": { ... } }, { "key": "Sun", "value": { ... } }, { "key": "Mon", "value": { ... } }, { "key": "Tue", "value": { ... } } ]
+
+- file ts: Chuyển một đối tượng thành mảng với key và value
+var data = { firstName: 'John', lastName: 'Doe', email: 'john.doe@gmail.com' }
+var output = Object.entries(data).map(([key, value]) => ({key,value}));
+console.log(output); => [{…}, {…}, {…}]
 
 ========================================================================
 - File app.module.ts: Khai báo các module, component, service
 - File app.routing.module.ts: Khai báo các đường dẫn Router của dự án
-- File app.component.ts: 
-	+ Nhận lại giá trị của đối tượng darkModeState phát ra
-	+ Gán cho biến darkModeActive để hiện thị chế độ sáng/tối
-	+ Phương thức để thay đổi chế độ sáng/tối
+- File app.component.ts:
+	+ Nhận lại giá trị của đối tượng darkModeState phát ra, gán cho biến darkModeActive để hiện thị chế độ sáng/tối
 	+ Phương thức để thay đổi giá trị showMenu: Hiện hoặc ẩn menu
+	+ Phương thức để thay đổi chế độ sáng/tối
 	+ Khi thoát khỏi trang này thì hủy đối tượng darkModeState để giải phóng bộ nhớ
-- File app.component.html:
-	Hiển thị giao diện ban đầu
+- File app.component.html: Hiển thị giao diện ban đầu
 	+ Có menu chọn ở góc trên bên trái
 	+ có logo ở góc trên bên trái
 	+ có button chọn để thay đổi chế độ sáng/tối
-	+ Render <router-outlet></router-outlet> là trang root
-	khai báo trong file app.routing.module.ts
+	+ Render <router-outlet></router-outlet> là trang root khai báo trong file app.routing.module.ts
 - File app.component.css: Định nghĩa các style cho các class
 - Trong thư mục pages có các trang:
-	+ home: Render <weather-card> để hiển thị thông tin nhiệt độ hiện tại
-	của các thành phố
-	+ detail: Sử dụng this.activeRouter.paramMap.subscribe() để nhận dữ liệu chuyển hướng sang
+	+ home:
+		- Khai báo biến cities là mảng chứa danh sách các thành phố
+		- Render <weather-card> để hiển thị thông tin nhiệt độ hiện tại của các thành phố
+	+ detail: Sử dụng this.activeRouter.paramMap.subscribe() để nhận dữ liệu chuyển hướng sang,
+		hiển thị chi tiết nhiệt độ cho một thành phố
 - Trong thư mục components có chứa các component:
 	+ weather-card:
 	- Lấy trạng thái thời tiết và nhiệt độ hiện tại
@@ -77,8 +86,7 @@ giá trị của mảng là các thuộc tính của đối tượng
 	 để hiển thị thông tin chi tiết của thành phố đó
 	 (sử dụng this.router.navigateByUrl để thực hiện chuyển hướng)
 	 
-	sử dụng component error để hiển thị thông báo lỗi
-	+ error: Nếu có lỗi thì hiển thị thông báo lỗi
+	+ error: Dùng để hiển thị thông báo lỗi
 - Trong thư mục service: các dịch vụ
-	+ ui.service.ts: dùng BehaviorSubject để phát ra giá trị true
+	+ ui.service.ts: dùng BehaviorSubject để phát ra thuộc tính darkModeState có giá trị true
 	+ weather.service.ts: Lấy các thông tin thời tiết hiện tại và dự báo
