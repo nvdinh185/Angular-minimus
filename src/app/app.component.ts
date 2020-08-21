@@ -14,16 +14,15 @@ export class AppComponent {
   showMenu: boolean = false;
   userEmail: string = 'nvdinh0766777123@gmail.com'
 
-  constructor(public ui: UiService) {
-  }
+  constructor(public ui: UiService) { }
 
   ngOnInit() {
     //Nhận lại thuộc tính darkModeState phát ra
     //gán cho biến darkModeActive
-    this.sub = this.ui.darkModeState.subscribe((value) => {
+    this.sub = this.ui.darkModeState.subscribe(value => {
       this.darkModeActive = value;
     })
-  };
+  }
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
@@ -41,6 +40,11 @@ export class AppComponent {
    */
   ngOnDestroy() {
     this.sub.unsubscribe();
+  }
+
+  logout() {
+    console.log("logout!");
+    this.showMenu = !this.showMenu;
   }
 
 }

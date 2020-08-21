@@ -27,11 +27,12 @@ export class DetailsComponent {
   errorMessage: string;
   tweets$: Observable<any>;
 
-  constructor(public twitter: TwitterService
+  constructor(
+    public twitter: TwitterService
     , public activeRouter: ActivatedRoute
     , public weather: WeatherService
-    , public ui: UiService) {
-  }
+    , public ui: UiService
+  ) { }
 
   ngOnInit() {
 
@@ -94,7 +95,7 @@ export class DetailsComponent {
       // console.log(dates) => {Thu: {…}, Fri: {…}, Sat: {…}, Sun: {…}, Mon: {…}, Tue: {…}}
       // console.log(dates["Thu"]) => {state: "Rain", temp: 85.82000000000001, counter: 4}
       // console.log(Object.keys(dates)) => ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"]
-      
+
       Object.keys(dates).forEach((day) => {
         // tính nhiệt độ trung bình
         dates[day].temp = Math.round(dates[day].temp / dates[day].counter);
@@ -102,7 +103,7 @@ export class DetailsComponent {
       // xóa thuộc tính ngày hiện tại ra khỏi thông tin thời tiết dự báo
       delete dates[Object.keys(dates)[0]];
       // chuyển đối tượng dates thành mảng với key và value
-      this.daysForecast = Object.entries(dates).map(([key, value]) => ({key,value}));
+      this.daysForecast = Object.entries(dates).map(([key, value]) => ({ key, value }));
     }, (err) => {
       this.errorMessage = err.error.message;
       setTimeout(() => {

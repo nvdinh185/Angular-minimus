@@ -7,11 +7,10 @@ import { environment } from '../../../environments/environment';
 export class WeatherService {
 
   //đường dẫn để lấy thông tin thời tiết
-  private readonly baseURL = 'https://api.openweathermap.org/data/2.5/';
-  private readonly appID = environment.appID;
+  private readonly baseURL = environment.config.baseURL;
+  private readonly appID = environment.config.appID;
 
-  constructor(public http: HttpClient) {
-  }
+  constructor(public http: HttpClient) { }
 
   /**
    * Lấy thông tin thời tiết hiện tại

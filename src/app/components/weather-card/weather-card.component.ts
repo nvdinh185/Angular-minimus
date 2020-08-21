@@ -59,13 +59,14 @@ export class WeatherCardComponent {
   errorMessage: string;
   cityName;
 
-  constructor(public weather: WeatherService,
+  constructor(
+    public weather: WeatherService,
     public router: Router,
-    public ui: UiService) {
-  }
+    public ui: UiService
+  ) { }
 
   ngOnInit() {
-    this.sub = this.ui.darkModeState.subscribe((isDark) => {
+    this.sub = this.ui.darkModeState.subscribe(isDark => {
       this.darkMode = isDark;
     });
   }
