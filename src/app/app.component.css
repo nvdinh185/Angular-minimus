@@ -270,7 +270,7 @@ menu links
 	có nghĩa là khi chiều rộng màn hình <= 959px
 	thì sử dụng các style này
 */
-@media screen and (max-width: 959px) {
+@media (max-width: 959px) {
 	.main-header {
 		/* Hiển thị theo dạng lưới (chỉ có 1 cột) */
 		grid-template-columns: 1fr;

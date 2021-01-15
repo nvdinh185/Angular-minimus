@@ -359,7 +359,7 @@
 }
 
 /* khi chiều rộng màn hình <= 1279px */
-@media screen and (max-width: 1279px) {
+@media (max-width: 1279px) {
   
   .back-button {
     /* khoảng cách với cạnh trên */
@@ -380,7 +380,7 @@
 }
 
 /* khi chiều rộng màn hình <= 959px */
-@media screen and (max-width: 959px) {
+@media (max-width: 959px) {
 
   .details-page-wrapper {
     /* sắp xếp hiển thị theo chiều dọc */
