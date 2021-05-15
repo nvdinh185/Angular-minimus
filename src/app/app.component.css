@@ -38,7 +38,7 @@
 
 .slide-menu-active-dark {
 	/* Màu nền khi ở chế độ tối */
-	background-color: #2B244D;
+	background-color: #2b244d;
 }
 
 /* 
@@ -46,7 +46,7 @@
 */
 .menu-header {
 	/* màu nền của menu header, thay đổi theo hướng từ trái sang phải */
-	background: linear-gradient(to right, #00FF9B, #5f84fb);
+	background: linear-gradient(to right, #00ff9b, #5f84fb);
 	/* hiển thị theo dạng cột */
 	display: grid;
 	/* tỉ lệ bề rộng theo mỗi hàng, có 3 hàng */
@@ -128,8 +128,8 @@ menu links
 
 .link-active {
 	/* link nào active thì tô màu khác và gạch chân */
-	color: #495CFC;
-	border-bottom: 1px solid #495CFC;
+	color: #495cfc;
+	border-bottom: 1px solid #495cfc;
 }
 
 .menu-link {
@@ -175,7 +175,7 @@ menu links
 
 /* Style cho header khi ở chế độ tối */
 .main-header-dark {
-	background-color: #2B244D;
+	background-color: #2b244d;
 	color: white;
 }
 
@@ -202,7 +202,7 @@ menu links
 
 .logo-text {
 	fill: rgb(160, 14, 75);
-	transform : translate(210px, 56px);
+	transform: translate(210px, 56px);
 }
 
 .logo-text-dark {
@@ -243,19 +243,19 @@ menu links
 
 /* Style cho thanh trượt khi chọn (ở chế độ tối)  */
 .mode-toggle-bg-checked {
-	background-color: #FF0070;
+	background-color: #ff0070;
 }
 
 /* Style cho nút trượt */
 .mode-toggle-circle {
-	height: 1.30rem;
-	width: 1.30rem;
-	background-color: #2B244D;
+	height: 1.3rem;
+	width: 1.3rem;
+	background-color: #2b244d;
 	position: absolute;
 	top: -0.25rem;
 	border-radius: 50%;
 	/* nút trượt di chuyển */
-	transition: left .3s linear;
+	transition: left 0.3s linear;
 	left: 0rem;
 }
 
@@ -277,7 +277,7 @@ menu links
 		padding: 1rem 0;
 		height: 8rem;
 	}
-	
+
 	.left-section {
 		/* Hiển thị theo dạng lưới (có 2 cột, cột đầu tiên có chiều rộng là 0) */
 		grid-template-columns: 0 1fr;
